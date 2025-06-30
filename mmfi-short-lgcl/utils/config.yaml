@@ -1,0 +1,55 @@
+# config.yaml
+
+# --- 基础训练参数 ---
+batch_size: 16
+n_epochs: 20
+n_warmup_epochs: 20
+lr: 0.0001
+seed: 10
+cuda_id: 0
+num_workers: 8
+
+# --- 持续学习设置 ---
+n_tasks: 9          # MMFI-27, 27个类别分成9个任务，每个任务3个类别
+half_iid: 1         # 1表示启用，0表示禁用。启用时，前一半任务数据会合并作为初始任务
+
+# --- 路径设置 ---
+data_root: "data"
+log_path: "log/" # 建议为新实验建一个新日志目录
+
+# --- LGCL 语义指导参数 (我们的新增核心) ---
+lgcl_enabled: True      # 总开关，方便你对比有无LGCL的效果
+alpha: 0.1              # 类别级别(Class-Level)对齐损失的权重
+beta: 0.05              # 任务级别(Task-Level)对齐损失的权重
+clip_model_name: "/data1/rsl/consense-0629/mmfi_short/clip-vit-base-patch32" # 强大的预训练文本编码器
+
+# --- 数据集特定信息 ---
+dataset: "mmfi27"
+class_names:
+  - 'stretching and relaxing'           # A01 (对应标签 0)
+  - 'horizontal chest expansion'        # A02 (对应标签 1)
+  - 'vertical chest expansion'          # A03 (对应标签 2)
+  - 'twisting body to the left'         # A04 (对应标签 3)
+  - 'twisting body to the right'        # A05 (对应标签 4)
+  - 'marching in place'                 # A06 (对应标签 5)
+  - 'extending left limb'               # A07 (对应标签 6)
+  - 'extending right limb'              # A08 (对应标签 7)
+  - 'lunge toward left-front'           # A09 (对应标签 8)
+  - 'lunge toward right-front'          # A10 (对应标签 9)
+  - 'extending both limbs'              # A11 (对应标签 10)
+  - 'squat'                             # A12 (对应标签 11)
+  - 'raising left hand'                 # A13 (对应标签 12)
+  - 'raising right hand'                # A14 (对应标签 13)
+  - 'lunge toward left side'            # A15 (对应标签 14)
+  - 'lunge toward right side'           # A16 (对应标签 15)
+  - 'waving left hand'                  # A17 (对应标签 16)
+  - 'waving right hand'                 # A18 (对应标签 17)
+  - 'picking up things'                 # A19 (对应标签 18)
+  - 'throwing toward left side'         # A20 (对应标签 19)
+  - 'throwing toward right side'        # A21 (对应标签 20)
+  - 'kicking toward left side'          # A22 (对应标签 21)
+  - 'kicking toward right side'         # A23 (对应标签 22)
+  - 'extending left side of the body'   # A24 (对应标签 23)
+  - 'extending right side of the body'  # A25 (对应标签 24)
+  - 'jumping up'                        # A26 (对应标签 25)
+  - 'bowing'                            # A27 (对应标签 26)
