@@ -1,0 +1,19 @@
+[2025-06-29 18:16:34,398][utils.py][line:63][INFO] Hyperparameters:
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] config_path: utils/config.yaml
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] batch_size: 16
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] n_epochs: 20
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] n_warmup_epochs: 20
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] lr: 0.0001
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] seed: 10
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] cuda_id: 0
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] num_workers: 8
+[2025-06-29 18:16:34,398][utils.py][line:65][INFO] n_tasks: 9
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] half_iid: 1
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] data_root: data
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] log_path: log/
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] lgcl_enabled: True
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] alpha: 0.1
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] beta: 0.05
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] clip_model_name: /data1/rsl/consense-0629/mmfi_short/clip-vit-base-patch32
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] dataset: mmfi27
+[2025-06-29 18:16:34,399][utils.py][line:65][INFO] class_names: ['stretching and relaxing', 'horizontal chest expansion', 'vertical chest expansion', 'twisting body to the left', 'twisting body to the right', 'marching in place', 'extending left limb', 'extending right limb', 'lunge toward left-front', 'lunge toward right-front', 'extending both limbs', 'squat', 'raising left hand', 'raising right hand', 'lunge toward left side', 'lunge toward right side', 'waving left hand', 'waving right hand', 'picking up things', 'throwing toward left side', 'throwing toward right side', 'kicking toward left side', 'kicking toward right side', 'extending left side of the body', 'extending right side of the body', 'jumping up', 'bowing']
