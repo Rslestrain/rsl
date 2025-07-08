@@ -1,0 +1,161 @@
+[2025-01-12 16:50:39,321][utils.py][line:63][INFO] Hyperparameters:
+[2025-01-12 16:50:39,321][utils.py][line:65][INFO] batch_size: 16
+[2025-01-12 16:50:39,321][utils.py][line:65][INFO] data_root: data
+[2025-01-12 16:50:39,321][utils.py][line:65][INFO] dataset: mmfi27
+[2025-01-12 16:50:39,321][utils.py][line:65][INFO] num_workers: 8
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] cuda_id: 0
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] seed: 10
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] half_iid: 0
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] n_epochs: 20
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] n_warmup_epochs: 0
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] n_tasks: 9
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] log_path: /data1/smy1/lr/work2_compress/fixhead/mmfi_long/log/
+[2025-01-12 16:50:39,322][utils.py][line:65][INFO] lr: 0.0001
+[2025-01-12 16:50:43,694][utils.py][line:72][INFO] Model's state_dict:
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: encoder_0.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: encoder_1.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.qkv.weight | Size: torch.Size([1026, 342]) | Total Parameters: 350892
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.weight | Size: torch.Size([342, 342]) | Total Parameters: 116964
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.0.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.1.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.2.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.3.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.4.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,695][utils.py][line:74][INFO] Layer: feats.5.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: feats.6.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: feats.7.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: feats.8.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: pos_encoding.embedding | Size: torch.Size([10, 342]) | Total Parameters: 3420
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.weight | Size: torch.Size([40, 10]) | Total Parameters: 400
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.weight | Size: torch.Size([10, 40]) | Total Parameters: 400
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.bias | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: encoder_0.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: encoder_1.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 16:50:43,696][utils.py][line:74][INFO] Layer: feats.0.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.1.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.2.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.3.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.4.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.5.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.6.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.7.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: feats.8.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.bias | Size: torch.Size([10]) | Total Parameters: 10
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: pos_encoding.mu | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-01-12 16:50:43,697][utils.py][line:74][INFO] Layer: pos_encoding.sigma | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-01-12 16:50:43,697][utils.py][line:76][INFO] Total number of parameters: 1964137
+[2025-01-12 16:50:43,698][utils.py][line:88][INFO] init model GPU Memory Allocated: 7.54 MB, Reserved: 24.00 MB, Max Allocated: 7.54 MB, Max Reserved: 24.00 MB
+[2025-01-12 16:50:51,225][main.py][line:71][INFO] 
+>>> Task #-3 --> Model Training
+[2025-01-12 16:50:52,223][main.py][line:84][INFO] Task 0. Time 1.00
+[2025-01-12 16:50:53,111][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:50:54,050][main.py][line:84][INFO] Task 0. Time 2.82
+[2025-01-12 16:50:54,805][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:50:55,707][main.py][line:84][INFO] Task 0. Time 4.48
+[2025-01-12 16:50:56,537][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:50:57,509][main.py][line:84][INFO] Task 0. Time 6.28
+[2025-01-12 16:50:58,325][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:50:59,234][main.py][line:84][INFO] Task 0. Time 8.01
+[2025-01-12 16:51:00,003][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:00,959][main.py][line:84][INFO] Task 0. Time 9.73
+[2025-01-12 16:51:01,804][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:02,870][main.py][line:84][INFO] Task 0. Time 11.64
+[2025-01-12 16:51:03,611][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:04,693][main.py][line:84][INFO] Task 0. Time 13.47
+[2025-01-12 16:51:05,475][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:06,377][main.py][line:84][INFO] Task 0. Time 15.15
+[2025-01-12 16:51:07,162][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:08,122][main.py][line:84][INFO] Task 0. Time 16.90
+[2025-01-12 16:51:08,904][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:09,920][main.py][line:84][INFO] Task 0. Time 18.70
+[2025-01-12 16:51:10,704][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:11,594][main.py][line:84][INFO] Task 0. Time 20.37
+[2025-01-12 16:51:12,501][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:13,445][main.py][line:84][INFO] Task 0. Time 22.22
+[2025-01-12 16:51:14,345][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:15,326][main.py][line:84][INFO] Task 0. Time 24.10
+[2025-01-12 16:51:16,159][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:17,044][main.py][line:84][INFO] Task 0. Time 25.82
+[2025-01-12 16:51:17,835][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:18,914][main.py][line:84][INFO] Task 0. Time 27.69
+[2025-01-12 16:51:19,835][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:20,792][main.py][line:84][INFO] Task 0. Time 29.57
+[2025-01-12 16:51:21,627][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:22,691][main.py][line:84][INFO] Task 0. Time 31.47
+[2025-01-12 16:51:23,552][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:24,545][main.py][line:84][INFO] Task 0. Time 33.32
+[2025-01-12 16:51:25,359][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:26,450][main.py][line:84][INFO] Task 0. Time 35.23
+[2025-01-12 16:51:27,248][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 16:51:27,261][utils.py][line:88][INFO] End training-0 GPU Memory Allocated: 20.88 MB, Reserved: 56.00 MB, Max Allocated: 32.29 MB, Max Reserved: 56.00 MB
+[2025-01-12 16:51:28,208][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 16:51:28,209][main.py][line:105][INFO] x1. indices [36, 22, 17, 28, 39, 14, 12]
+[2025-01-12 16:51:28,209][main.py][line:105][INFO] x2. indices [27, 2, 14, 13, 22, 37, 28]
+[2025-01-12 16:51:28,209][main.py][line:105][INFO] x3. indices [26, 37, 36, 35, 38, 33, 23]
+[2025-01-12 16:51:28,209][main.py][line:105][INFO] x4. indices [0, 9]
+[2025-01-12 16:51:28,212][main.py][line:71][INFO] 
+>>> Task #-2 --> Model Training
+[2025-01-12 16:51:29,404][main.py][line:84][INFO] Task 1. Time 1.19
+[2025-01-12 16:51:31,663][method.py][line:154][INFO] 
+Accuracy:78	31	0	0	0	0	0	0	0	Avg Acc: 55.00
+[2025-01-12 16:51:32,867][main.py][line:84][INFO] Task 1. Time 4.66
+[2025-01-12 16:51:34,957][method.py][line:154][INFO] 
+Accuracy:78	33	0	0	0	0	0	0	0	Avg Acc: 55.83
+[2025-01-12 16:51:36,072][main.py][line:84][INFO] Task 1. Time 7.86
+[2025-01-12 16:51:38,116][method.py][line:154][INFO] 
+Accuracy:78	33	0	0	0	0	0	0	0	Avg Acc: 55.83
+[2025-01-12 16:51:39,225][main.py][line:84][INFO] Task 1. Time 11.01
+[2025-01-12 16:51:41,309][method.py][line:154][INFO] 
+Accuracy:78	33	0	0	0	0	0	0	0	Avg Acc: 55.83
+[2025-01-12 16:51:42,406][main.py][line:84][INFO] Task 1. Time 14.19
+[2025-01-12 16:51:44,419][method.py][line:154][INFO] 
+Accuracy:78	35	0	0	0	0	0	0	0	Avg Acc: 56.67
+[2025-01-12 16:51:45,532][main.py][line:84][INFO] Task 1. Time 17.32
+[2025-01-12 16:51:47,816][method.py][line:154][INFO] 
+Accuracy:78	33	0	0	0	0	0	0	0	Avg Acc: 55.83
+[2025-01-12 16:51:48,982][main.py][line:84][INFO] Task 1. Time 20.77
+[2025-01-12 16:51:51,011][method.py][line:154][INFO] 
+Accuracy:78	35	0	0	0	0	0	0	0	Avg Acc: 56.67
+[2025-01-12 16:51:52,173][main.py][line:84][INFO] Task 1. Time 23.96
+[2025-01-12 16:51:54,447][method.py][line:154][INFO] 
+Accuracy:78	35	0	0	0	0	0	0	0	Avg Acc: 56.67
+[2025-01-12 16:51:55,542][main.py][line:84][INFO] Task 1. Time 27.33

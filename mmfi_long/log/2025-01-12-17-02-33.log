@@ -1,0 +1,543 @@
+[2025-01-12 17:02:33,442][utils.py][line:63][INFO] Hyperparameters:
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] batch_size: 16
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] data_root: data
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] dataset: mmfi27
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] num_workers: 8
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] cuda_id: 0
+[2025-01-12 17:02:33,442][utils.py][line:65][INFO] seed: 0
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] half_iid: 0
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] n_epochs: 20
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] n_warmup_epochs: 0
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] n_tasks: 9
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] log_path: /data1/smy1/lr/work2_compress/fixhead/mmfi_long/log/
+[2025-01-12 17:02:33,443][utils.py][line:65][INFO] lr: 0.0001
+[2025-01-12 17:02:38,310][utils.py][line:72][INFO] Model's state_dict:
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: encoder_0.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: encoder_1.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.qkv.weight | Size: torch.Size([1026, 342]) | Total Parameters: 350892
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.weight | Size: torch.Size([342, 342]) | Total Parameters: 116964
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: feats.0.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,310][utils.py][line:74][INFO] Layer: feats.1.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.2.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.3.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.4.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.5.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.6.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.7.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: feats.8.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: pos_encoding.embedding | Size: torch.Size([10, 342]) | Total Parameters: 3420
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.weight | Size: torch.Size([40, 10]) | Total Parameters: 400
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.weight | Size: torch.Size([10, 40]) | Total Parameters: 400
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.bias | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: encoder_0.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-01-12 17:02:38,311][utils.py][line:74][INFO] Layer: encoder_1.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.0.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.1.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.2.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.3.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.4.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.5.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.6.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.7.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: feats.8.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.bias | Size: torch.Size([10]) | Total Parameters: 10
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: pos_encoding.mu | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-01-12 17:02:38,312][utils.py][line:74][INFO] Layer: pos_encoding.sigma | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-01-12 17:02:38,312][utils.py][line:76][INFO] Total number of parameters: 1964137
+[2025-01-12 17:02:38,313][utils.py][line:88][INFO] init model GPU Memory Allocated: 7.54 MB, Reserved: 24.00 MB, Max Allocated: 7.54 MB, Max Reserved: 24.00 MB
+[2025-01-12 17:02:45,697][main.py][line:71][INFO] 
+>>> Task #-3 --> Model Training
+[2025-01-12 17:02:46,752][main.py][line:84][INFO] Task 0. Time 1.05
+[2025-01-12 17:02:47,648][method.py][line:154][INFO] 
+Accuracy:90	0	0	0	0	0	0	0	0	Avg Acc: 90.00
+[2025-01-12 17:02:48,630][main.py][line:84][INFO] Task 0. Time 2.93
+[2025-01-12 17:02:49,524][method.py][line:154][INFO] 
+Accuracy:96	0	0	0	0	0	0	0	0	Avg Acc: 96.67
+[2025-01-12 17:02:50,502][main.py][line:84][INFO] Task 0. Time 4.81
+[2025-01-12 17:02:51,349][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:02:52,303][main.py][line:84][INFO] Task 0. Time 6.61
+[2025-01-12 17:02:53,211][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:02:54,247][main.py][line:84][INFO] Task 0. Time 8.55
+[2025-01-12 17:02:55,093][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:02:56,065][main.py][line:84][INFO] Task 0. Time 10.37
+[2025-01-12 17:02:56,984][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:02:57,954][main.py][line:84][INFO] Task 0. Time 12.26
+[2025-01-12 17:02:58,776][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:02:59,775][main.py][line:84][INFO] Task 0. Time 14.08
+[2025-01-12 17:03:00,602][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:01,520][main.py][line:84][INFO] Task 0. Time 15.82
+[2025-01-12 17:03:02,356][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:03,410][main.py][line:84][INFO] Task 0. Time 17.71
+[2025-01-12 17:03:04,295][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:05,368][main.py][line:84][INFO] Task 0. Time 19.67
+[2025-01-12 17:03:06,227][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:07,303][main.py][line:84][INFO] Task 0. Time 21.61
+[2025-01-12 17:03:08,172][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:09,173][main.py][line:84][INFO] Task 0. Time 23.48
+[2025-01-12 17:03:09,993][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:10,944][main.py][line:84][INFO] Task 0. Time 25.25
+[2025-01-12 17:03:11,746][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:12,678][main.py][line:84][INFO] Task 0. Time 26.98
+[2025-01-12 17:03:13,484][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:14,440][main.py][line:84][INFO] Task 0. Time 28.74
+[2025-01-12 17:03:15,356][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:16,405][main.py][line:84][INFO] Task 0. Time 30.71
+[2025-01-12 17:03:17,411][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:18,445][main.py][line:84][INFO] Task 0. Time 32.75
+[2025-01-12 17:03:19,225][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:20,258][main.py][line:84][INFO] Task 0. Time 34.56
+[2025-01-12 17:03:21,085][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:22,124][main.py][line:84][INFO] Task 0. Time 36.43
+[2025-01-12 17:03:22,990][method.py][line:154][INFO] 
+Accuracy:100	0	0	0	0	0	0	0	0	Avg Acc: 100.00
+[2025-01-12 17:03:23,003][utils.py][line:88][INFO] End training-0 GPU Memory Allocated: 20.88 MB, Reserved: 56.00 MB, Max Allocated: 32.29 MB, Max Reserved: 56.00 MB
+[2025-01-12 17:03:23,846][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:03:23,847][main.py][line:105][INFO] x1. indices [2, 8, 6, 7, 34, 31, 24]
+[2025-01-12 17:03:23,847][main.py][line:105][INFO] x2. indices [37, 39, 4, 29, 8, 15, 10]
+[2025-01-12 17:03:23,847][main.py][line:105][INFO] x3. indices [34, 15, 14, 39, 38, 29, 37]
+[2025-01-12 17:03:23,847][main.py][line:105][INFO] x4. indices [6, 8]
+[2025-01-12 17:03:23,851][main.py][line:71][INFO] 
+>>> Task #-2 --> Model Training
+[2025-01-12 17:03:24,936][main.py][line:84][INFO] Task 1. Time 1.09
+[2025-01-12 17:03:27,202][method.py][line:154][INFO] 
+Accuracy:80	33	0	0	0	0	0	0	0	Avg Acc: 56.67
+[2025-01-12 17:03:28,274][main.py][line:84][INFO] Task 1. Time 4.42
+[2025-01-12 17:03:29,979][method.py][line:154][INFO] 
+Accuracy:80	35	0	0	0	0	0	0	0	Avg Acc: 57.50
+[2025-01-12 17:03:31,065][main.py][line:84][INFO] Task 1. Time 7.21
+[2025-01-12 17:03:33,466][method.py][line:154][INFO] 
+Accuracy:80	35	0	0	0	0	0	0	0	Avg Acc: 57.50
+[2025-01-12 17:03:34,444][main.py][line:84][INFO] Task 1. Time 10.59
+[2025-01-12 17:03:36,674][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:03:37,763][main.py][line:84][INFO] Task 1. Time 13.91
+[2025-01-12 17:03:39,587][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:03:40,636][main.py][line:84][INFO] Task 1. Time 16.79
+[2025-01-12 17:03:43,042][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:03:44,167][main.py][line:84][INFO] Task 1. Time 20.32
+[2025-01-12 17:03:46,577][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:03:47,761][main.py][line:84][INFO] Task 1. Time 23.91
+[2025-01-12 17:03:49,529][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:03:50,589][main.py][line:84][INFO] Task 1. Time 26.74
+[2025-01-12 17:03:52,861][method.py][line:154][INFO] 
+Accuracy:80	35	0	0	0	0	0	0	0	Avg Acc: 57.50
+[2025-01-12 17:03:53,959][main.py][line:84][INFO] Task 1. Time 30.11
+[2025-01-12 17:03:56,290][method.py][line:154][INFO] 
+Accuracy:80	35	0	0	0	0	0	0	0	Avg Acc: 57.50
+[2025-01-12 17:03:57,515][main.py][line:84][INFO] Task 1. Time 33.66
+[2025-01-12 17:04:00,587][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:04:01,714][main.py][line:84][INFO] Task 1. Time 37.86
+[2025-01-12 17:04:04,770][method.py][line:154][INFO] 
+Accuracy:80	35	0	0	0	0	0	0	0	Avg Acc: 57.50
+[2025-01-12 17:04:05,865][main.py][line:84][INFO] Task 1. Time 42.01
+[2025-01-12 17:04:08,931][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:04:10,110][main.py][line:84][INFO] Task 1. Time 46.26
+[2025-01-12 17:04:13,161][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:14,224][main.py][line:84][INFO] Task 1. Time 50.37
+[2025-01-12 17:04:17,330][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:18,533][main.py][line:84][INFO] Task 1. Time 54.68
+[2025-01-12 17:04:21,663][method.py][line:154][INFO] 
+Accuracy:80	36	0	0	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:04:22,819][main.py][line:84][INFO] Task 1. Time 58.97
+[2025-01-12 17:04:25,852][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:26,901][main.py][line:84][INFO] Task 1. Time 63.05
+[2025-01-12 17:04:29,804][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:30,938][main.py][line:84][INFO] Task 1. Time 67.09
+[2025-01-12 17:04:33,908][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:35,032][main.py][line:84][INFO] Task 1. Time 71.18
+[2025-01-12 17:04:38,162][method.py][line:154][INFO] 
+Accuracy:80	38	0	0	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:04:38,175][utils.py][line:88][INFO] End training-1 GPU Memory Allocated: 25.80 MB, Reserved: 62.00 MB, Max Allocated: 43.60 MB, Max Reserved: 62.00 MB
+[2025-01-12 17:04:40,306][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:04:40,307][main.py][line:105][INFO] x1. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:04:40,307][main.py][line:105][INFO] x2. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 23 24 25
+ 27 28 29 30 31 32 33 34 35 37 38 39]
+[2025-01-12 17:04:40,308][main.py][line:105][INFO] x3. indices [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 25 26 27
+ 28 29 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:04:40,308][main.py][line:105][INFO] x4. indices [0 1 2 3 4 5 6 7 8 9]
+[2025-01-12 17:04:40,311][main.py][line:71][INFO] 
+>>> Task #-1 --> Model Training
+[2025-01-12 17:04:42,524][main.py][line:84][INFO] Task 2. Time 2.21
+[2025-01-12 17:04:47,025][method.py][line:154][INFO] 
+Accuracy:80	36	88	0	0	0	0	0	0	Avg Acc: 68.33
+[2025-01-12 17:04:49,077][main.py][line:84][INFO] Task 2. Time 8.77
+[2025-01-12 17:04:53,484][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:04:55,449][main.py][line:84][INFO] Task 2. Time 15.14
+[2025-01-12 17:05:00,120][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:02,253][main.py][line:84][INFO] Task 2. Time 21.94
+[2025-01-12 17:05:06,871][method.py][line:154][INFO] 
+Accuracy:80	33	86	0	0	0	0	0	0	Avg Acc: 66.67
+[2025-01-12 17:05:08,997][main.py][line:84][INFO] Task 2. Time 28.69
+[2025-01-12 17:05:14,472][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:16,645][main.py][line:84][INFO] Task 2. Time 36.33
+[2025-01-12 17:05:22,517][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:24,722][main.py][line:84][INFO] Task 2. Time 44.41
+[2025-01-12 17:05:28,082][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:30,079][main.py][line:84][INFO] Task 2. Time 49.77
+[2025-01-12 17:05:32,842][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:34,927][main.py][line:84][INFO] Task 2. Time 54.62
+[2025-01-12 17:05:37,868][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:40,041][main.py][line:84][INFO] Task 2. Time 59.73
+[2025-01-12 17:05:42,872][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:44,892][main.py][line:84][INFO] Task 2. Time 64.58
+[2025-01-12 17:05:47,802][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:49,812][main.py][line:84][INFO] Task 2. Time 69.50
+[2025-01-12 17:05:52,702][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:54,722][main.py][line:84][INFO] Task 2. Time 74.41
+[2025-01-12 17:05:57,769][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:05:59,794][main.py][line:84][INFO] Task 2. Time 79.48
+[2025-01-12 17:06:02,400][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:04,361][main.py][line:84][INFO] Task 2. Time 84.05
+[2025-01-12 17:06:07,157][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:09,196][main.py][line:84][INFO] Task 2. Time 88.88
+[2025-01-12 17:06:12,132][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:14,203][main.py][line:84][INFO] Task 2. Time 93.89
+[2025-01-12 17:06:17,062][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:19,160][main.py][line:84][INFO] Task 2. Time 98.85
+[2025-01-12 17:06:22,107][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:24,138][main.py][line:84][INFO] Task 2. Time 103.83
+[2025-01-12 17:06:26,838][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:28,816][main.py][line:84][INFO] Task 2. Time 108.51
+[2025-01-12 17:06:31,885][method.py][line:154][INFO] 
+Accuracy:80	33	88	0	0	0	0	0	0	Avg Acc: 67.22
+[2025-01-12 17:06:31,898][utils.py][line:88][INFO] End training-2 GPU Memory Allocated: 26.13 MB, Reserved: 64.00 MB, Max Allocated: 45.36 MB, Max Reserved: 64.00 MB
+[2025-01-12 17:06:33,625][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:06:33,626][main.py][line:105][INFO] x1. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:06:33,626][main.py][line:105][INFO] x2. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:06:33,626][main.py][line:105][INFO] x3. indices [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 24 25 26
+ 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:06:33,626][main.py][line:105][INFO] x4. indices [0 1 2 3 4 5 6 7 8 9]
+[2025-01-12 17:06:33,630][main.py][line:71][INFO] 
+>>> Task #0 --> Model Training
+[2025-01-12 17:06:35,801][main.py][line:84][INFO] Task 3. Time 2.17
+[2025-01-12 17:06:40,740][method.py][line:154][INFO] 
+Accuracy:78	35	90	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:06:42,909][main.py][line:84][INFO] Task 3. Time 9.28
+[2025-01-12 17:06:47,628][method.py][line:154][INFO] 
+Accuracy:78	31	90	33	0	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:06:49,660][main.py][line:84][INFO] Task 3. Time 16.03
+[2025-01-12 17:06:54,563][method.py][line:154][INFO] 
+Accuracy:78	33	90	30	0	0	0	0	0	Avg Acc: 57.92
+[2025-01-12 17:06:56,595][main.py][line:84][INFO] Task 3. Time 22.97
+[2025-01-12 17:07:01,754][method.py][line:154][INFO] 
+Accuracy:78	35	90	33	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:07:03,790][main.py][line:84][INFO] Task 3. Time 30.16
+[2025-01-12 17:07:08,365][method.py][line:154][INFO] 
+Accuracy:78	33	90	33	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:07:10,413][main.py][line:84][INFO] Task 3. Time 36.78
+[2025-01-12 17:07:15,060][method.py][line:154][INFO] 
+Accuracy:78	35	90	33	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:07:17,190][main.py][line:84][INFO] Task 3. Time 43.56
+[2025-01-12 17:07:21,879][method.py][line:154][INFO] 
+Accuracy:78	36	90	33	0	0	0	0	0	Avg Acc: 59.58
+[2025-01-12 17:07:24,106][main.py][line:84][INFO] Task 3. Time 50.48
+[2025-01-12 17:07:28,745][method.py][line:154][INFO] 
+Accuracy:78	36	90	31	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:07:30,847][main.py][line:84][INFO] Task 3. Time 57.22
+[2025-01-12 17:07:36,137][method.py][line:154][INFO] 
+Accuracy:78	36	90	33	0	0	0	0	0	Avg Acc: 59.58
+[2025-01-12 17:07:38,141][main.py][line:84][INFO] Task 3. Time 64.51
+[2025-01-12 17:07:43,039][method.py][line:154][INFO] 
+Accuracy:78	36	90	33	0	0	0	0	0	Avg Acc: 59.58
+[2025-01-12 17:07:45,183][main.py][line:84][INFO] Task 3. Time 71.55
+[2025-01-12 17:07:50,473][method.py][line:154][INFO] 
+Accuracy:78	36	90	31	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:07:52,500][main.py][line:84][INFO] Task 3. Time 78.87
+[2025-01-12 17:07:57,690][method.py][line:154][INFO] 
+Accuracy:78	36	90	31	0	0	0	0	0	Avg Acc: 59.17
+[2025-01-12 17:07:59,737][main.py][line:84][INFO] Task 3. Time 86.11
+[2025-01-12 17:08:05,731][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:07,815][main.py][line:84][INFO] Task 3. Time 94.18
+[2025-01-12 17:08:13,404][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:15,567][main.py][line:84][INFO] Task 3. Time 101.94
+[2025-01-12 17:08:21,287][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:23,433][main.py][line:84][INFO] Task 3. Time 109.80
+[2025-01-12 17:08:28,723][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:30,822][main.py][line:84][INFO] Task 3. Time 117.19
+[2025-01-12 17:08:36,786][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:38,917][main.py][line:84][INFO] Task 3. Time 125.29
+[2025-01-12 17:08:42,969][method.py][line:154][INFO] 
+Accuracy:78	36	88	31	0	0	0	0	0	Avg Acc: 58.75
+[2025-01-12 17:08:45,019][main.py][line:84][INFO] Task 3. Time 131.39
+[2025-01-12 17:08:48,945][method.py][line:154][INFO] 
+Accuracy:78	36	85	31	0	0	0	0	0	Avg Acc: 57.92
+[2025-01-12 17:08:51,014][main.py][line:84][INFO] Task 3. Time 137.38
+[2025-01-12 17:08:54,637][method.py][line:154][INFO] 
+Accuracy:78	36	85	31	0	0	0	0	0	Avg Acc: 57.92
+[2025-01-12 17:08:54,645][utils.py][line:88][INFO] End training-3 GPU Memory Allocated: 27.02 MB, Reserved: 66.00 MB, Max Allocated: 46.14 MB, Max Reserved: 66.00 MB
+[2025-01-12 17:08:56,259][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:08:56,259][main.py][line:105][INFO] x1. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:08:56,260][main.py][line:105][INFO] x2. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:08:56,260][main.py][line:105][INFO] x3. indices [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25
+ 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:08:56,260][main.py][line:105][INFO] x4. indices [0 1 2 3 4 5 6 7 8 9]
+[2025-01-12 17:08:56,264][main.py][line:71][INFO] 
+>>> Task #1 --> Model Training
+[2025-01-12 17:08:58,478][main.py][line:84][INFO] Task 4. Time 2.21
+[2025-01-12 17:09:02,915][method.py][line:154][INFO] 
+Accuracy:78	35	60	31	70	0	0	0	0	Avg Acc: 55.00
+[2025-01-12 17:09:04,940][main.py][line:84][INFO] Task 4. Time 8.68
+[2025-01-12 17:09:09,369][method.py][line:154][INFO] 
+Accuracy:78	33	60	35	65	0	0	0	0	Avg Acc: 54.33
+[2025-01-12 17:09:11,415][main.py][line:84][INFO] Task 4. Time 15.15
+[2025-01-12 17:09:16,195][method.py][line:154][INFO] 
+Accuracy:78	31	68	36	65	0	0	0	0	Avg Acc: 56.00
+[2025-01-12 17:09:18,367][main.py][line:84][INFO] Task 4. Time 22.10
+[2025-01-12 17:09:23,238][method.py][line:154][INFO] 
+Accuracy:78	31	71	35	65	0	0	0	0	Avg Acc: 56.33
+[2025-01-12 17:09:25,307][main.py][line:84][INFO] Task 4. Time 29.04
+[2025-01-12 17:09:29,861][method.py][line:154][INFO] 
+Accuracy:78	30	75	36	65	0	0	0	0	Avg Acc: 57.00
+[2025-01-12 17:09:31,901][main.py][line:84][INFO] Task 4. Time 35.64
+[2025-01-12 17:09:36,337][method.py][line:154][INFO] 
+Accuracy:78	30	78	36	65	0	0	0	0	Avg Acc: 57.67
+[2025-01-12 17:09:38,277][main.py][line:84][INFO] Task 4. Time 42.01
+[2025-01-12 17:09:43,146][method.py][line:154][INFO] 
+Accuracy:78	30	78	36	65	0	0	0	0	Avg Acc: 57.67
+[2025-01-12 17:09:45,358][main.py][line:84][INFO] Task 4. Time 49.09
+[2025-01-12 17:09:49,796][method.py][line:154][INFO] 
+Accuracy:78	28	81	36	65	0	0	0	0	Avg Acc: 58.00
+[2025-01-12 17:09:51,950][main.py][line:84][INFO] Task 4. Time 55.69
+[2025-01-12 17:09:56,093][method.py][line:154][INFO] 
+Accuracy:78	28	81	36	65	0	0	0	0	Avg Acc: 58.00
+[2025-01-12 17:09:58,174][main.py][line:84][INFO] Task 4. Time 61.91
+[2025-01-12 17:10:02,991][method.py][line:154][INFO] 
+Accuracy:78	28	81	36	65	0	0	0	0	Avg Acc: 58.00
+[2025-01-12 17:10:05,037][main.py][line:84][INFO] Task 4. Time 68.77
+[2025-01-12 17:10:09,279][method.py][line:154][INFO] 
+Accuracy:78	28	81	36	65	0	0	0	0	Avg Acc: 58.00
+[2025-01-12 17:10:11,427][main.py][line:84][INFO] Task 4. Time 75.16
+[2025-01-12 17:10:16,235][method.py][line:154][INFO] 
+Accuracy:78	28	81	36	65	0	0	0	0	Avg Acc: 58.00
+[2025-01-12 17:10:18,522][main.py][line:84][INFO] Task 4. Time 82.26
+[2025-01-12 17:10:23,073][method.py][line:154][INFO] 
+Accuracy:78	28	81	38	65	0	0	0	0	Avg Acc: 58.33
+[2025-01-12 17:10:25,296][main.py][line:84][INFO] Task 4. Time 89.03
+[2025-01-12 17:10:29,651][method.py][line:154][INFO] 
+Accuracy:78	28	83	38	65	0	0	0	0	Avg Acc: 58.67
+[2025-01-12 17:10:31,670][main.py][line:84][INFO] Task 4. Time 95.41
+[2025-01-12 17:10:35,800][method.py][line:154][INFO] 
+Accuracy:78	28	83	38	65	0	0	0	0	Avg Acc: 58.67
+[2025-01-12 17:10:37,797][main.py][line:84][INFO] Task 4. Time 101.53
+[2025-01-12 17:10:42,028][method.py][line:154][INFO] 
+Accuracy:78	28	85	38	65	0	0	0	0	Avg Acc: 59.00
+[2025-01-12 17:10:44,068][main.py][line:84][INFO] Task 4. Time 107.80
+[2025-01-12 17:10:48,704][method.py][line:154][INFO] 
+Accuracy:78	28	86	38	65	0	0	0	0	Avg Acc: 59.33
+[2025-01-12 17:10:50,834][main.py][line:84][INFO] Task 4. Time 114.57
+[2025-01-12 17:10:55,524][method.py][line:154][INFO] 
+Accuracy:78	28	86	38	65	0	0	0	0	Avg Acc: 59.33
+[2025-01-12 17:10:57,651][main.py][line:84][INFO] Task 4. Time 121.39
+[2025-01-12 17:11:02,014][method.py][line:154][INFO] 
+Accuracy:78	28	86	38	65	0	0	0	0	Avg Acc: 59.33
+[2025-01-12 17:11:04,135][main.py][line:84][INFO] Task 4. Time 127.87
+[2025-01-12 17:11:08,361][method.py][line:154][INFO] 
+Accuracy:78	28	86	38	65	0	0	0	0	Avg Acc: 59.33
+[2025-01-12 17:11:08,369][utils.py][line:88][INFO] End training-4 GPU Memory Allocated: 26.35 MB, Reserved: 66.00 MB, Max Allocated: 46.58 MB, Max Reserved: 66.00 MB
+[2025-01-12 17:11:10,272][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:11:10,273][main.py][line:105][INFO] x1. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:11:10,273][main.py][line:105][INFO] x2. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:11:10,273][main.py][line:105][INFO] x3. indices [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25
+ 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:11:10,273][main.py][line:105][INFO] x4. indices [0 1 2 3 4 5 6 7 8 9]
+[2025-01-12 17:11:10,276][main.py][line:71][INFO] 
+>>> Task #2 --> Model Training
+[2025-01-12 17:11:12,429][main.py][line:84][INFO] Task 5. Time 2.15
+[2025-01-12 17:11:18,269][method.py][line:154][INFO] 
+Accuracy:78	30	55	41	63	48	0	0	0	Avg Acc: 52.78
+[2025-01-12 17:11:20,502][main.py][line:84][INFO] Task 5. Time 10.23
+[2025-01-12 17:11:26,097][method.py][line:154][INFO] 
+Accuracy:78	31	38	40	63	60	0	0	0	Avg Acc: 51.94
+[2025-01-12 17:11:28,219][main.py][line:84][INFO] Task 5. Time 17.94
+[2025-01-12 17:11:33,758][method.py][line:154][INFO] 
+Accuracy:78	33	38	38	63	63	0	0	0	Avg Acc: 52.50
+[2025-01-12 17:11:35,774][main.py][line:84][INFO] Task 5. Time 25.50
+[2025-01-12 17:11:41,158][method.py][line:154][INFO] 
+Accuracy:78	33	38	38	63	63	0	0	0	Avg Acc: 52.50
+[2025-01-12 17:11:43,211][main.py][line:84][INFO] Task 5. Time 32.94
+[2025-01-12 17:11:48,655][method.py][line:154][INFO] 
+Accuracy:78	30	41	38	63	70	0	0	0	Avg Acc: 53.61
+[2025-01-12 17:11:50,827][main.py][line:84][INFO] Task 5. Time 40.55
+[2025-01-12 17:11:55,979][method.py][line:154][INFO] 
+Accuracy:78	31	41	38	63	70	0	0	0	Avg Acc: 53.89
+[2025-01-12 17:11:58,035][main.py][line:84][INFO] Task 5. Time 47.76
+[2025-01-12 17:12:03,273][method.py][line:154][INFO] 
+Accuracy:78	31	41	38	63	70	0	0	0	Avg Acc: 53.89
+[2025-01-12 17:12:05,414][main.py][line:84][INFO] Task 5. Time 55.14
+[2025-01-12 17:12:10,862][method.py][line:154][INFO] 
+Accuracy:78	31	41	38	63	70	0	0	0	Avg Acc: 53.89
+[2025-01-12 17:12:12,944][main.py][line:84][INFO] Task 5. Time 62.67
+[2025-01-12 17:12:18,254][method.py][line:154][INFO] 
+Accuracy:78	31	43	38	63	70	0	0	0	Avg Acc: 54.17
+[2025-01-12 17:12:20,360][main.py][line:84][INFO] Task 5. Time 70.08
+[2025-01-12 17:12:25,466][method.py][line:154][INFO] 
+Accuracy:78	31	43	38	63	70	0	0	0	Avg Acc: 54.17
+[2025-01-12 17:12:27,574][main.py][line:84][INFO] Task 5. Time 77.30
+[2025-01-12 17:12:33,296][method.py][line:154][INFO] 
+Accuracy:78	31	45	38	65	70	0	0	0	Avg Acc: 54.72
+[2025-01-12 17:12:35,496][main.py][line:84][INFO] Task 5. Time 85.22
+[2025-01-12 17:12:41,597][method.py][line:154][INFO] 
+Accuracy:78	31	45	38	65	70	0	0	0	Avg Acc: 54.72
+[2025-01-12 17:12:43,782][main.py][line:84][INFO] Task 5. Time 93.51
+[2025-01-12 17:12:49,230][method.py][line:154][INFO] 
+Accuracy:78	31	46	38	65	70	0	0	0	Avg Acc: 55.00
+[2025-01-12 17:12:51,255][main.py][line:84][INFO] Task 5. Time 100.98
+[2025-01-12 17:12:56,235][method.py][line:154][INFO] 
+Accuracy:78	31	46	38	65	70	0	0	0	Avg Acc: 55.00
+[2025-01-12 17:12:58,290][main.py][line:84][INFO] Task 5. Time 108.01
+[2025-01-12 17:13:03,163][method.py][line:154][INFO] 
+Accuracy:78	30	50	38	65	70	0	0	0	Avg Acc: 55.28
+[2025-01-12 17:13:05,248][main.py][line:84][INFO] Task 5. Time 114.97
+[2025-01-12 17:13:10,853][method.py][line:154][INFO] 
+Accuracy:78	31	50	38	65	70	0	0	0	Avg Acc: 55.56
+[2025-01-12 17:13:12,997][main.py][line:84][INFO] Task 5. Time 122.72
+[2025-01-12 17:13:18,355][method.py][line:154][INFO] 
+Accuracy:78	30	50	38	65	70	0	0	0	Avg Acc: 55.28
+[2025-01-12 17:13:20,332][main.py][line:84][INFO] Task 5. Time 130.06
+[2025-01-12 17:13:25,986][method.py][line:154][INFO] 
+Accuracy:78	31	50	38	65	70	0	0	0	Avg Acc: 55.56
+[2025-01-12 17:13:28,157][main.py][line:84][INFO] Task 5. Time 137.88
+[2025-01-12 17:13:33,359][method.py][line:154][INFO] 
+Accuracy:78	30	50	38	65	70	0	0	0	Avg Acc: 55.28
+[2025-01-12 17:13:35,360][main.py][line:84][INFO] Task 5. Time 145.08
+[2025-01-12 17:13:40,748][method.py][line:154][INFO] 
+Accuracy:78	30	50	38	65	70	0	0	0	Avg Acc: 55.28
+[2025-01-12 17:13:40,761][utils.py][line:88][INFO] End training-5 GPU Memory Allocated: 27.24 MB, Reserved: 66.00 MB, Max Allocated: 46.58 MB, Max Reserved: 66.00 MB
+[2025-01-12 17:13:42,583][main.py][line:105][INFO] x0. indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-01-12 17:13:42,584][main.py][line:105][INFO] x1. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:13:42,584][main.py][line:105][INFO] x2. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:13:42,585][main.py][line:105][INFO] x3. indices [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39]
+[2025-01-12 17:13:42,585][main.py][line:105][INFO] x4. indices [0 1 2 3 4 5 6 7 8 9]
+[2025-01-12 17:13:42,587][main.py][line:71][INFO] 
+>>> Task #3 --> Model Training
+[2025-01-12 17:13:44,648][main.py][line:84][INFO] Task 6. Time 2.06
+[2025-01-12 17:13:50,318][method.py][line:154][INFO] 
+Accuracy:78	31	46	35	65	66	25	0	0	Avg Acc: 49.76
+[2025-01-12 17:13:52,511][main.py][line:84][INFO] Task 6. Time 9.92
+[2025-01-12 17:13:59,027][method.py][line:154][INFO] 
+Accuracy:78	31	23	35	65	66	26	0	0	Avg Acc: 46.67
+[2025-01-12 17:14:01,136][main.py][line:84][INFO] Task 6. Time 18.55
+[2025-01-12 17:14:07,537][method.py][line:154][INFO] 
+Accuracy:78	30	6	35	65	66	28	0	0	Avg Acc: 44.29
+[2025-01-12 17:14:09,754][main.py][line:84][INFO] Task 6. Time 27.17
+[2025-01-12 17:14:16,133][method.py][line:154][INFO] 
+Accuracy:78	30	6	35	65	66	30	0	0	Avg Acc: 44.52
+[2025-01-12 17:14:18,141][main.py][line:84][INFO] Task 6. Time 35.55
+[2025-01-12 17:14:25,223][method.py][line:154][INFO] 
+Accuracy:78	28	6	35	65	66	30	0	0	Avg Acc: 44.29
+[2025-01-12 17:14:27,505][main.py][line:84][INFO] Task 6. Time 44.92
+[2025-01-12 17:14:34,466][method.py][line:154][INFO] 
+Accuracy:78	28	10	35	65	66	30	0	0	Avg Acc: 44.76
+[2025-01-12 17:14:36,614][main.py][line:84][INFO] Task 6. Time 54.03
+[2025-01-12 17:14:42,734][method.py][line:154][INFO] 
+Accuracy:78	28	10	35	65	66	30	0	0	Avg Acc: 44.76
+[2025-01-12 17:14:44,904][main.py][line:84][INFO] Task 6. Time 62.32
+[2025-01-12 17:14:51,149][method.py][line:154][INFO] 
+Accuracy:78	28	13	35	65	66	30	0	0	Avg Acc: 45.24
+[2025-01-12 17:14:53,346][main.py][line:84][INFO] Task 6. Time 70.76
+[2025-01-12 17:15:00,183][method.py][line:154][INFO] 
+Accuracy:78	30	15	35	65	66	31	0	0	Avg Acc: 45.95
+[2025-01-12 17:15:02,291][main.py][line:84][INFO] Task 6. Time 79.70
+[2025-01-12 17:15:08,278][method.py][line:154][INFO] 
+Accuracy:78	30	15	35	65	68	30	0	0	Avg Acc: 45.95
+[2025-01-12 17:15:10,373][main.py][line:84][INFO] Task 6. Time 87.79
+[2025-01-12 17:15:16,047][method.py][line:154][INFO] 
+Accuracy:78	30	15	35	65	68	31	0	0	Avg Acc: 46.19
+[2025-01-12 17:15:18,055][main.py][line:84][INFO] Task 6. Time 95.47
+[2025-01-12 17:15:24,688][method.py][line:154][INFO] 
+Accuracy:78	33	13	35	65	68	31	0	0	Avg Acc: 46.43
+[2025-01-12 17:15:26,766][main.py][line:84][INFO] Task 6. Time 104.18
+[2025-01-12 17:15:33,501][method.py][line:154][INFO] 
+Accuracy:78	33	13	35	65	68	31	0	0	Avg Acc: 46.43
+[2025-01-12 17:15:35,725][main.py][line:84][INFO] Task 6. Time 113.14
+[2025-01-12 17:15:41,765][method.py][line:154][INFO] 
+Accuracy:78	33	13	35	65	68	31	0	0	Avg Acc: 46.43
+[2025-01-12 17:15:44,018][main.py][line:84][INFO] Task 6. Time 121.43
+[2025-01-12 17:15:51,037][method.py][line:154][INFO] 
+Accuracy:78	33	8	35	65	68	31	0	0	Avg Acc: 45.71
+[2025-01-12 17:15:53,219][main.py][line:84][INFO] Task 6. Time 130.63
+[2025-01-12 17:16:00,258][method.py][line:154][INFO] 
+Accuracy:78	33	15	35	65	68	31	0	0	Avg Acc: 46.67
+[2025-01-12 17:16:02,377][main.py][line:84][INFO] Task 6. Time 139.79
+[2025-01-12 17:16:08,774][method.py][line:154][INFO] 
+Accuracy:78	33	11	35	65	68	31	0	0	Avg Acc: 46.19
+[2025-01-12 17:16:11,001][main.py][line:84][INFO] Task 6. Time 148.41
