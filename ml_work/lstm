@@ -1,0 +1,321 @@
+# -*- coding: utf-8 -*-
+"""
+专硕机器学习课程项目 - LSTM模型实现
+(版本已修正，将分钟数据聚合为天数据)
+
+功能:
+1. 加载和预处理家庭电力消耗时间序列数据，将分钟数据聚合为天数据。
+2. 使用LSTM模型进行多步时间序列预测 (基于天)。
+3. 分别执行短期(90天)和长期(365天)预测任务。
+4. 对每个任务进行5次独立实验，计算平均性能指标(MSE, MAE)和标准差。
+5. 将最后一次实验的预测结果与真实值进行可视化对比。
+"""
+
+# =============================================================================
+# 1. 导入必要的库
+# =============================================================================
+import torch
+import torch.nn as nn
+from torch.utils.data import Dataset, DataLoader
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+import matplotlib.pyplot as plt
+import time
+import os
+
+# 设置随机种子以保证实验结果的可复现性
+np.random.seed(42)
+torch.manual_seed(42)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(42)
+
+# =============================================================================
+# 2. 配置类 (已修改)
+# =============================================================================
+class Config:
+    def __init__(self, prediction_horizon):
+        self.train_file = 'data/train.csv'
+        self.test_file = 'data/test.csv'
+        self.date_column = 'DateTime'
+        
+        # !!!【关键修改】!!!
+        # 添加了新的特征 sub_metering_remainder
+        self.feature_columns = [
+            'Global_active_power', 'Global_reactive_power', 'Voltage', 
+            'Global_intensity', 'Sub_metering_1', 'Sub_metering_2', 
+            'Sub_metering_3', 'sub_metering_remainder', # 新增特征
+            'RR', 'NBJRR1', 'NBJRR5', 'NBJRR10', 'NBJBROU'
+        ]
+        self.target_column = 'Global_active_power'
+        self.input_window_size = 90 # 现在代表90天
+        self.output_window_size = prediction_horizon # 现在代表预测未来N天
+        self.input_size = len(self.feature_columns)
+        self.hidden_size = 64
+        self.num_layers = 2
+        self.output_size = self.output_window_size
+        self.dropout_rate = 0.2
+        self.batch_size = 32
+        self.num_epochs = 40
+        self.learning_rate = 0.001
+        self.num_runs = 5
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# =============================================================================
+# 3. 数据加载和预处理函数 (已修改)
+# =============================================================================
+def load_and_preprocess_data(config):
+    """
+    加载、预处理训练和测试数据。
+    此版本将分钟数据聚合为天数据。
+    """
+    print("开始加载分钟级数据...")
+    try:
+        # 加载数据，并将'?'视作NaN
+        train_df = pd.read_csv(
+            config.train_file, 
+            na_values='?'
+        )
+        test_df = pd.read_csv(
+            config.test_file,
+            header=None,
+            names=train_df.columns, # 从训练集获取列名
+            na_values='?'
+        )
+        
+        # 将日期列转换为datetime对象
+        train_df[config.date_column] = pd.to_datetime(train_df[config.date_column])
+        test_df[config.date_column] = pd.to_datetime(test_df[config.date_column])
+
+        # 将日期列设为索引
+        train_df.set_index(config.date_column, inplace=True)
+        test_df.set_index(config.date_column, inplace=True)
+
+        print("已成功加载分钟级数据。")
+
+    except FileNotFoundError as e:
+        print(f"错误: {e}. \n请确保 '{config.train_file}' 和 '{config.test_file}' 文件与脚本在同一个目录中。")
+        return None, None, None, None
+
+    # !!!【关键修改 1】!!!
+    # 在分钟级别数据上计算 'sub_metering_remainder'
+    # 这个公式将平均功率(kW)转换为分钟能量(Wh)
+    print("正在计算 sub_metering_remainder 特征...")
+    for df in [train_df, test_df]:
+        df['sub_metering_remainder'] = (df['Global_active_power'] * 1000 / 60) - (df['Sub_metering_1'] + df['Sub_metering_2'] + df['Sub_metering_3'])
+
+    # !!!【关键修改 2】!!!
+    # 定义每日聚合规则
+    agg_rules = {
+        'Global_active_power': 'sum',
+        'Global_reactive_power': 'sum',
+        'Voltage': 'mean',
+        'Global_intensity': 'mean',
+        'Sub_metering_1': 'sum',
+        'Sub_metering_2': 'sum',
+        'Sub_metering_3': 'sum',
+        'sub_metering_remainder': 'sum',
+        'RR': 'first',
+        'NBJRR1': 'first',
+        'NBJRR5': 'first',
+        'NBJRR10': 'first',
+        'NBJBROU': 'first'
+    }
+
+    # !!!【关键修改 3】!!!
+    # 使用 resample 将分钟数据聚合为天数据
+    print("正在将分钟级数据聚合为天级数据...")
+    train_df_daily = train_df.resample('D').agg(agg_rules)
+    test_df_daily = test_df.resample('D').agg(agg_rules)
+
+    # 处理聚合后可能产生的缺失值（例如，一整天都没有数据）
+    print("正在使用前向填充处理缺失值...")
+    train_df_daily.ffill(inplace=True)
+    test_df_daily.ffill(inplace=True)
+
+    # --- 数据缩放 (在日度数据上进行) ---
+    print("正在对日度数据进行标准化...")
+    feature_scaler = MinMaxScaler()
+    target_scaler = MinMaxScaler()
+
+    # 注意：现在我们使用 _daily 的DataFrame
+    train_features = train_df_daily[config.feature_columns]
+    train_target = train_df_daily[[config.target_column]]
+    train_features_scaled = feature_scaler.fit_transform(train_features)
+    train_target_scaled = target_scaler.fit_transform(train_target)
+    
+    train_df_scaled = pd.DataFrame(train_features_scaled, columns=config.feature_columns, index=train_df_daily.index)
+    train_df_scaled[config.target_column] = train_target_scaled.flatten()
+
+    test_features = test_df_daily[config.feature_columns]
+    test_target = test_df_daily[[config.target_column]]
+    test_features_scaled = feature_scaler.transform(test_features)
+    test_target_scaled = target_scaler.transform(test_target)
+    
+    test_df_scaled = pd.DataFrame(test_features_scaled, columns=config.feature_columns, index=test_df_daily.index)
+    test_df_scaled[config.target_column] = test_target_scaled.flatten()
+    
+    print("数据加载和预处理完成。")
+    return train_df_scaled, test_df_scaled, feature_scaler, target_scaler
+
+# =============================================================================
+# 4. 创建时间序列样本函数 (无需修改)
+# =============================================================================
+def create_sequences(data, config):
+    X, y = [], []
+    features = data[config.feature_columns].values
+    target = data[config.target_column].values
+    # 现在data是日度数据，len(data)是总天数
+    for i in range(len(data) - config.input_window_size - config.output_window_size + 1):
+        input_seq = features[i:(i + config.input_window_size)]
+        output_seq = target[(i + config.input_window_size):(i + config.input_window_size + config.output_window_size)]
+        X.append(input_seq)
+        y.append(output_seq)
+    return np.array(X), np.array(y)
+
+# =============================================================================
+# 5. PyTorch Dataset 类 (无需修改)
+# =============================================================================
+class TimeSeriesDataset(Dataset):
+    def __init__(self, X, y, device):
+        self.X = torch.tensor(X, dtype=torch.float32).to(device)
+        self.y = torch.tensor(y, dtype=torch.float32).to(device)
+        self.device = device
+    def __len__(self):
+        return len(self.X)
+    def __getitem__(self, idx):
+        return self.X[idx], self.y[idx]
+
+# =============================================================================
+# 6. LSTM 模型定义 (无需修改)
+# =============================================================================
+class LSTMModel(nn.Module):
+    def __init__(self, config):
+        super(LSTMModel, self).__init__()
+        self.lstm = nn.LSTM(
+            input_size=config.input_size,
+            hidden_size=config.hidden_size,
+            num_layers=config.num_layers,
+            batch_first=True,
+            dropout=config.dropout_rate if config.num_layers > 1 else 0
+        )
+        self.dropout = nn.Dropout(config.dropout_rate)
+        self.linear = nn.Linear(in_features=config.hidden_size, out_features=config.output_size)
+    def forward(self, x):
+        lstm_out, _ = self.lstm(x)
+        last_time_step_out = lstm_out[:, -1, :]
+        dropped_out = self.dropout(last_time_step_out)
+        predictions = self.linear(dropped_out)
+        return predictions
+
+# =============================================================================
+# 7. 训练和评估函数 (无需修改)
+# =============================================================================
+def train_model(model, train_loader, criterion, optimizer, config):
+    model.train()
+    for epoch in range(config.num_epochs):
+        epoch_loss = 0
+        for X_batch, y_batch in train_loader:
+            outputs = model(X_batch)
+            loss = criterion(outputs, y_batch)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            epoch_loss += loss.item()
+        if (epoch + 1) % 10 == 0:
+            print(f'Epoch [{epoch+1}/{config.num_epochs}], Loss: {epoch_loss/len(train_loader):.4f}')
+
+def evaluate_model(model, test_loader, target_scaler):
+    model.eval()
+    all_preds, all_trues = [], []
+    with torch.no_grad():
+        for X_batch, y_batch in test_loader:
+            outputs = model(X_batch)
+            all_preds.append(outputs.cpu().numpy())
+            all_trues.append(y_batch.cpu().numpy())
+    predictions = np.concatenate(all_preds)
+    true_values = np.concatenate(all_trues)
+    predictions_inversed = target_scaler.inverse_transform(predictions)
+    true_values_inversed = target_scaler.inverse_transform(true_values)
+    mse = mean_squared_error(true_values_inversed, predictions_inversed)
+    mae = mean_absolute_error(true_values_inversed, predictions_inversed)
+    return mse, mae, predictions_inversed, true_values_inversed
+
+# =============================================================================
+# 8. 可视化函数 (无需修改)
+# =============================================================================
+def plot_results(true_values, predictions, horizon, run=None):
+    plt.figure(figsize=(15, 7))
+    plt.plot(true_values[0, :], label='Ground Truth (Actual Values)')
+    plt.plot(predictions[0, :], label='Predictions')
+    plt.title(f'LSTM Prediction vs Actual for {horizon}-Day Horizon (First Test Sample)')
+    plt.xlabel('Days into the Future')
+    plt.ylabel('Daily Global Active Power (Sum in kW-min)')
+    plt.legend()
+    plt.grid(True)
+    if not os.path.exists('results'):
+        os.makedirs('results')
+    # 新增：根据run编号命名
+    if run is not None:
+        filename = f'results/lstm_{horizon}day_prediction_run{run+1}.png'
+    else:
+        filename = f'results/lstm_{horizon}day_prediction.png'
+    plt.savefig(filename)
+    print(f"结果图已保存至: {filename}")
+    plt.close()
+
+# =============================================================================
+# 9. 主执行函数 (无需修改)
+# =============================================================================
+def main():
+    print(f"PyTorch 版本: {torch.__version__}")
+    prediction_horizons = {'short_term': 90, 'long_term': 365}
+    for term, horizon in prediction_horizons.items():
+        print(f"\n{'='*40}")
+        print(f"  开始 {term} 预测任务 (预测未来 {horizon} 天)  ")
+        print(f"{'='*40}\n")
+        config = Config(prediction_horizon=horizon)
+        print(f"设备已设置为: {config.device}")
+        train_df_scaled, test_df_scaled, _, target_scaler = load_and_preprocess_data(config)
+        if train_df_scaled is None:
+            continue
+        X_train, y_train = create_sequences(train_df_scaled, config)
+        X_test, y_test = create_sequences(test_df_scaled, config)
+        if len(X_train) == 0 or len(X_test) == 0:
+            print("错误：数据不足，无法创建足够的训练/测试样本。")
+            print(f"需要至少 {config.input_window_size + config.output_window_size} 天的数据。")
+            continue
+        print(f"训练样本数量: {len(X_train)}")
+        print(f"测试样本数量: {len(X_test)}")
+        train_dataset = TimeSeriesDataset(X_train, y_train, config.device)
+        test_dataset = TimeSeriesDataset(X_test, y_test, config.device)
+        train_loader = DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True)
+        test_loader = DataLoader(test_dataset, batch_size=config.batch_size, shuffle=False)
+        all_mse, all_mae = [], []
+        for run in range(config.num_runs):
+            print(f"\n--- 第 {run + 1}/{config.num_runs} 次运行 ---")
+            model = LSTMModel(config).to(config.device)
+            criterion = nn.MSELoss()
+            optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
+            print("开始训练...")
+            start_time = time.time()
+            train_model(model, train_loader, criterion, optimizer, config)
+            print(f"训练耗时: {time.time() - start_time:.2f} 秒")
+            print("开始评估...")
+            mse, mae, predictions, true_values = evaluate_model(model, test_loader, target_scaler)
+            print(f"运行 {run + 1} 结果 -> MSE: {mse:.4f}, MAE: {mae:.4f}")
+            all_mse.append(mse)
+            all_mae.append(mae)
+            # 每次实验都绘图
+            if len(true_values) > 0 and len(predictions) > 0:
+                plot_results(true_values, predictions, horizon, run=run)
+        print(f"\n--- {term} ({horizon}天) 预测任务最终结果 (共 {config.num_runs} 次运行) ---")
+        print(f"平均 MSE: {np.mean(all_mse):.4f} (标准差 std: {np.std(all_mse):.4f})")
+        print(f"平均 MAE: {np.mean(all_mae):.4f} (标准差 std: {np.std(all_mae):.4f})")
+
+# =============================================================================
+# 10. 脚本入口
+# =============================================================================
+if __name__ == "__main__":
+    main()
