@@ -1,0 +1,319 @@
+[2025-07-26 14:37:19,576][utils.py][line:63][INFO] Hyperparameters:
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] config_path: utils/config.yaml
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] batch_size: 16
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] n_epochs: 20
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] n_warmup_epochs: 20
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] lr: 0.0001
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] seed: 10
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] cuda_id: 0
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] num_workers: 8
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] n_tasks: 9
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] half_iid: 1
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] data_root: data
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] log_path: log/
+[2025-07-26 14:37:19,576][utils.py][line:65][INFO] lgcl_enabled: True
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] alpha: 0.2
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] beta: 0.1
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] clip_model_name: /data1/rsl/consense-0721/mmfi_short/clip-vit-base-patch32
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] use_ncd: True
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] use_domain_alignment: True
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] domain_loss_weight: 0.1
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] evaluate_domains: True
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] use_domain_heads: True
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] use_domain_specific_prototypes: False
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] dataset: mmfi27
+[2025-07-26 14:37:19,577][utils.py][line:65][INFO] class_names: ['stretching and relaxing', 'horizontal chest expansion', 'vertical chest expansion', 'twisting body to the left', 'twisting body to the right', 'marching in place', 'extending left limb', 'extending right limb', 'lunge toward left-front', 'lunge toward right-front', 'extending both limbs', 'squat', 'raising left hand', 'raising right hand', 'lunge toward left side', 'lunge toward right side', 'waving left hand', 'waving right hand', 'picking up things', 'throwing toward left side', 'throwing toward right side', 'kicking toward left side', 'kicking toward right side', 'extending left side of the body', 'extending right side of the body', 'jumping up', 'bowing']
+[2025-07-26 14:37:22,983][utils.py][line:72][INFO] Model's state_dict:
+[2025-07-26 14:37:22,983][utils.py][line:74][INFO] Layer: encoder_0.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-07-26 14:37:22,983][utils.py][line:74][INFO] Layer: encoder_1.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-07-26 14:37:22,983][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.qkv.weight | Size: torch.Size([1026, 342]) | Total Parameters: 350892
+[2025-07-26 14:37:22,983][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-07-26 14:37:22,983][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: feature_projection.weight | Size: torch.Size([512, 342]) | Total Parameters: 175104
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.weight | Size: torch.Size([342, 342]) | Total Parameters: 116964
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: domain_heads.0.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: domain_heads.1.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: domain_heads.2.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: domain_heads.3.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: domain_heads.4.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: pos_encoding.embedding | Size: torch.Size([10, 342]) | Total Parameters: 3420
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: feature_projection.bias | Size: torch.Size([512]) | Total Parameters: 512
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.weight | Size: torch.Size([40, 10]) | Total Parameters: 400
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.weight | Size: torch.Size([10, 40]) | Total Parameters: 400
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.bias | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: encoder_0.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: encoder_1.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-07-26 14:37:22,984][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: domain_heads.0.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: domain_heads.1.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: domain_heads.2.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: domain_heads.3.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: domain_heads.4.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.bias | Size: torch.Size([10]) | Total Parameters: 10
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: pos_encoding.mu | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-07-26 14:37:22,985][utils.py][line:74][INFO] Layer: pos_encoding.sigma | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-07-26 14:37:22,985][utils.py][line:76][INFO] Total number of parameters: 2102709
+[2025-07-26 14:37:22,986][utils.py][line:88][INFO] init model GPU Memory Allocated: 594.63 MB, Reserved: 634.00 MB, Max Allocated: 594.63 MB, Max Reserved: 634.00 MB
+[2025-07-26 14:37:30,841][main.py][line:71][INFO] Prototypes computed and assigned to the model.
+[2025-07-26 14:37:30,841][main.py][line:92][INFO] Task 0: Classes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], New classes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+[2025-07-26 14:37:30,841][main.py][line:94][INFO] Domain distribution: {0: [1], 1: [1], 2: [1], 3: [1], 4: [1], 5: [1], 6: [1], 7: [1], 8: [1], 9: [1], 10: [1], 11: [1], 12: [1], 13: [1], 14: [1]}
+[2025-07-26 14:37:30,843][method.py][line:281][INFO] Task 0: Active domains: {1}
+[2025-07-26 14:37:30,843][main.py][line:112][INFO] 
+>>> Task #-3 --> Model Training
+[2025-07-26 14:37:33,447][main.py][line:135][INFO] Task 0. Time 2.60
+[2025-07-26 14:37:33,927][method.py][line:245][INFO] 
+Accuracy:94	0	0	0	0	0	0	0	0	Avg Acc: 94.00
+[2025-07-26 14:37:33,927][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:33,927][method.py][line:256][INFO] Task 0: P1:94.0% 
+[2025-07-26 14:37:36,357][main.py][line:135][INFO] Task 0. Time 5.51
+[2025-07-26 14:37:36,768][method.py][line:245][INFO] 
+Accuracy:97	0	0	0	0	0	0	0	0	Avg Acc: 97.33
+[2025-07-26 14:37:36,768][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:36,768][method.py][line:256][INFO] Task 0: P1:97.3% 
+[2025-07-26 14:37:39,319][main.py][line:135][INFO] Task 0. Time 8.48
+[2025-07-26 14:37:39,721][method.py][line:245][INFO] 
+Accuracy:98	0	0	0	0	0	0	0	0	Avg Acc: 98.00
+[2025-07-26 14:37:39,721][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:39,721][method.py][line:256][INFO] Task 0: P1:98.0% 
+[2025-07-26 14:37:42,130][main.py][line:135][INFO] Task 0. Time 11.29
+[2025-07-26 14:37:42,543][method.py][line:245][INFO] 
+Accuracy:98	0	0	0	0	0	0	0	0	Avg Acc: 98.67
+[2025-07-26 14:37:42,543][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:42,543][method.py][line:256][INFO] Task 0: P1:98.7% 
+[2025-07-26 14:37:44,879][main.py][line:135][INFO] Task 0. Time 14.04
+[2025-07-26 14:37:45,309][method.py][line:245][INFO] 
+Accuracy:98	0	0	0	0	0	0	0	0	Avg Acc: 98.67
+[2025-07-26 14:37:45,309][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:45,309][method.py][line:256][INFO] Task 0: P1:98.7% 
+[2025-07-26 14:37:47,281][main.py][line:135][INFO] Task 0. Time 16.44
+[2025-07-26 14:37:47,700][method.py][line:245][INFO] 
+Accuracy:98	0	0	0	0	0	0	0	0	Avg Acc: 98.67
+[2025-07-26 14:37:47,701][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:47,701][method.py][line:256][INFO] Task 0: P1:98.7% 
+[2025-07-26 14:37:50,138][main.py][line:135][INFO] Task 0. Time 19.29
+[2025-07-26 14:37:50,595][method.py][line:245][INFO] 
+Accuracy:98	0	0	0	0	0	0	0	0	Avg Acc: 98.67
+[2025-07-26 14:37:50,595][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:50,595][method.py][line:256][INFO] Task 0: P1:98.7% 
+[2025-07-26 14:37:53,031][main.py][line:135][INFO] Task 0. Time 22.19
+[2025-07-26 14:37:53,491][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:37:53,492][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:53,492][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:37:55,989][main.py][line:135][INFO] Task 0. Time 25.15
+[2025-07-26 14:37:56,456][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:37:56,456][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:56,456][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:37:58,903][main.py][line:135][INFO] Task 0. Time 28.06
+[2025-07-26 14:37:59,365][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:37:59,365][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:37:59,365][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:38:01,706][main.py][line:135][INFO] Task 0. Time 30.86
+[2025-07-26 14:38:02,143][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:38:02,143][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:02,143][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:38:04,544][main.py][line:135][INFO] Task 0. Time 33.70
+[2025-07-26 14:38:05,035][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:05,035][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:05,035][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:07,555][main.py][line:135][INFO] Task 0. Time 36.71
+[2025-07-26 14:38:08,029][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:08,029][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:08,030][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:10,459][main.py][line:135][INFO] Task 0. Time 39.62
+[2025-07-26 14:38:10,871][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:10,872][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:10,872][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:13,220][main.py][line:135][INFO] Task 0. Time 42.38
+[2025-07-26 14:38:13,627][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:13,627][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:13,627][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:16,079][main.py][line:135][INFO] Task 0. Time 45.24
+[2025-07-26 14:38:16,476][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:38:16,476][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:16,476][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:38:18,843][main.py][line:135][INFO] Task 0. Time 48.00
+[2025-07-26 14:38:19,244][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:19,244][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:19,244][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:21,596][main.py][line:135][INFO] Task 0. Time 50.75
+[2025-07-26 14:38:21,991][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.00
+[2025-07-26 14:38:21,991][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:21,991][method.py][line:256][INFO] Task 0: P1:99.0% 
+[2025-07-26 14:38:24,418][main.py][line:135][INFO] Task 0. Time 53.58
+[2025-07-26 14:38:24,841][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:24,841][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:24,841][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:27,330][main.py][line:135][INFO] Task 0. Time 56.49
+[2025-07-26 14:38:27,751][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:27,752][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:27,752][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:30,163][main.py][line:135][INFO] Task 0. Time 59.32
+[2025-07-26 14:38:30,635][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:30,636][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:30,636][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:32,827][main.py][line:135][INFO] Task 0. Time 61.98
+[2025-07-26 14:38:33,290][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:33,290][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:33,290][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:35,699][main.py][line:135][INFO] Task 0. Time 64.86
+[2025-07-26 14:38:36,090][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:36,091][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:36,091][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:38,365][main.py][line:135][INFO] Task 0. Time 67.52
+[2025-07-26 14:38:38,759][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:38,759][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:38,759][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:40,799][main.py][line:135][INFO] Task 0. Time 69.96
+[2025-07-26 14:38:41,226][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:41,226][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:41,226][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:43,479][main.py][line:135][INFO] Task 0. Time 72.64
+[2025-07-26 14:38:43,883][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:43,884][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:43,884][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:46,250][main.py][line:135][INFO] Task 0. Time 75.41
+[2025-07-26 14:38:46,685][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:46,685][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:46,685][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:49,193][main.py][line:135][INFO] Task 0. Time 78.35
+[2025-07-26 14:38:49,652][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:49,652][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:49,652][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:52,123][main.py][line:135][INFO] Task 0. Time 81.28
+[2025-07-26 14:38:52,543][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:52,543][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:52,543][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:55,011][main.py][line:135][INFO] Task 0. Time 84.17
+[2025-07-26 14:38:55,389][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:55,389][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:55,389][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:38:57,807][main.py][line:135][INFO] Task 0. Time 86.96
+[2025-07-26 14:38:58,286][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:38:58,286][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:38:58,286][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:00,557][main.py][line:135][INFO] Task 0. Time 89.71
+[2025-07-26 14:39:00,952][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:00,952][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:00,952][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:03,364][main.py][line:135][INFO] Task 0. Time 92.52
+[2025-07-26 14:39:03,793][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:03,794][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:03,794][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:06,226][main.py][line:135][INFO] Task 0. Time 95.38
+[2025-07-26 14:39:06,697][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:06,698][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:06,698][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:09,107][main.py][line:135][INFO] Task 0. Time 98.26
+[2025-07-26 14:39:09,520][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.67
+[2025-07-26 14:39:09,521][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:09,521][method.py][line:256][INFO] Task 0: P1:99.7% 
+[2025-07-26 14:39:11,912][main.py][line:135][INFO] Task 0. Time 101.07
+[2025-07-26 14:39:12,340][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:12,340][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:12,341][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:14,785][main.py][line:135][INFO] Task 0. Time 103.94
+[2025-07-26 14:39:15,183][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:15,183][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:15,184][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:17,100][main.py][line:135][INFO] Task 0. Time 106.26
+[2025-07-26 14:39:17,548][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:17,548][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:17,548][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:19,973][main.py][line:135][INFO] Task 0. Time 109.13
+[2025-07-26 14:39:20,461][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.67
+[2025-07-26 14:39:20,461][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:20,461][method.py][line:256][INFO] Task 0: P1:99.7% 
+[2025-07-26 14:39:22,688][main.py][line:135][INFO] Task 0. Time 111.84
+[2025-07-26 14:39:23,102][method.py][line:245][INFO] 
+Accuracy:99	0	0	0	0	0	0	0	0	Avg Acc: 99.33
+[2025-07-26 14:39:23,102][method.py][line:249][INFO] 
+Domain-wise accuracy:
+[2025-07-26 14:39:23,102][method.py][line:256][INFO] Task 0: P1:99.3% 
+[2025-07-26 14:39:23,115][utils.py][line:88][INFO] End training-0 GPU Memory Allocated: 631.97 MB, Reserved: 670.00 MB, Max Allocated: 631.97 MB, Max Reserved: 670.00 MB

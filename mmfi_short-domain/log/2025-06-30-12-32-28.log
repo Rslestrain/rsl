@@ -1,0 +1,69 @@
+[2025-06-30 12:32:28,664][utils.py][line:63][INFO] Hyperparameters:
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] config_path: utils/config.yaml
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] batch_size: 16
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] n_epochs: 20
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] n_warmup_epochs: 20
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] lr: 0.0001
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] seed: 10
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] cuda_id: 0
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] num_workers: 8
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] n_tasks: 9
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] half_iid: 1
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] data_root: data
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] log_path: log/
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] lgcl_enabled: True
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] alpha: 0.1
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] beta: 0.05
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] clip_model_name: /data1/rsl/consense-0629/mmfi_short/clip-vit-base-patch32
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] dataset: mmfi27
+[2025-06-30 12:32:28,664][utils.py][line:65][INFO] class_names: ['stretching and relaxing', 'horizontal chest expansion', 'vertical chest expansion', 'twisting body to the left', 'twisting body to the right', 'marching in place', 'extending left limb', 'extending right limb', 'lunge toward left-front', 'lunge toward right-front', 'extending both limbs', 'squat', 'raising left hand', 'raising right hand', 'lunge toward left side', 'lunge toward right side', 'waving left hand', 'waving right hand', 'picking up things', 'throwing toward left side', 'throwing toward right side', 'kicking toward left side', 'kicking toward right side', 'extending left side of the body', 'extending right side of the body', 'jumping up', 'bowing']
+[2025-06-30 12:32:30,124][utils.py][line:72][INFO] Model's state_dict:
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: encoder_0.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: encoder_1.weight | Size: torch.Size([128, 342, 10]) | Total Parameters: 437760
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.qkv.weight | Size: torch.Size([1026, 342]) | Total Parameters: 350892
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.weight | Size: torch.Size([684, 256]) | Total Parameters: 175104
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.weight | Size: torch.Size([342, 342]) | Total Parameters: 116964
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.weight | Size: torch.Size([256, 342]) | Total Parameters: 87552
+[2025-06-30 12:32:30,124][utils.py][line:74][INFO] Layer: feats.0.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: feats.1.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: feats.2.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: feats.3.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: feats.4.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: feats.5.weight | Size: torch.Size([27, 342]) | Total Parameters: 9234
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: pos_encoding.embedding | Size: torch.Size([10, 342]) | Total Parameters: 3420
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.weight | Size: torch.Size([40, 40]) | Total Parameters: 1600
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.up.bias | Size: torch.Size([684]) | Total Parameters: 684
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.weight | Size: torch.Size([40, 10]) | Total Parameters: 400
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.weight | Size: torch.Size([10, 40]) | Total Parameters: 400
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.proj.bias | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.0.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.layers.sublayer.1.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.norm.a_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,125][utils.py][line:74][INFO] Layer: transformer.model.norm.b_2 | Size: torch.Size([342]) | Total Parameters: 342
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.self_attn.prev_conPerfix.down.bias | Size: torch.Size([256]) | Total Parameters: 256
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: encoder_0.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: encoder_1.bias | Size: torch.Size([128]) | Total Parameters: 128
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer1.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer2.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer3.bias | Size: torch.Size([40]) | Total Parameters: 40
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.0.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.1.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.2.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.3.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.4.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: feats.5.bias | Size: torch.Size([27]) | Total Parameters: 27
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: transformer.model.layers.feed_forward.layer4.bias | Size: torch.Size([10]) | Total Parameters: 10
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: pos_encoding.mu | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-06-30 12:32:30,126][utils.py][line:74][INFO] Layer: pos_encoding.sigma | Size: torch.Size([1, 10]) | Total Parameters: 10
+[2025-06-30 12:32:30,127][utils.py][line:76][INFO] Total number of parameters: 1936354
+[2025-06-30 12:32:30,127][utils.py][line:88][INFO] init model GPU Memory Allocated: 248.39 MB, Reserved: 270.00 MB, Max Allocated: 248.39 MB, Max Reserved: 270.00 MB
+[2025-06-30 12:32:32,241][main.py][line:71][INFO] Prototypes computed and assigned to the model.
+[2025-06-30 12:32:32,243][main.py][line:87][INFO] 
+>>> Task #0 --> Model Training
