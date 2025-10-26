@@ -1,0 +1,5 @@
+Looking in links: https://download.pytorch.org/whl/cu118
+Requirement already satisfied: torch in /data1/rsl/anaconda3/envs/consense/lib/python3.10/site-packages (2.5.1+cu118)
+Collecting torch
+  Downloading torch-2.9.0-cp310-cp310-manylinux_2_28_x86_64.whl (899.8 MB)
+     ━                                        29.8/899.8 MB 297.6 kB/s eta 0:48:44
