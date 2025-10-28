@@ -1,0 +1,65 @@
+{"text": "<tool>BlueToothOnOff(ActionType=True)</tool>"}
+{"text": "<tool>SearchBlueTooth(DeviceType=\"\u97f3\u7bb1\")</tool>"}
+{"text": "<tool>ConnectBlueTooth(DeviceType=\"\u8f66\u8f7d\", ActionType=False)</tool>"}
+{"text": "<tool>WlanOnOff(ActionType=False)</tool>"}
+{"text": "<tool>SearchWlan()</tool>"}
+{"text": "<tool>MobileDataOnOff(ActionType=False)</tool>"}
+{"text": "<tool>HotShotOnOff(ActionType=True)</tool>"}
+{"text": "<tool>CheckBatteryLevel()</tool>"}
+{"text": "<tool>CheckBatteryConsumptionRank(TimeRange=\"\u6700\u8fd17\u5929\", AnomalyDetection=False, SortBy=\"DESC\")</tool>"}
+{"text": "<tool>BatterySavingMode(ActionType=True)</tool>"}
+{"text": "<tool>Reboot(DeviceType=\"\u624b\u673a\")</tool>"}
+{"text": "<tool>ShutDown(DeviceType=\"\u97f3\u7bb1\")</tool>"}
+{"text": "<tool>Sleep(DeviceType=\"\u624b\u673a\")</tool>"}
+{"text": "<tool>ControlSound(VolumeType=\"\u901a\u8bdd\u97f3\u91cf\", ActionType=\"\u589e\u52a0\", Percentage=15)</tool>"}
+{"text": "<tool>VibrationModeOnOff(ActionType=False)</tool>"}
+{"text": "<tool>QuietModeOnOff(ActionType=True)</tool>"}
+{"text": "<tool>CheckLuminance(DeviceType=\"\u5e73\u677f\u5c4f\u5e55\")</tool>"}
+{"text": "<tool>ControlLuminance(DeviceType=\"\u5e73\u677f\u5c4f\u5e55\", ActionType=\"\u8c03\u5230\", Percentage=60)</tool>"}
+{"text": "<tool>AutoLuminanceOnOff(DeviceType=\"\u624b\u673a\u5c4f\u5e55\", ActionType=False)</tool>"}
+{"text": "<tool>CheckContrast(DeviceType=\"\u663e\u793a\u5668\")</tool>"}
+{"text": "<tool>SwitchContrast(DeviceType=\"\u7535\u8111\u5c4f\u5e55\", ActionType=\"\u589e\u5f3a\", Percentage=60)</tool>"}
+{"text": "<tool>SetSystemTheme(ThemeType=\"\u6697\u8272\u6a21\u5f0f\")</tool>"}
+{"text": "<tool>CheckFont()</tool>"}
+{"text": "<tool>SwitchFontSize(ActionType=\"\u8bbe\u7f6e\", AdjustLevel=\"\u6700\u5927\", AppName=\"\u5fae\u4fe1\")</tool>"}
+{"text": "<tool>SwitchFontWeight(ActionType=\"\u8c03\u6574\", FontWeight=\"\u7c97\u4f53\", AppName=\"\u5fae\u4fe1\")</tool>"}
+{"text": "<tool>ControlFontType(FontType=\"\u6977\u4f53\", ActionType=\"\u66f4\u6362\", AppName=\"\u5fae\u4fe1\")</tool>"}
+{"text": "<tool>CheckInputMethod()</tool>"}
+{"text": "<tool>SwitchInputMethod(AppName=\"\u5fae\u4fe1\", InputMethodName=\"\u767e\u5ea6\u8f93\u5165\u6cd5\", ActionType=\"\u5207\u6362\")</tool>"}
+{"text": "<tool>SwitchLanguage(AppName=\"\u5fae\u4fe1\", LanguageType=\"\u82f1\u6587\", ActionType=\"\u66f4\u6539\")</tool>"}
+{"text": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"}
+{"text": "<tool>CheckSystemUpdate()</tool>"}
+{"text": "<tool>SystemUpdate(ActionType=\"\u5347\u7ea7\")</tool>"}
+{"text": "<tool>SwitchApp(AppName=\"QQ\u97f3\u4e50\")</tool>"}
+{"text": "<tool>Call(AppName=\"\u5fae\u4fe1\", Contact=\"\u674e\u7ecf\u7406\", PhoneCard=\"\u53611\", Mode=\"\u514d\u63d0\")</tool>"}
+{"text": "<tool>CheckContact(Contact=\"\u738b\u603b\")</tool>"}
+{"text": "<tool>AnswerCall(ActionType=True, Mode=\"\u514d\u63d0\")</tool>"}
+{"text": "<tool>SendMessage(AppName=\"\u5fae\u4fe1\", Contact=\"\u738b\u603b\", PhoneCard=\"\u5de5\u4f5c\u5361\", Content=\"\u4e0b\u5348\u7684\u4f1a\u8bae\u6539\u52303\u70b9\")</tool>"}
+{"text": "<tool>SendEmail(AppName=\"\u7f51\u6613\u90ae\u7bb1\", Contact=\"\u674e\u603b\", Content=\"\u5173\u4e8e\u4e0b\u5b63\u5ea6\u5408\u4f5c\u65b9\u6848\u7684\u521d\u6b65\u8ba8\u8bba\uff0c\u9644\u4ef6\u662f\u8be6\u7ec6\u63d0\u6848\uff0c\u8bf7\u67e5\u6536\u540e\u5c3d\u5feb\u53cd\u9988\u610f\u89c1\")</tool>"}
+{"text": "<tool>CheckEmail(AppName=\"Outlook\", Folder=\"\u661f\u6807\u90ae\u4ef6\", TimeRange=\"\u6628\u5929\")</tool>"}
+{"text": "<tool>CreateAlarm(Time=\"\u660e\u5929\u65e9\u4e0a8\u70b9\", Content=\"\u9879\u76ee\u4f8b\u4f1a\")</tool>"}
+{"text": "<tool>CheckAlarm(Time=\"\u660e\u5929\u4e0a\u53489\u70b9\", Content=\"\u5f00\u4f1a\", RangeType=\"\u660e\u5929\", State=\"\u5df2\u5f00\u542f\")</tool>"}
+{"text": "<tool>DeleteAlarm(Time=\"\u660e\u59298:00\", Content=\"\u4f1a\u8bae\", RangeType=\"\u660e\u5929\")</tool>"}
+{"text": "<tool>CreateNote(AppName=\"WPS\", Title=\"Q3\u9879\u76ee\u8ba1\u5212\", Content=\"1.\u5e02\u573a\u8c03\u7814 2.\u7ade\u54c1\u5206\u6790 3.\u65b9\u6848\u8bbe\u8ba1\", Type=\"\u5de5\u4f5c\u7b14\u8bb0\", ReminderTime=\"\u660e\u592915:00\")</tool>"}
+{"text": "<tool>Translate(Content=\"\u4eca\u5929\u7684\u5929\u6c14\u771f\u597d\uff0c\u9002\u5408\u5916\u51fa\u6563-\u6b65\u3002\", SourceLanguage=\"\u4e2d\u6587\", TargetLanguage=\"\u82f1\u6587\")</tool>"}
+{"text": "<tool>CaptureScreenshot(CaptureArea=\"\u5f53\u524d\u7a97\u53e3\", SavePath=\"~/Desktop/\u5de5\u4f5c\u8d44\u6599\")</tool>"}
+{"text": "<tool>Refresh()</tool>"}
+{"text": "<tool>TaskManagerOnOff(ActionType=True)</tool>"}
+{"text": "<tool>MultipleWindowModeOnOff(ActionType=True)</tool>"}
+{"text": "<tool>EmptyBin()</tool>"}
+{"text": "<tool>Search(Content=\"\u660e\u5929 \u5317\u4eac \u5929\u6c14\u9884\u62a5\")</tool>"}
+{"text": "<tool>ControlSound(VolumeType=\"\u5a92\u4f53\u97f3\u91cf\", ActionType=\"\u589e\u52a0\", Percentage=15)</tool>"}
+{"text": "<tool>QuietModeOnOff(ActionType=True)</tool>"}
+{"text": "<tool>ControlFontType(FontType=\"\u6977\u4f53\", ActionType=\"\u66f4\u6362\", AppName=\"\u7cfb\u7edf\")</tool>"}
+{"text": "<tool>Call(Contact=\"\u674e\u7ecf\u7406\", PhoneCard=\"\u53612\")</tool>"}
+{"text": "<tool>CaptureScreenshot(CaptureArea=\"\u5168\u5c4f\")</tool>"}
+{"text": "<tool>SendMessage(AppName=\"\u77ed\u4fe1\", PhoneNumber=\"10086\", Content=\"\u67e5\u8bdd\u8d39\")</tool>"}
+{"text": "<tool>CreateAlarm(Time=\"\u660e\u5929\u65e9\u4e0a7\u70b930\u5206\", Content=\"\u8d77\u5e8a\")</tool>"}
+{"text": "<tool>Translate(Content=\"\u4f60\u597d\u4e16\u754c\", SourceLanguage=\"\u4e2d\u6587\", TargetLanguage=\"\u82f1\u6587\")</tool>"}
+{"text": "<tool>EmptyBin()</tool>"}
+{"text": "<tool>SwitchApp(AppName=\"\u5fae\u4fe1\")</tool>"}
+{"text": "<tool>QuietModeOnOff(ActionType=False)</tool>"}
+{"text": "<tool>ControlLuminance(ActionType=\"\u6700\u5927\")</tool>"}
+{"text": "<tool>SwitchFontSize(ActionType=\"\u653e\u5927\", AdjustLevel=\"\u4e00\u7ea7\", AppName=\"\u7cfb\u7edf\")</tool>"}
+{"text": "<tool>AirplaneModeOnOff(ActionType=True)</tool>"}
+{"text": "<tool>Search(Content=\"\u6700\u8fd1\u7684\u7535\u5f71\")</tool>"}
