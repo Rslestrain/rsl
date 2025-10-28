@@ -1,0 +1,128 @@
+[
+  {
+    "id": "e16f68a6-6b22-55aa-8bee-5ae5bbae4216",
+    "user_query": "小艺小艺，麻烦帮我把家里的智能音箱关掉",
+    "prediction": "BlueToothOnOff(ActionType=False)",
+    "ground_truth": "ShutDown(DeviceType=\"音箱\")"
+  },
+  {
+    "id": "bc7f6756-2e41-59de-ba53-5fb4230c3899",
+    "user_query": "能不能帮我把手机通话音量调高一点？",
+    "prediction": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=10)",
+    "ground_truth": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)"
+  },
+  {
+    "id": "c2706715-2312-5688-b41e-c9a68760e159",
+    "user_query": "帮我看下平板的屏幕亮度现在是多少？",
+    "prediction": "CheckLuminance(\"平板屏幕\")",
+    "ground_truth": "CheckLuminance(DeviceType=\"平板屏幕\")"
+  },
+  {
+    "id": "3f96cf79-4b93-5fb2-b6c6-b2c2fb6549c4",
+    "user_query": "帮我看下显示器现在的对比度是多少？",
+    "prediction": "CheckContrast(设备类型=\"显示器\")",
+    "ground_truth": "CheckContrast(DeviceType=\"显示器\")"
+  },
+  {
+    "id": "1e113efe-5595-5758-84f3-1a08ad50afcd",
+    "user_query": "帮我把电脑显示器的对比度调到60%",
+    "prediction": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=60)",
+    "ground_truth": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)"
+  },
+  {
+    "id": "965be042-2fa8-5ab0-a9f2-289bef95d44a",
+    "user_query": "帮我把微信的字体调到最大号，看着清楚点",
+    "prediction": "SwitchFontSize(ActionType=\"调到\", AdjustLevel=\"最大\", AppName=\"微信\", FontSize=\"最大\")",
+    "ground_truth": "SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"微信\")"
+  },
+  {
+    "id": "c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9",
+    "user_query": "能把微信的字体调粗一点吗？看起来更醒目些",
+    "prediction": "SwitchFontWeight(ActionType=\"调粗\", FontWeight=\"粗体\", AppName=\"微信\")",
+    "ground_truth": "SwitchFontWeight(ActionType=\"调整\", FontWeight=\"粗体\", AppName=\"微信\")"
+  },
+  {
+    "id": "f8ac8e46-a371-546a-a588-caf0fdd17f87",
+    "user_query": "能把微信聊天的字体换成楷体吗？感觉现在的看起来不太舒服",
+    "prediction": "ControlFontType(FontType=\"楷体\", ActionType=\"设置\", AppName=\"微信\")",
+    "ground_truth": "ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"微信\")"
+  },
+  {
+    "id": "7c0bb589-3eb7-57ab-83d9-6bdcd6f1a70f",
+    "user_query": "把微信的语言设置改成英文吧，我朋友看不懂中文",
+    "prediction": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"切换\")",
+    "ground_truth": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")"
+  },
+  {
+    "id": "15c757b4-d111-55ab-970b-0e674a2f24d9",
+    "user_query": "电脑最近有点卡，能帮我看看系统有没有可用的升级？",
+    "prediction": "CheckSystemUpdate()",
+    "ground_truth": "SystemUpdate(ActionType=\"升级\")"
+  },
+  {
+    "id": "c2d18e15-f99e-5bbb-87e1-97f85b5100be",
+    "user_query": "小张我想听周杰伦的歌，帮我开一下音乐软件吧",
+    "prediction": "SwitchApp(\"音乐\")",
+    "ground_truth": "SwitchApp(AppName=\"QQ音乐\")"
+  },
+  {
+    "id": "a75b888d-ecd0-51b5-ae93-b4083794e0a6",
+    "user_query": "帮我用微信给李经理打个电话，用卡1，开免提模式",
+    "prediction": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneNumber=\"\", Mode=\"免提\", PhoneCard=\"卡1\")",
+    "ground_truth": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneCard=\"卡1\", Mode=\"免提\")"
+  },
+  {
+    "id": "dae77761-73b9-5d2d-a929-f6070c127a22",
+    "user_query": "“帮我用免提接一下这个电话”",
+    "prediction": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"\")",
+    "ground_truth": "AnswerCall(ActionType=True, Mode=\"免提\")"
+  },
+  {
+    "id": "161f1b6a-c04f-54fe-9813-d8fcd99bb9ed",
+    "user_query": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发",
+    "prediction": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneNumber=\"\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点了\")",
+    "ground_truth": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")"
+  },
+  {
+    "id": "d1ec4179-b4a9-59a6-ba32-6745c45ba536",
+    "user_query": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\"",
+    "prediction": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", EmailAddress=\"lizong@company.com\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")",
+    "ground_truth": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"
+  },
+  {
+    "id": "7951d325-8ca7-5406-ac56-e3a1528f65e4",
+    "user_query": "明早8点记得提醒我开项目例会",
+    "prediction": "CreateAlarm(Time=\"早上8点\", Content=\"开项目例会\")",
+    "ground_truth": "CreateAlarm(Time=\"明天早上8点\", Content=\"项目例会\")"
+  },
+  {
+    "id": "71d1acad-3d9f-5a56-848b-5ddde6206d54",
+    "user_query": "帮我看看明天上午9点叫我开会的闹钟开了没有",
+    "prediction": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"今天\", State=\"已开启\")",
+    "ground_truth": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+  },
+  {
+    "id": "ef6ebf81-29d5-5a30-8c89-26d42c7ae751",
+    "user_query": "帮我取消明天早上8点的会议提醒",
+    "prediction": "DeleteAlarm(Time=\"明天早上8点\", Content=\"会议\", RangeType=\"明天\", State=\"已开启\")",
+    "ground_truth": "DeleteAlarm(Time=\"明天8:00\", Content=\"会议\", RangeType=\"明天\")"
+  },
+  {
+    "id": "00b21a1f-921a-5b6e-9776-fcd438cfb85c",
+    "user_query": "早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为\"Q3项目计划\"的工作笔记吗？内容就写\"1.市场调研 2.竞品分析 3.方案设计\"，最好能在明天下午三点提醒我查看",
+    "prediction": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天下午3点\")",
+    "ground_truth": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天15:00\")"
+  },
+  {
+    "id": "61bd1f34-79c4-5f11-8f59-29397c33ef87",
+    "user_query": "您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面\"工作资料\"文件夹里，谢谢！",
+    "prediction": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"桌面/工作资料\")",
+    "ground_truth": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")"
+  },
+  {
+    "id": "0a0c8b48-c3b7-56c3-8e06-6c2ac4277a31",
+    "user_query": "帮我查一下明天北京的天气预报",
+    "prediction": "Search(Content=\"明天北京的天气预报\")",
+    "ground_truth": "Search(Content=\"明天 北京 天气预报\")"
+  }
+]

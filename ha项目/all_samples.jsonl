@@ -1,0 +1,65 @@
+{"query": "帮我把蓝牙打开一下，谢谢", "answer": "BlueToothOnOff(ActionType=True)"}
+{"query": "帮我看看周围有没有能连的蓝牙音箱", "answer": "SearchBlueTooth(DeviceType=\"音箱\")"}
+{"query": "帮我把车载蓝牙断开一下，谢谢", "answer": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"}
+{"query": "把WiFi关了", "answer": "WlanOnOff(ActionType=False)"}
+{"query": "帮我看看周围有什么WiFi能用", "answer": "SearchWlan()"}
+{"query": "我手机快没流量了，帮我把移动网络关掉吧", "answer": "MobileDataOnOff(ActionType=False)"}
+{"query": "帮我打开手机的热点功能，朋友要用我流量", "answer": "HotShotOnOff(ActionType=True)"}
+{"query": "手机快没电了，帮我看看还剩多少电量？", "answer": "CheckBatteryLevel()"}
+{"query": "帮我查一下最近7天哪些APP最耗电，要按从高到低排序", "answer": "CheckBatteryConsumptionRank(TimeRange=\"最近7天\", AnomalyDetection=False, SortBy=\"DESC\")"}
+{"query": "手机快没电了，帮我打开省电模式", "answer": "BatterySavingMode(ActionType=True)"}
+{"query": "手机卡死了，帮我强制重启一下", "answer": "Reboot(DeviceType=\"手机\")"}
+{"query": "小艺小艺，麻烦帮我把家里的智能音箱关掉", "answer": "ShutDown(DeviceType=\"音箱\")"}
+{"query": "小艺小艺，我的手机屏幕一直亮着太费电了，能不能帮我锁屏休息一会儿？", "answer": "Sleep(DeviceType=\"手机\")"}
+{"query": "能不能帮我把手机通话音量调高一点？", "answer": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)"}
+{"query": "手机震动太吵了，帮我关掉振动模式吧", "answer": "VibrationModeOnOff(ActionType=False)"}
+{"query": "帮我打开勿扰模式，谢谢！", "answer": "QuietModeOnOff(ActionType=True)"}
+{"query": "帮我看下平板的屏幕亮度现在是多少？", "answer": "CheckLuminance(DeviceType=\"平板屏幕\")"}
+{"query": "帮我把平板屏幕的亮度调到60%吧，有点刺眼", "answer": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"}
+{"query": "帮我把手机的自动亮度调节关掉，现在太亮了", "answer": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"}
+{"query": "帮我看下显示器现在的对比度是多少？", "answer": "CheckContrast(DeviceType=\"显示器\")"}
+{"query": "帮我把电脑显示器的对比度调到60%", "answer": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)"}
+{"query": "帮我把手机主题改成暗色的，晚上看太刺眼了", "answer": "SetSystemTheme(ThemeType=\"暗色模式\")"}
+{"query": "帮我看看现在用的是啥字体啊？", "answer": "CheckFont()"}
+{"query": "帮我把微信的字体调到最大号，看着清楚点", "answer": "SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"微信\")"}
+{"query": "能把微信的字体调粗一点吗？看起来更醒目些", "answer": "SwitchFontWeight(ActionType=\"调整\", FontWeight=\"粗体\", AppName=\"微信\")"}
+{"query": "能把微信聊天的字体换成楷体吗？感觉现在的看起来不太舒服", "answer": "ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"微信\")"}
+{"query": "帮我看看现在用的什么输入法", "answer": "CheckInputMethod()"}
+{"query": "能不能帮我把微信里的输入法改成百度输入法？现在用的是系统自带的，打字不太顺手。", "answer": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"}
+{"query": "把微信的语言设置改成英文吧，我朋友看不懂中文", "answer": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")"}
+{"query": "我的手机需要开启飞行模式了，麻烦帮我处理一下", "answer": "AirplaneModeOnOff(ActionType=True)"}
+{"query": "帮我看看电脑有没有可用的系统更新，谢谢！", "answer": "CheckSystemUpdate()"}
+{"query": "电脑最近有点卡，能帮我看看系统有没有可用的升级？", "answer": "SystemUpdate(ActionType=\"升级\")"}
+{"query": "小张我想听周杰伦的歌，帮我开一下音乐软件吧", "answer": "SwitchApp(AppName=\"QQ音乐\")"}
+{"query": "帮我用微信给李经理打个电话，用卡1，开免提模式", "answer": "Call(AppName=\"微信\", Contact=\"李经理\", PhoneCard=\"卡1\", Mode=\"免提\")"}
+{"query": "帮我查一下王总的联系方式", "answer": "CheckContact(Contact=\"王总\")"}
+{"query": "“帮我用免提接一下这个电话”", "answer": "AnswerCall(ActionType=True, Mode=\"免提\")"}
+{"query": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发", "answer": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")"}
+{"query": "帮我用网易邮箱给客户经理李总发封邮件，内容是\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\"", "answer": "SendEmail(AppName=\"网易邮箱\", Contact=\"李总\", Content=\"关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见\")"}
+{"query": "帮我在Outlook里看看昨天收到的标星邮件", "answer": "CheckEmail(AppName=\"Outlook\", Folder=\"星标邮件\", TimeRange=\"昨天\")"}
+{"query": "明早8点记得提醒我开项目例会", "answer": "CreateAlarm(Time=\"明天早上8点\", Content=\"项目例会\")"}
+{"query": "帮我看看明天上午9点叫我开会的闹钟开了没有", "answer": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"}
+{"query": "帮我取消明天早上8点的会议提醒", "answer": "DeleteAlarm(Time=\"明天8:00\", Content=\"会议\", RangeType=\"明天\")"}
+{"query": "早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为\"Q3项目计划\"的工作笔记吗？内容就写\"1.市场调研 2.竞品分析 3.方案设计\"，最好能在明天下午三点提醒我查看", "answer": "CreateNote(AppName=\"WPS\", Title=\"Q3项目计划\", Content=\"1.市场调研 2.竞品分析 3.方案设计\", Type=\"工作笔记\", ReminderTime=\"明天15:00\")"}
+{"query": "把这段中文翻译成英文：\"今天的天气真好，适合外出散步。\"", "answer": "Translate(Content=\"今天的天气真好，适合外出散-步。\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"}
+{"query": "您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面\"工作资料\"文件夹里，谢谢！", "answer": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")"}
+{"query": "电脑有点卡，能帮我刷新下桌面吗？", "answer": "Refresh()"}
+{"query": "可以麻烦你帮我把任务管理器调出来吗？我需要查一下后台进程", "answer": "TaskManagerOnOff(ActionType=True)"}
+{"query": "帮我把手机的分屏模式打开吧，我需要同时看两个应用", "answer": "MultipleWindowModeOnOff(ActionType=True)"}
+{"query": "帮我把电脑的回收站彻底清空一下", "answer": "EmptyBin()"}
+{"query": "帮我查一下明天北京的天气预报", "answer": "Search(Content=\"明天 北京 天气预报\")"}
+{"query": "音量调大点", "answer": "ControlSound(VolumeType=\"媒体音量\", ActionType=\"增加\", Percentage=15)"}
+{"query": "别打扰我", "answer": "QuietModeOnOff(ActionType=True)"}
+{"query": "我想把字体调成楷体", "answer": "ControlFontType(FontType=\"楷体\", ActionType=\"更换\", AppName=\"系统\")"}
+{"query": "给李经理打电话，用卡2", "answer": "Call(Contact=\"李经理\", PhoneCard=\"卡2\")"}
+{"query": "截个图", "answer": "CaptureScreenshot(CaptureArea=\"全屏\")"}
+{"query": "发短信给10086，内容是查话费", "answer": "SendMessage(AppName=\"短信\", PhoneNumber=\"10086\", Content=\"查话费\")"}
+{"query": "明天早上七点半叫我起床", "answer": "CreateAlarm(Time=\"明天早上7点30分\", Content=\"起床\")"}
+{"query": "翻译'你好世界'到英语", "answer": "Translate(Content=\"你好世界\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"}
+{"query": "清空垃圾箱", "answer": "EmptyBin()"}
+{"query": "打开微信", "answer": "SwitchApp(AppName=\"微信\")"}
+{"query": "静音模式关掉", "answer": "QuietModeOnOff(ActionType=False)"}
+{"query": "把亮度调到最亮", "answer": "ControlLuminance(ActionType=\"最大\")"}
+{"query": "字体放大一级", "answer": "SwitchFontSize(ActionType=\"放大\", AdjustLevel=\"一级\", AppName=\"系统\")"}
+{"query": "开启飞行模式", "answer": "AirplaneModeOnOff(ActionType=True)"}
+{"query": "搜一下最近的电影", "answer": "Search(Content=\"最近的电影\")"}
