@@ -1,0 +1,6 @@
+# config/dataset/ldu.yaml
+defaults:
+  - base
+  - _self_
+
+name: LongDocURL

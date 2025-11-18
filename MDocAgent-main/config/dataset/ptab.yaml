@@ -1,0 +1,6 @@
+# config/dataset/ptab.yaml
+defaults:
+  - base
+  - _self_
+
+name: PaperTab

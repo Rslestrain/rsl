@@ -1,0 +1,6 @@
+# config/dataset/ptext.yaml
+defaults:
+  - base
+  - _self_
+
+name: PaperText

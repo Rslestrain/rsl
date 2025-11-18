@@ -1,0 +1,7 @@
+# config/mmlb.yaml
+defaults:
+  - base
+  - dataset: mmlb
+  - _self_
+
+run-name: mmlb-MDocAgent

@@ -1,0 +1,7 @@
+# config/feta.yaml
+defaults:
+  - base
+  - dataset: feta
+  - _self_
+
+run-name: feta-MDocAgent

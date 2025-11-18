@@ -1,0 +1,6 @@
+# config/dataset/mmlb.yaml
+defaults:
+  - base
+  - _self_
+
+name: MMLongBench

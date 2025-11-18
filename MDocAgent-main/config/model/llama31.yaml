@@ -1,0 +1,9 @@
+# config/model/llama31.yaml
+defaults:
+  - base
+  - _self_
+
+model_id: qwen2.5-7b-instruct  # 阿里云API中的模型名称
+api_key:  # 可以在这里设置API key，或通过环境变量DASHSCOPE_API_KEY设置
+module_name: models.llama
+class_name: Llama3

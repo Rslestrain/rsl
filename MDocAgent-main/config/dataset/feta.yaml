@@ -1,0 +1,6 @@
+# config/dataset/feta.yaml
+defaults:
+  - base
+  - _self_
+
+name: FetaTab

@@ -1,0 +1,688 @@
+<!-- mdoc_frontend.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多模态文档问答系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .upload-section, .qa-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            border-color: #764ba2;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        }
+
+        .upload-area.dragover {
+            border-color: #4CAF50;
+            background: rgba(76, 175, 80, 0.1);
+        }
+
+        .upload-icon {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .upload-text {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .upload-subtext {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .file-info {
+            display: none;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .retrieval-options {
+            margin: 20px 0;
+        }
+
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .radio-option:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        .radio-option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        }
+
+        .radio-option input[type="radio"] {
+            margin-right: 10px;
+            scale: 1.2;
+        }
+
+        .process-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .process-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .process-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .status-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .status-info {
+            background: #cce7ff;
+            color: #004085;
+            border: 1px solid #abd7ff;
+        }
+
+        .question-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1em;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        .question-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .ask-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .ask-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+        }
+
+        .ask-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .answer-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            display: none;
+        }
+
+        .answer-title {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .answer-content {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #f3f3f3;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>多模态文档问答系统</h1>
+            <p>智能文档理解与问答</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title">📄 文档上传与处理</h2>
+                
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">点击或拖拽上传PDF文档</div>
+                    <div class="upload-subtext">支持PDF格式，最大100MB</div>
+                </div>
+                
+                <input type="file" id="fileInput" accept=".pdf" />
+                
+                <div class="file-info" id="fileInfo">
+                    <strong>已选择文件：</strong><span id="fileName"></span><br>
+                    <strong>文件大小：</strong><span id="fileSize"></span>
+                </div>
+                
+                <div class="retrieval-options">
+                    <h3>🔍 检索方式选择</h3>
+                    <div class="option-group">
+                        <label class="radio-option" data-value="text">
+                            <input type="radio" name="retrieval" value="text" checked>
+                            <span>📝 文本检索 - 基于文本内容的语义检索</span>
+                        </label>
+                        <label class="radio-option" data-value="image">
+                            <input type="radio" name="retrieval" value="image">
+                            <span>🖼️ 图像检索 - 基于图像内容的视觉检索</span>
+                        </label>
+                        <label class="radio-option" data-value="both">
+                            <input type="radio" name="retrieval" value="both">
+                            <span>🔄 文本+图像 - 多模态融合检索</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="process-btn" id="processBtn" disabled>处理文档</button>
+                
+                <div class="status-message" id="statusMessage"></div>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            
+            <div class="qa-section">
+                <h2 class="section-title">💬 智能问答</h2>
+                
+                <textarea 
+                    class="question-input" 
+                    id="questionInput" 
+                    placeholder="请输入您的问题...&#10;&#10;例如：&#10;• 这份文档的主要内容是什么？&#10;• 文档中提到的关键数据有哪些？&#10;• 请分析文档中的图表信息"
+                    disabled
+                ></textarea>
+                
+                <button class="ask-btn" id="askBtn" disabled>🤖 开始问答</button>
+                
+                <div class="answer-section" id="answerSection">
+                    <div class="answer-title">💡 AI回答</div>
+                    <div class="answer-content" id="answerContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentFile = null;
+        let isProcessed = false;
+        let currentRetrievalMethod = 'text';
+
+        // DOM elements
+        const fileInput = document.getElementById('fileInput');
+        const uploadArea = document.querySelector('.upload-area');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const processBtn = document.getElementById('processBtn');
+        const statusMessage = document.getElementById('statusMessage');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
+        const questionInput = document.getElementById('questionInput');
+        const askBtn = document.getElementById('askBtn');
+        const answerSection = document.getElementById('answerSection');
+        const answerContent = document.getElementById('answerContent');
+
+        // File input change handler
+        fileInput.addEventListener('change', handleFileSelect);
+
+        // Drag and drop handlers
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('dragleave', handleDragLeave);
+        uploadArea.addEventListener('drop', handleFileDrop);
+
+        // Retrieval method selection
+        document.querySelectorAll('input[name="retrieval"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                currentRetrievalMethod = this.value;
+                document.querySelectorAll('.radio-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                this.closest('.radio-option').classList.add('selected');
+                
+                // If document is already processed but method changed, need to reprocess
+                if (isProcessed && currentFile) {
+                    showStatus('检索方式已更改，请重新处理文档', 'info');
+                    questionInput.disabled = true;
+                    askBtn.disabled = true;
+                    isProcessed = false;
+                }
+            });
+        });
+
+        // Process button handler
+        processBtn.addEventListener('click', processDocument);
+
+        // Ask button handler
+        askBtn.addEventListener('click', askQuestion);
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        }
+
+        function handleFileDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.type === 'application/pdf') {
+                handleFile(file);
+            } else {
+                showStatus('请上传PDF文件', 'error');
+            }
+        }
+
+        function handleFile(file) {
+            if (file.size > 100 * 1024 * 1024) { // 100MB limit
+                showStatus('文件大小超过100MB限制', 'error');
+                return;
+            }
+
+            currentFile = file;
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileInfo.style.display = 'block';
+            processBtn.disabled = false;
+            isProcessed = false;
+            
+            // Reset UI state
+            questionInput.disabled = true;
+            askBtn.disabled = true;
+            answerSection.style.display = 'none';
+            hideStatus();
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        async function processDocument() {
+            if (!currentFile) return;
+
+            processBtn.disabled = true;
+            processBtn.innerHTML = '<div class="loading"><div class="spinner"></div>处理中...</div>';
+            showProgress(0);
+            showStatus('正在上传文档...', 'info');
+
+            try {
+                const formData = new FormData();
+                formData.append('file', currentFile);
+                formData.append('retrieval_method', currentRetrievalMethod);
+
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showProgress(33);
+                    showStatus('文档上传成功，正在提取内容...', 'info');
+                    
+                    // Start extraction
+                    await extractDocument(result.doc_id);
+                } else {
+                    throw new Error(result.message || '上传失败');
+                }
+            } catch (error) {
+                console.error('Upload error:', error);
+                showStatus('上传失败: ' + error.message, 'error');
+                resetProcessButton();
+            }
+        }
+
+        async function extractDocument(docId) {
+            try {
+                showStatus('正在提取文档内容...', 'info');
+                
+                const response = await fetch('/extract', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ doc_id: docId })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showProgress(66);
+                    showStatus('内容提取成功，正在建立索引...', 'info');
+                    
+                    // Start retrieval indexing
+                    await setupRetrieval(docId);
+                } else {
+                    throw new Error(result.message || '提取失败');
+                }
+            } catch (error) {
+                console.error('Extract error:', error);
+                showStatus('提取失败: ' + error.message, 'error');
+                resetProcessButton();
+            }
+        }
+
+        async function setupRetrieval(docId) {
+            try {
+                showStatus('正在建立检索索引...', 'info');
+                
+                const response = await fetch('/setup_retrieval', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        doc_id: docId,
+                        retrieval_method: currentRetrievalMethod
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showProgress(100);
+                    showStatus('文档处理完成！现在可以开始问答了', 'success');
+                    
+                    // Enable Q&A
+                    isProcessed = true;
+                    questionInput.disabled = false;
+                    askBtn.disabled = false;
+                    questionInput.focus();
+                } else {
+                    throw new Error(result.message || '索引建立失败');
+                }
+            } catch (error) {
+                console.error('Retrieval setup error:', error);
+                showStatus('索引建立失败: ' + error.message, 'error');
+            } finally {
+                resetProcessButton();
+            }
+        }
+
+        async function askQuestion() {
+            const question = questionInput.value.trim();
+            if (!question) {
+                showStatus('请输入问题', 'error');
+                return;
+            }
+
+            askBtn.disabled = true;
+            askBtn.innerHTML = '<div class="loading"><div class="spinner"></div>思考中...</div>';
+            answerSection.style.display = 'none';
+
+            try {
+                const response = await fetch('/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        question: question,
+                        retrieval_method: currentRetrievalMethod
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    answerContent.textContent = result.answer;
+                    answerSection.style.display = 'block';
+                    answerSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    throw new Error(result.message || '问答失败');
+                }
+            } catch (error) {
+                console.error('Ask error:', error);
+                showStatus('问答失败: ' + error.message, 'error');
+            } finally {
+                askBtn.disabled = false;
+                askBtn.innerHTML = '🤖 开始问答';
+            }
+        }
+
+        function showStatus(message, type) {
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message status-${type}`;
+            statusMessage.style.display = 'block';
+        }
+
+        function hideStatus() {
+            statusMessage.style.display = 'none';
+        }
+
+        function showProgress(percent) {
+            progressBar.style.display = 'block';
+            progressFill.style.width = percent + '%';
+            if (percent === 100) {
+                setTimeout(() => {
+                    progressBar.style.display = 'none';
+                }, 2000);
+            }
+        }
+
+        function resetProcessButton() {
+            processBtn.disabled = false;
+            processBtn.innerHTML = '处理文档';
+        }
+
+        // Initialize selected radio option
+        document.querySelector('input[name="retrieval"]:checked').closest('.radio-option').classList.add('selected');
+    </script>
+</body>
+</html>
