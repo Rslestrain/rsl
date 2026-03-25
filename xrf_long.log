@@ -1,0 +1,175 @@
+nohup: ignoring input
+Generated 50 random seeds: [1824, 409, 4506, 4012, 3657]...
+
+============================================================
+Processing dataset: xrf_long
+============================================================
+
+[xrf_long] Seed 1/50: 1824
+Accuracy: 64.3275
+
+[xrf_long] Seed 2/50: 409
+Accuracy: 68.7350
+
+[xrf_long] Seed 3/50: 4506
+Accuracy: 62.9913
+
+[xrf_long] Seed 4/50: 4012
+Accuracy: 69.2575
+
+[xrf_long] Seed 5/50: 3657
+Accuracy: 68.8112
+
+[xrf_long] Seed 6/50: 2286
+Accuracy: 70.4213
+
+[xrf_long] Seed 7/50: 1679
+Accuracy: 67.5425
+
+[xrf_long] Seed 8/50: 8935
+Accuracy: 65.9662
+
+[xrf_long] Seed 9/50: 1424
+Accuracy: 72.4188
+
+[xrf_long] Seed 10/50: 9674
+Accuracy: 65.5625
+
+[xrf_long] Seed 11/50: 6912
+Accuracy: 64.0800
+
+[xrf_long] Seed 12/50: 520
+Accuracy: 70.4675
+
+[xrf_long] Seed 13/50: 488
+Accuracy: 67.1938
+
+[xrf_long] Seed 14/50: 1535
+Accuracy: 65.1238
+
+[xrf_long] Seed 15/50: 3582
+Accuracy: 67.9513
+
+[xrf_long] Seed 16/50: 3811
+Accuracy: 65.9875
+
+[xrf_long] Seed 17/50: 8279
+Accuracy: 67.6137
+
+[xrf_long] Seed 18/50: 9863
+Accuracy: 65.4250
+
+[xrf_long] Seed 19/50: 434
+Accuracy: 67.0475
+
+[xrf_long] Seed 20/50: 9195
+Accuracy: 65.3425
+
+[xrf_long] Seed 21/50: 3257
+Accuracy: 68.1312
+
+[xrf_long] Seed 22/50: 8928
+Accuracy: 69.5838
+
+[xrf_long] Seed 23/50: 6873
+Accuracy: 69.7512
+
+[xrf_long] Seed 24/50: 3611
+Accuracy: 66.2712
+
+[xrf_long] Seed 25/50: 7359
+Accuracy: 64.5062
+
+[xrf_long] Seed 26/50: 9654
+Accuracy: 69.8350
+
+[xrf_long] Seed 27/50: 4557
+Accuracy: 61.3550
+
+[xrf_long] Seed 28/50: 106
+Accuracy: 71.7550
+
+[xrf_long] Seed 29/50: 2615
+Accuracy: 69.3012
+
+[xrf_long] Seed 30/50: 6924
+Accuracy: 66.6500
+
+[xrf_long] Seed 31/50: 5574
+Accuracy: 70.7687
+
+[xrf_long] Seed 32/50: 4552
+Accuracy: 66.0513
+
+[xrf_long] Seed 33/50: 2547
+Accuracy: 66.2975
+
+[xrf_long] Seed 34/50: 3527
+Accuracy: 69.2850
+
+[xrf_long] Seed 35/50: 5514
+Accuracy: 69.9075
+
+[xrf_long] Seed 36/50: 1674
+Accuracy: 67.1600
+
+[xrf_long] Seed 37/50: 1519
+Accuracy: 67.8588
+
+[xrf_long] Seed 38/50: 6224
+Accuracy: 70.1362
+
+[xrf_long] Seed 39/50: 1584
+Accuracy: 67.3813
+
+[xrf_long] Seed 40/50: 5881
+Accuracy: 65.0275
+
+[xrf_long] Seed 41/50: 5635
+Accuracy: 68.4375
+
+[xrf_long] Seed 42/50: 9891
+Accuracy: 65.5600
+
+[xrf_long] Seed 43/50: 4333
+Accuracy: 69.3675
+
+[xrf_long] Seed 44/50: 711
+Accuracy: 68.6562
+
+[xrf_long] Seed 45/50: 7527
+Accuracy: 63.4075
+
+[xrf_long] Seed 46/50: 8785
+Accuracy: 67.0763
+
+[xrf_long] Seed 47/50: 2045
+Accuracy: 69.5900
+
+[xrf_long] Seed 48/50: 6201
+Accuracy: 60.6175
+
+[xrf_long] Seed 49/50: 1291
+Accuracy: 69.4800
+
+[xrf_long] Seed 50/50: 9044
+Accuracy: 65.5175
+
+xrf_long Statistics:
+  Mean Accuracy: 67.3398
+  Std Deviation: 2.5309
+  Min Accuracy: 60.6175
+  Max Accuracy: 72.4188
+  Top5 Mean: 71.1663
+  Top5 Std: 0.7895
+  Top5 Values: [70.42125, 70.4675, 70.76875, 71.75500000000001, 72.41875]
+
+============================================================
+Batch training completed!
+Results saved to: batch_results_20251021_185010.json
+
+Final Summary:
+
+XRF_LONG:
+  Mean: 67.3398 ± 2.5309
+  Top5 Mean: 71.1663 ± 0.7895

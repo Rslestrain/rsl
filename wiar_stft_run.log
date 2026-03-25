@@ -1,0 +1,485 @@
+/data1/rsl/anaconda3/envs/consense/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data1/rsl/anaconda3/envs/consense/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/data1/rsl/anaconda3/envs/consense/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:780: UserWarning: Overwriting vit_tiny_patch16_224 in registry with models.vit_lora.vit_tiny_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:789: UserWarning: Overwriting vit_tiny_patch16_384 in registry with models.vit_lora.vit_tiny_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:798: UserWarning: Overwriting vit_small_patch32_224 in registry with models.vit_lora.vit_small_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:807: UserWarning: Overwriting vit_small_patch32_384 in registry with models.vit_lora.vit_small_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:816: UserWarning: Overwriting vit_small_patch16_224 in registry with models.vit_lora.vit_small_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:826: UserWarning: Overwriting vit_small_patch16_384 in registry with models.vit_lora.vit_small_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:836: UserWarning: Overwriting vit_base_patch32_224 in registry with models.vit_lora.vit_base_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:856: UserWarning: Overwriting vit_base_patch32_384 in registry with models.vit_lora.vit_base_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:866: UserWarning: Overwriting vit_base_patch16_224 in registry with models.vit_lora.vit_base_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:876: UserWarning: Overwriting vit_base_patch16_384 in registry with models.vit_lora.vit_base_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:886: UserWarning: Overwriting vit_base_patch8_224 in registry with models.vit_lora.vit_base_patch8_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:896: UserWarning: Overwriting vit_large_patch32_224 in registry with models.vit_lora.vit_large_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:905: UserWarning: Overwriting vit_large_patch32_384 in registry with models.vit_lora.vit_large_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:915: UserWarning: Overwriting vit_large_patch16_224 in registry with models.vit_lora.vit_large_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:925: UserWarning: Overwriting vit_large_patch16_384 in registry with models.vit_lora.vit_large_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:935: UserWarning: Overwriting vit_large_patch14_224 in registry with models.vit_lora.vit_large_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:944: UserWarning: Overwriting vit_huge_patch14_224 in registry with models.vit_lora.vit_huge_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_huge_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:953: UserWarning: Overwriting vit_giant_patch14_224 in registry with models.vit_lora.vit_giant_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_giant_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:962: UserWarning: Overwriting vit_gigantic_patch14_224 in registry with models.vit_lora.vit_gigantic_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_gigantic_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:971: UserWarning: Overwriting vit_tiny_patch16_224_in21k in registry with models.vit_lora.vit_tiny_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:982: UserWarning: Overwriting vit_small_patch32_224_in21k in registry with models.vit_lora.vit_small_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:993: UserWarning: Overwriting vit_small_patch16_224_in21k in registry with models.vit_lora.vit_small_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1004: UserWarning: Overwriting vit_base_patch32_224_in21k in registry with models.vit_lora.vit_base_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1016: UserWarning: Overwriting vit_base_patch16_224_in21k in registry with models.vit_lora.vit_base_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1028: UserWarning: Overwriting vit_base_patch8_224_in21k in registry with models.vit_lora.vit_base_patch8_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1040: UserWarning: Overwriting vit_large_patch32_224_in21k in registry with models.vit_lora.vit_large_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1052: UserWarning: Overwriting vit_large_patch16_224_in21k in registry with models.vit_lora.vit_large_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1064: UserWarning: Overwriting vit_huge_patch14_224_in21k in registry with models.vit_lora.vit_huge_patch14_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_huge_patch14_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1076: UserWarning: Overwriting vit_base_patch16_224_sam in registry with models.vit_lora.vit_base_patch16_224_sam. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_sam(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1086: UserWarning: Overwriting vit_base_patch32_224_sam in registry with models.vit_lora.vit_base_patch32_224_sam. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224_sam(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1096: UserWarning: Overwriting vit_small_patch16_224_dino in registry with models.vit_lora.vit_small_patch16_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1105: UserWarning: Overwriting vit_small_patch8_224_dino in registry with models.vit_lora.vit_small_patch8_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch8_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1114: UserWarning: Overwriting vit_base_patch16_224_dino in registry with models.vit_lora.vit_base_patch16_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1123: UserWarning: Overwriting vit_base_patch8_224_dino in registry with models.vit_lora.vit_base_patch8_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1132: UserWarning: Overwriting vit_base_patch16_224_miil_in21k in registry with models.vit_lora.vit_base_patch16_224_miil_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_miil_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1142: UserWarning: Overwriting vit_base_patch16_224_miil in registry with models.vit_lora.vit_base_patch16_224_miil. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_miil(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1152: UserWarning: Overwriting vit_small_patch16_36x1_224 in registry with models.vit_lora.vit_small_patch16_36x1_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_36x1_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1163: UserWarning: Overwriting vit_small_patch16_18x2_224 in registry with models.vit_lora.vit_small_patch16_18x2_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_18x2_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit_lora.py:1175: UserWarning: Overwriting vit_base_patch16_18x2_224 in registry with models.vit_lora.vit_base_patch16_18x2_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_18x2_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:682: UserWarning: Overwriting vit_tiny_patch16_224 in registry with models.vit.vit_tiny_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:691: UserWarning: Overwriting vit_tiny_patch16_384 in registry with models.vit.vit_tiny_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:700: UserWarning: Overwriting vit_small_patch32_224 in registry with models.vit.vit_small_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:709: UserWarning: Overwriting vit_small_patch32_384 in registry with models.vit.vit_small_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:718: UserWarning: Overwriting vit_small_patch16_224 in registry with models.vit.vit_small_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:728: UserWarning: Overwriting vit_small_patch16_384 in registry with models.vit.vit_small_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:738: UserWarning: Overwriting vit_base_patch32_224 in registry with models.vit.vit_base_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:748: UserWarning: Overwriting vit_base2_patch32_256 in registry with models.vit.vit_base2_patch32_256. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base2_patch32_256(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:758: UserWarning: Overwriting vit_base_patch32_384 in registry with models.vit.vit_base_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:768: UserWarning: Overwriting vit_base_patch16_224 in registry with models.vit.vit_base_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:778: UserWarning: Overwriting vit_base_patch16_384 in registry with models.vit.vit_base_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:788: UserWarning: Overwriting vit_base_patch8_224 in registry with models.vit.vit_base_patch8_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:798: UserWarning: Overwriting vit_large_patch32_224 in registry with models.vit.vit_large_patch32_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:807: UserWarning: Overwriting vit_large_patch32_384 in registry with models.vit.vit_large_patch32_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:817: UserWarning: Overwriting vit_large_patch16_224 in registry with models.vit.vit_large_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:827: UserWarning: Overwriting vit_large_patch16_384 in registry with models.vit.vit_large_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_384(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:837: UserWarning: Overwriting vit_large_patch14_224 in registry with models.vit.vit_large_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:846: UserWarning: Overwriting vit_huge_patch14_224 in registry with models.vit.vit_huge_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_huge_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:855: UserWarning: Overwriting vit_giant_patch14_224 in registry with models.vit.vit_giant_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_giant_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:864: UserWarning: Overwriting vit_gigantic_patch14_224 in registry with models.vit.vit_gigantic_patch14_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_gigantic_patch14_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:873: UserWarning: Overwriting vit_tiny_patch16_224_in21k in registry with models.vit.vit_tiny_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_tiny_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:884: UserWarning: Overwriting vit_small_patch32_224_in21k in registry with models.vit.vit_small_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:895: UserWarning: Overwriting vit_small_patch16_224_in21k in registry with models.vit.vit_small_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:906: UserWarning: Overwriting vit_base_patch32_224_in21k in registry with models.vit.vit_base_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:918: UserWarning: Overwriting vit_base_patch16_224_in21k in registry with models.vit.vit_base_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:930: UserWarning: Overwriting vit_base_patch8_224_in21k in registry with models.vit.vit_base_patch8_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:942: UserWarning: Overwriting vit_large_patch32_224_in21k in registry with models.vit.vit_large_patch32_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch32_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:954: UserWarning: Overwriting vit_large_patch16_224_in21k in registry with models.vit.vit_large_patch16_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_large_patch16_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:966: UserWarning: Overwriting vit_huge_patch14_224_in21k in registry with models.vit.vit_huge_patch14_224_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_huge_patch14_224_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:978: UserWarning: Overwriting vit_base_patch16_224_sam in registry with models.vit.vit_base_patch16_224_sam. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_sam(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:988: UserWarning: Overwriting vit_base_patch32_224_sam in registry with models.vit.vit_base_patch32_224_sam. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch32_224_sam(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:998: UserWarning: Overwriting vit_small_patch16_224_dino in registry with models.vit.vit_small_patch16_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1007: UserWarning: Overwriting vit_small_patch8_224_dino in registry with models.vit.vit_small_patch8_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch8_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1016: UserWarning: Overwriting vit_base_patch16_224_dino in registry with models.vit.vit_base_patch16_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1025: UserWarning: Overwriting vit_base_patch8_224_dino in registry with models.vit.vit_base_patch8_224_dino. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch8_224_dino(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1034: UserWarning: Overwriting vit_base_patch16_224_miil_in21k in registry with models.vit.vit_base_patch16_224_miil_in21k. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_miil_in21k(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1044: UserWarning: Overwriting vit_base_patch16_224_miil in registry with models.vit.vit_base_patch16_224_miil. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_224_miil(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1054: UserWarning: Overwriting vit_small_patch16_36x1_224 in registry with models.vit.vit_small_patch16_36x1_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_36x1_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1065: UserWarning: Overwriting vit_small_patch16_18x2_224 in registry with models.vit.vit_small_patch16_18x2_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_small_patch16_18x2_224(pretrained=False, **kwargs):
+/data1/rsl/LoRA-Sub-DRS-master/models/vit.py:1077: UserWarning: Overwriting vit_base_patch16_18x2_224 in registry with models.vit.vit_base_patch16_18x2_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def vit_base_patch16_18x2_224(pretrained=False, **kwargs):
+logs/wiar_stft/8_2_sip/lorasub_drs/Adam/0
+2025-11-21 13:34:21,966 [trainer.py] => config: configs/wiar_stft.json
+2025-11-21 13:34:21,966 [trainer.py] => device: [device(type='cuda', index=0)]
+2025-11-21 13:34:21,966 [trainer.py] => eval: False
+2025-11-21 13:34:21,967 [trainer.py] => prefix: wiar_stft
+2025-11-21 13:34:21,967 [trainer.py] => dataset: wiar_stft
+2025-11-21 13:34:21,967 [trainer.py] => data_path: data/
+2025-11-21 13:34:21,967 [trainer.py] => memory_size: 0
+2025-11-21 13:34:21,967 [trainer.py] => memory_per_class: 0
+2025-11-21 13:34:21,967 [trainer.py] => fixed_memory: True
+2025-11-21 13:34:21,967 [trainer.py] => shuffle: False
+2025-11-21 13:34:21,967 [trainer.py] => seed: 0
+2025-11-21 13:34:21,967 [trainer.py] => init_cls: 8
+2025-11-21 13:34:21,967 [trainer.py] => increment: 2
+2025-11-21 13:34:21,967 [trainer.py] => total_sessions: 5
+2025-11-21 13:34:21,967 [trainer.py] => model_name: lorasub_drs
+2025-11-21 13:34:21,967 [trainer.py] => net_type: sip
+2025-11-21 13:34:21,967 [trainer.py] => embd_dim: 768
+2025-11-21 13:34:21,967 [trainer.py] => num_heads: 12
+2025-11-21 13:34:21,967 [trainer.py] => EPSILON: 1e-08
+2025-11-21 13:34:21,967 [trainer.py] => init_epoch: 20
+2025-11-21 13:34:21,967 [trainer.py] => optim: Adam
+2025-11-21 13:34:21,967 [trainer.py] => init_lr: 0.0005
+2025-11-21 13:34:21,967 [trainer.py] => init_lr_decay: 0.1
+2025-11-21 13:34:21,967 [trainer.py] => init_weight_decay: 0.0
+2025-11-21 13:34:21,967 [trainer.py] => epochs: 20
+2025-11-21 13:34:21,967 [trainer.py] => fc_lrate: 0.002
+2025-11-21 13:34:21,967 [trainer.py] => lrate: 0.0005
+2025-11-21 13:34:21,967 [trainer.py] => lrate_decay: 0.1
+2025-11-21 13:34:21,967 [trainer.py] => batch_size: 64
+2025-11-21 13:34:21,967 [trainer.py] => weight_decay: 0.0
+2025-11-21 13:34:21,967 [trainer.py] => rank: 10
+2025-11-21 13:34:21,967 [trainer.py] => margin_inter: 1.0
+2025-11-21 13:34:21,967 [trainer.py] => lambada: 0.05
+2025-11-21 13:34:21,968 [trainer.py] => num_workers: 16
+加载Wiar文件 wiar_01.npy: 30 个样本, 类别 0
+加载Wiar文件 wiar_02.npy: 30 个样本, 类别 1
+加载Wiar文件 wiar_03.npy: 30 个样本, 类别 2
+加载Wiar文件 wiar_04.npy: 30 个样本, 类别 3
+加载Wiar文件 wiar_05.npy: 30 个样本, 类别 4
+加载Wiar文件 wiar_06.npy: 30 个样本, 类别 5
+加载Wiar文件 wiar_07.npy: 30 个样本, 类别 6
+加载Wiar文件 wiar_08.npy: 30 个样本, 类别 7
+加载Wiar文件 wiar_09.npy: 30 个样本, 类别 8
+加载Wiar文件 wiar_10.npy: 30 个样本, 类别 9
+加载Wiar文件 wiar_11.npy: 30 个样本, 类别 10
+加载Wiar文件 wiar_12.npy: 30 个样本, 类别 11
+加载Wiar文件 wiar_13.npy: 30 个样本, 类别 12
+加载Wiar文件 wiar_14.npy: 30 个样本, 类别 13
+加载Wiar文件 wiar_15.npy: 30 个样本, 类别 14
+加载Wiar文件 wiar_16.npy: 30 个样本, 类别 15
+Wiar总数据量: 480 个样本
+Wiar数据集划分: 训练集 384 个样本, 测试集 96 个样本
+开始使用STFT处理Wiar训练集数据...
+开始使用STFT处理Wiar测试集数据...
+Wiar-STFT数据处理完成
+Wiar-STFT数据集划分和处理完成: 训练集384个样本, 测试集96个样本
+2025-11-21 13:34:38,430 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-11-21 13:34:39,685 [_builder.py] => Loading pretrained weights from url (https://storage.googleapis.com/vit_models/augreg/B_16-i21k-300ep-lr_0.001-aug_medium1-wd_0.1-do_0.0-sd_0.0.npz)
+2025-11-21 13:34:40,284 [trainer.py] => All params: 109259171
+2025-11-21 13:34:40,285 [trainer.py] => Trainable params: 109259171
+2025-11-21 13:34:40,285 [lorasub_drs.py] => Learning on 0-8
+Parameters to be updated: {'image_encoder.blocks.10.attn.lora_B_k.0.weight', 'image_encoder.blocks.10.attn.lora_A_k.0.weight', 'image_encoder.blocks.8.attn.lora_A_v.0.weight', 'image_encoder.blocks.0.attn.lora_B_k.0.weight', 'image_encoder.blocks.3.attn.lora_B_v.0.weight', 'image_encoder.blocks.3.attn.lora_A_k.0.weight', 'image_encoder.blocks.1.attn.lora_B_k.0.weight', 'image_encoder.blocks.6.attn.lora_B_v.0.weight', 'image_encoder.blocks.2.attn.lora_B_k.0.weight', 'image_encoder.blocks.0.attn.lora_A_k.0.weight', 'image_encoder.blocks.5.attn.lora_A_k.0.weight', 'classifier_pool.0.weight', 'image_encoder.blocks.7.attn.lora_B_v.0.weight', 'image_encoder.blocks.10.attn.lora_A_v.0.weight', 'classifier_pool.0.bias', 'image_encoder.blocks.4.attn.lora_B_k.0.weight', 'image_encoder.blocks.5.attn.lora_B_v.0.weight', 'image_encoder.blocks.8.attn.lora_B_v.0.weight', 'image_encoder.blocks.11.attn.lora_A_v.0.weight', 'image_encoder.blocks.8.attn.lora_B_k.0.weight', 'image_encoder.blocks.1.attn.lora_B_v.0.weight', 'image_encoder.blocks.1.attn.lora_A_v.0.weight', 'image_encoder.blocks.0.attn.lora_A_v.0.weight', 'image_encoder.blocks.0.attn.lora_B_v.0.weight', 'image_encoder.blocks.1.attn.lora_A_k.0.weight', 'image_encoder.blocks.7.attn.lora_B_k.0.weight', 'image_encoder.blocks.3.attn.lora_B_k.0.weight', 'image_encoder.blocks.11.attn.lora_B_v.0.weight', 'image_encoder.blocks.7.attn.lora_A_k.0.weight', 'image_encoder.blocks.3.attn.lora_A_v.0.weight', 'image_encoder.blocks.2.attn.lora_A_k.0.weight', 'image_encoder.blocks.8.attn.lora_A_k.0.weight', 'image_encoder.blocks.2.attn.lora_B_v.0.weight', 'image_encoder.blocks.6.attn.lora_A_k.0.weight', 'image_encoder.blocks.6.attn.lora_A_v.0.weight', 'image_encoder.blocks.9.attn.lora_A_v.0.weight', 'image_encoder.blocks.11.attn.lora_A_k.0.weight', 'image_encoder.blocks.5.attn.lora_B_k.0.weight', 'image_encoder.blocks.5.attn.lora_A_v.0.weight', 'image_encoder.blocks.4.attn.lora_A_v.0.weight', 'image_encoder.blocks.9.attn.lora_A_k.0.weight', 'image_encoder.blocks.6.attn.lora_B_k.0.weight', 'image_encoder.blocks.11.attn.lora_B_k.0.weight', 'image_encoder.blocks.9.attn.lora_B_k.0.weight', 'image_encoder.blocks.2.attn.lora_A_v.0.weight', 'image_encoder.blocks.9.attn.lora_B_v.0.weight', 'image_encoder.blocks.4.attn.lora_B_v.0.weight', 'image_encoder.blocks.7.attn.lora_A_v.0.weight', 'image_encoder.blocks.4.attn.lora_A_k.0.weight', 'image_encoder.blocks.10.attn.lora_B_v.0.weight'}
+  0%|          | 0/20 [00:00<?, ?it/s]/data1/rsl/LoRA-Sub-DRS-master/utils/losses.py:25: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:1805.)
+  dist.addmm_(1, -2, inputs, inputs.t())
+Task 0, Epoch 1/20 => Loss 1.920, Train_accy 32.14:   0%|          | 0/20 [00:03<?, ?it/s]Task 0, Epoch 1/20 => Loss 1.920, Train_accy 32.14:   5%|▌         | 1/20 [00:03<00:57,  3.03s/it]Task 0, Epoch 2/20 => Loss 1.221, Train_accy 52.55:   5%|▌         | 1/20 [00:05<00:57,  3.03s/it]Task 0, Epoch 2/20 => Loss 1.221, Train_accy 52.55:  10%|█         | 2/20 [00:05<00:49,  2.74s/it]Task 0, Epoch 3/20 => Loss 0.868, Train_accy 78.06:  10%|█         | 2/20 [00:08<00:49,  2.74s/it]Task 0, Epoch 3/20 => Loss 0.868, Train_accy 78.06:  15%|█▌        | 3/20 [00:08<00:44,  2.61s/it]Task 0, Epoch 4/20 => Loss 0.875, Train_accy 90.31:  15%|█▌        | 3/20 [00:10<00:44,  2.61s/it]Task 0, Epoch 4/20 => Loss 0.875, Train_accy 90.31:  20%|██        | 4/20 [00:10<00:40,  2.55s/it]Task 0, Epoch 5/20 => Loss 0.562, Train_accy 75.51:  20%|██        | 4/20 [00:12<00:40,  2.55s/it]Task 0, Epoch 5/20 => Loss 0.562, Train_accy 75.51:  25%|██▌       | 5/20 [00:12<00:38,  2.54s/it]Task 0, Epoch 6/20 => Loss 0.368, Train_accy 88.27:  25%|██▌       | 5/20 [00:15<00:38,  2.54s/it]Task 0, Epoch 6/20 => Loss 0.368, Train_accy 88.27:  30%|███       | 6/20 [00:15<00:35,  2.54s/it]Task 0, Epoch 7/20 => Loss 0.409, Train_accy 85.20:  30%|███       | 6/20 [00:18<00:35,  2.54s/it]Task 0, Epoch 7/20 => Loss 0.409, Train_accy 85.20:  35%|███▌      | 7/20 [00:18<00:33,  2.56s/it]Task 0, Epoch 8/20 => Loss 0.313, Train_accy 92.35:  35%|███▌      | 7/20 [00:20<00:33,  2.56s/it]Task 0, Epoch 8/20 => Loss 0.313, Train_accy 92.35:  40%|████      | 8/20 [00:20<00:30,  2.53s/it]Task 0, Epoch 9/20 => Loss 0.190, Train_accy 97.45:  40%|████      | 8/20 [00:23<00:30,  2.53s/it]Task 0, Epoch 9/20 => Loss 0.190, Train_accy 97.45:  45%|████▌     | 9/20 [00:23<00:27,  2.51s/it]Task 0, Epoch 10/20 => Loss 0.178, Train_accy 95.41:  45%|████▌     | 9/20 [00:25<00:27,  2.51s/it]Task 0, Epoch 10/20 => Loss 0.178, Train_accy 95.41:  50%|█████     | 10/20 [00:25<00:24,  2.49s/it]Task 0, Epoch 11/20 => Loss 0.164, Train_accy 97.45:  50%|█████     | 10/20 [00:27<00:24,  2.49s/it]Task 0, Epoch 11/20 => Loss 0.164, Train_accy 97.45:  55%|█████▌    | 11/20 [00:27<00:22,  2.48s/it]Task 0, Epoch 12/20 => Loss 0.103, Train_accy 98.47:  55%|█████▌    | 11/20 [00:30<00:22,  2.48s/it]Task 0, Epoch 12/20 => Loss 0.103, Train_accy 98.47:  60%|██████    | 12/20 [00:30<00:19,  2.47s/it]Task 0, Epoch 13/20 => Loss 0.203, Train_accy 97.45:  60%|██████    | 12/20 [00:33<00:19,  2.47s/it]Task 0, Epoch 13/20 => Loss 0.203, Train_accy 97.45:  65%|██████▌   | 13/20 [00:33<00:17,  2.50s/it]Task 0, Epoch 14/20 => Loss 0.224, Train_accy 97.96:  65%|██████▌   | 13/20 [00:35<00:17,  2.50s/it]Task 0, Epoch 14/20 => Loss 0.224, Train_accy 97.96:  70%|███████   | 14/20 [00:35<00:15,  2.53s/it]Task 0, Epoch 15/20 => Loss 0.151, Train_accy 96.43:  70%|███████   | 14/20 [00:38<00:15,  2.53s/it]Task 0, Epoch 15/20 => Loss 0.151, Train_accy 96.43:  75%|███████▌  | 15/20 [00:38<00:12,  2.54s/it]Task 0, Epoch 16/20 => Loss 0.142, Train_accy 94.90:  75%|███████▌  | 15/20 [00:40<00:12,  2.54s/it]Task 0, Epoch 16/20 => Loss 0.142, Train_accy 94.90:  80%|████████  | 16/20 [00:40<00:10,  2.52s/it]Task 0, Epoch 17/20 => Loss 0.125, Train_accy 98.47:  80%|████████  | 16/20 [00:43<00:10,  2.52s/it]Task 0, Epoch 17/20 => Loss 0.125, Train_accy 98.47:  85%|████████▌ | 17/20 [00:43<00:07,  2.53s/it]Task 0, Epoch 18/20 => Loss 0.085, Train_accy 98.98:  85%|████████▌ | 17/20 [00:45<00:07,  2.53s/it]Task 0, Epoch 18/20 => Loss 0.085, Train_accy 98.98:  90%|█████████ | 18/20 [00:45<00:05,  2.55s/it]Task 0, Epoch 19/20 => Loss 0.077, Train_accy 98.47:  90%|█████████ | 18/20 [00:48<00:05,  2.55s/it]Task 0, Epoch 19/20 => Loss 0.077, Train_accy 98.47:  95%|█████████▌| 19/20 [00:48<00:02,  2.53s/it]Task 0, Epoch 20/20 => Loss 0.081, Train_accy 98.47:  95%|█████████▌| 19/20 [00:50<00:02,  2.53s/it]Task 0, Epoch 20/20 => Loss 0.081, Train_accy 98.47: 100%|██████████| 20/20 [00:50<00:00,  2.55s/it]Task 0, Epoch 20/20 => Loss 0.081, Train_accy 98.47: 100%|██████████| 20/20 [00:50<00:00,  2.54s/it]
+2025-11-21 13:35:32,214 [lorasub_drs.py] => Task 0, Epoch 20/20 => Loss 0.081, Train_accy 98.47
+2025-11-21 13:35:34,763 [trainer.py] => Time:54.4772367477417
+44 44
+2025-11-21 13:35:35,565 [trainer.py] => Time:0.8016703128814697
+2025-11-21 13:35:35,565 [trainer.py] => ACC: {'total': np.float64(88.64), '00-07': np.float64(88.64), 'old': 0, 'new': np.float64(88.64)}
+2025-11-21 13:35:35,565 [trainer.py] => ACC top1 curve: [np.float64(88.64)]
+Average Accuracy: 88.64
+2025-11-21 13:35:35,565 [trainer.py] => Average Accuracy: 88.64
+2025-11-21 13:35:35,567 [trainer.py] => All params: 109259171
+2025-11-21 13:35:35,569 [trainer.py] => Trainable params: 374792
+2025-11-21 13:35:35,569 [lorasub_drs.py] => Learning on 8-10
+Parameters to be updated: {'image_encoder.blocks.0.attn.lora_A_v.1.weight', 'image_encoder.blocks.2.attn.lora_B_v.1.weight', 'image_encoder.blocks.6.attn.lora_A_k.1.weight', 'image_encoder.blocks.1.attn.lora_A_v.1.weight', 'image_encoder.blocks.1.attn.lora_B_v.1.weight', 'image_encoder.blocks.4.attn.lora_B_k.1.weight', 'image_encoder.blocks.2.attn.lora_A_v.1.weight', 'image_encoder.blocks.4.attn.lora_A_v.1.weight', 'image_encoder.blocks.7.attn.lora_B_k.1.weight', 'image_encoder.blocks.0.attn.lora_B_k.1.weight', 'image_encoder.blocks.6.attn.lora_B_v.1.weight', 'image_encoder.blocks.8.attn.lora_B_v.1.weight', 'image_encoder.blocks.4.attn.lora_B_v.1.weight', 'image_encoder.blocks.6.attn.lora_B_k.1.weight', 'image_encoder.blocks.11.attn.lora_B_v.1.weight', 'image_encoder.blocks.5.attn.lora_B_v.1.weight', 'image_encoder.blocks.8.attn.lora_A_v.1.weight', 'image_encoder.blocks.9.attn.lora_B_k.1.weight', 'image_encoder.blocks.0.attn.lora_A_k.1.weight', 'image_encoder.blocks.11.attn.lora_A_k.1.weight', 'image_encoder.blocks.3.attn.lora_A_v.1.weight', 'image_encoder.blocks.8.attn.lora_A_k.1.weight', 'image_encoder.blocks.11.attn.lora_A_v.1.weight', 'image_encoder.blocks.0.attn.lora_B_v.1.weight', 'image_encoder.blocks.5.attn.lora_A_k.1.weight', 'image_encoder.blocks.1.attn.lora_A_k.1.weight', 'image_encoder.blocks.7.attn.lora_B_v.1.weight', 'image_encoder.blocks.10.attn.lora_A_v.1.weight', 'image_encoder.blocks.6.attn.lora_A_v.1.weight', 'image_encoder.blocks.9.attn.lora_A_k.1.weight', 'image_encoder.blocks.9.attn.lora_A_v.1.weight', 'image_encoder.blocks.9.attn.lora_B_v.1.weight', 'classifier_pool.1.weight', 'image_encoder.blocks.10.attn.lora_A_k.1.weight', 'classifier_pool.1.bias', 'image_encoder.blocks.4.attn.lora_A_k.1.weight', 'image_encoder.blocks.2.attn.lora_B_k.1.weight', 'image_encoder.blocks.3.attn.lora_A_k.1.weight', 'image_encoder.blocks.10.attn.lora_B_v.1.weight', 'image_encoder.blocks.1.attn.lora_B_k.1.weight', 'image_encoder.blocks.10.attn.lora_B_k.1.weight', 'image_encoder.blocks.3.attn.lora_B_k.1.weight', 'image_encoder.blocks.11.attn.lora_B_k.1.weight', 'image_encoder.blocks.8.attn.lora_B_k.1.weight', 'image_encoder.blocks.5.attn.lora_A_v.1.weight', 'image_encoder.blocks.5.attn.lora_B_k.1.weight', 'image_encoder.blocks.7.attn.lora_A_k.1.weight', 'image_encoder.blocks.7.attn.lora_A_v.1.weight', 'image_encoder.blocks.2.attn.lora_A_k.1.weight', 'image_encoder.blocks.3.attn.lora_B_v.1.weight'}
+reserving basis 18/768; cond: 29999354609664.0, ratio:0.991520881652832
+reserving basis 18/768; cond: 29999354609664.0, ratio:0.991520881652832
+reserving basis 18/768; cond: 29999354609664.0, ratio:0.991520881652832
+reserving basis 18/768; cond: 29999354609664.0, ratio:0.991520881652832
+reserving basis 48/768; cond: 47155142197248.0, ratio:0.9901870489120483
+reserving basis 48/768; cond: 47155142197248.0, ratio:0.9901870489120483
+reserving basis 48/768; cond: 47155142197248.0, ratio:0.9901870489120483
+reserving basis 48/768; cond: 47155142197248.0, ratio:0.9901870489120483
+reserving basis 99/768; cond: 58902385262592.0, ratio:0.9900504350662231
+reserving basis 99/768; cond: 58902385262592.0, ratio:0.9900504350662231
+reserving basis 99/768; cond: 58902385262592.0, ratio:0.9900504350662231
+reserving basis 99/768; cond: 58902385262592.0, ratio:0.9900504350662231
+reserving basis 164/768; cond: 15081433726976.0, ratio:0.9900321364402771
+reserving basis 164/768; cond: 15081433726976.0, ratio:0.9900321364402771
+reserving basis 164/768; cond: 15081433726976.0, ratio:0.9900321364402771
+reserving basis 164/768; cond: 15081433726976.0, ratio:0.9900321364402771
+reserving basis 221/768; cond: 4843607949312.0, ratio:0.9900467395782471
+reserving basis 221/768; cond: 4843607949312.0, ratio:0.9900467395782471
+reserving basis 221/768; cond: 4843607949312.0, ratio:0.9900467395782471
+reserving basis 221/768; cond: 4843607949312.0, ratio:0.9900467395782471
+reserving basis 283/768; cond: 11744507330560.0, ratio:0.99004065990448
+reserving basis 283/768; cond: 11744507330560.0, ratio:0.99004065990448
+reserving basis 283/768; cond: 11744507330560.0, ratio:0.99004065990448
+reserving basis 283/768; cond: 11744507330560.0, ratio:0.99004065990448
+reserving basis 308/768; cond: 58263040000.0, ratio:0.9900620579719543
+reserving basis 308/768; cond: 58263040000.0, ratio:0.9900620579719543
+reserving basis 308/768; cond: 58263040000.0, ratio:0.9900620579719543
+reserving basis 308/768; cond: 58263040000.0, ratio:0.9900620579719543
+reserving basis 331/768; cond: 3719065763840.0, ratio:0.9900354743003845
+reserving basis 331/768; cond: 3719065763840.0, ratio:0.9900354743003845
+reserving basis 331/768; cond: 3719065763840.0, ratio:0.9900354743003845
+reserving basis 331/768; cond: 3719065763840.0, ratio:0.9900354743003845
+reserving basis 303/768; cond: 2507371776.0, ratio:0.9900487661361694
+reserving basis 303/768; cond: 2507371776.0, ratio:0.9900487661361694
+reserving basis 303/768; cond: 2507371776.0, ratio:0.9900487661361694
+reserving basis 303/768; cond: 2507371776.0, ratio:0.9900487661361694
+reserving basis 297/768; cond: 7502754304.0, ratio:0.9900529384613037
+reserving basis 297/768; cond: 7502754304.0, ratio:0.9900529384613037
+reserving basis 297/768; cond: 7502754304.0, ratio:0.9900529384613037
+reserving basis 297/768; cond: 7502754304.0, ratio:0.9900529384613037
+reserving basis 274/768; cond: 351174688.0, ratio:0.990026593208313
+reserving basis 274/768; cond: 351174688.0, ratio:0.990026593208313
+reserving basis 274/768; cond: 351174688.0, ratio:0.990026593208313
+reserving basis 274/768; cond: 351174688.0, ratio:0.990026593208313
+reserving basis 306/768; cond: 225478098944.0, ratio:0.9900134205818176
+reserving basis 306/768; cond: 225478098944.0, ratio:0.9900134205818176
+reserving basis 306/768; cond: 225478098944.0, ratio:0.9900134205818176
+reserving basis 306/768; cond: 225478098944.0, ratio:0.9900134205818176
+  0%|          | 0/20 [00:00<?, ?it/s]Task 1, Epoch 1/20 => Loss 3.258, Train_accy 0.00:   0%|          | 0/20 [00:01<?, ?it/s]Task 1, Epoch 1/20 => Loss 3.258, Train_accy 0.00:   5%|▌         | 1/20 [00:01<00:22,  1.19s/it]Task 1, Epoch 2/20 => Loss 0.757, Train_accy 64.71:   5%|▌         | 1/20 [00:02<00:22,  1.19s/it]Task 1, Epoch 2/20 => Loss 0.757, Train_accy 64.71:  10%|█         | 2/20 [00:02<00:22,  1.23s/it]Task 1, Epoch 3/20 => Loss 0.588, Train_accy 86.27:  10%|█         | 2/20 [00:03<00:22,  1.23s/it]Task 1, Epoch 3/20 => Loss 0.588, Train_accy 86.27:  15%|█▌        | 3/20 [00:03<00:21,  1.24s/it]Task 1, Epoch 4/20 => Loss 0.508, Train_accy 90.20:  15%|█▌        | 3/20 [00:04<00:21,  1.24s/it]Task 1, Epoch 4/20 => Loss 0.508, Train_accy 90.20:  20%|██        | 4/20 [00:04<00:19,  1.24s/it]Task 1, Epoch 5/20 => Loss 0.435, Train_accy 94.12:  20%|██        | 4/20 [00:06<00:19,  1.24s/it]Task 1, Epoch 5/20 => Loss 0.435, Train_accy 94.12:  25%|██▌       | 5/20 [00:06<00:18,  1.25s/it]Task 1, Epoch 6/20 => Loss 0.379, Train_accy 98.04:  25%|██▌       | 5/20 [00:07<00:18,  1.25s/it]Task 1, Epoch 6/20 => Loss 0.379, Train_accy 98.04:  30%|███       | 6/20 [00:07<00:17,  1.25s/it]Task 1, Epoch 7/20 => Loss 0.332, Train_accy 98.04:  30%|███       | 6/20 [00:08<00:17,  1.25s/it]Task 1, Epoch 7/20 => Loss 0.332, Train_accy 98.04:  35%|███▌      | 7/20 [00:08<00:15,  1.23s/it]Task 1, Epoch 8/20 => Loss 0.293, Train_accy 96.08:  35%|███▌      | 7/20 [00:09<00:15,  1.23s/it]Task 1, Epoch 8/20 => Loss 0.293, Train_accy 96.08:  40%|████      | 8/20 [00:09<00:14,  1.22s/it]Task 1, Epoch 9/20 => Loss 0.265, Train_accy 96.08:  40%|████      | 8/20 [00:11<00:14,  1.22s/it]Task 1, Epoch 9/20 => Loss 0.265, Train_accy 96.08:  45%|████▌     | 9/20 [00:11<00:13,  1.23s/it]Task 1, Epoch 10/20 => Loss 0.243, Train_accy 98.04:  45%|████▌     | 9/20 [00:12<00:13,  1.23s/it]Task 1, Epoch 10/20 => Loss 0.243, Train_accy 98.04:  50%|█████     | 10/20 [00:12<00:12,  1.22s/it]Task 1, Epoch 11/20 => Loss 0.224, Train_accy 98.04:  50%|█████     | 10/20 [00:13<00:12,  1.22s/it]Task 1, Epoch 11/20 => Loss 0.224, Train_accy 98.04:  55%|█████▌    | 11/20 [00:13<00:11,  1.25s/it]Task 1, Epoch 12/20 => Loss 0.209, Train_accy 96.08:  55%|█████▌    | 11/20 [00:14<00:11,  1.25s/it]Task 1, Epoch 12/20 => Loss 0.209, Train_accy 96.08:  60%|██████    | 12/20 [00:14<00:10,  1.28s/it]Task 1, Epoch 13/20 => Loss 0.197, Train_accy 98.04:  60%|██████    | 12/20 [00:16<00:10,  1.28s/it]Task 1, Epoch 13/20 => Loss 0.197, Train_accy 98.04:  65%|██████▌   | 13/20 [00:16<00:08,  1.28s/it]Task 1, Epoch 14/20 => Loss 0.188, Train_accy 98.04:  65%|██████▌   | 13/20 [00:17<00:08,  1.28s/it]Task 1, Epoch 14/20 => Loss 0.188, Train_accy 98.04:  70%|███████   | 14/20 [00:17<00:07,  1.28s/it]Task 1, Epoch 15/20 => Loss 0.181, Train_accy 98.04:  70%|███████   | 14/20 [00:18<00:07,  1.28s/it]Task 1, Epoch 15/20 => Loss 0.181, Train_accy 98.04:  75%|███████▌  | 15/20 [00:18<00:06,  1.27s/it]Task 1, Epoch 16/20 => Loss 0.176, Train_accy 98.04:  75%|███████▌  | 15/20 [00:20<00:06,  1.27s/it]Task 1, Epoch 16/20 => Loss 0.176, Train_accy 98.04:  80%|████████  | 16/20 [00:20<00:05,  1.28s/it]Task 1, Epoch 17/20 => Loss 0.171, Train_accy 98.04:  80%|████████  | 16/20 [00:21<00:05,  1.28s/it]Task 1, Epoch 17/20 => Loss 0.171, Train_accy 98.04:  85%|████████▌ | 17/20 [00:21<00:03,  1.25s/it]Task 1, Epoch 18/20 => Loss 0.167, Train_accy 98.04:  85%|████████▌ | 17/20 [00:22<00:03,  1.25s/it]Task 1, Epoch 18/20 => Loss 0.167, Train_accy 98.04:  90%|█████████ | 18/20 [00:22<00:02,  1.27s/it]Task 1, Epoch 19/20 => Loss 0.165, Train_accy 98.04:  90%|█████████ | 18/20 [00:23<00:02,  1.27s/it]Task 1, Epoch 19/20 => Loss 0.165, Train_accy 98.04:  95%|█████████▌| 19/20 [00:23<00:01,  1.29s/it]Task 1, Epoch 20/20 => Loss 0.163, Train_accy 98.04:  95%|█████████▌| 19/20 [00:25<00:01,  1.29s/it]Task 1, Epoch 20/20 => Loss 0.163, Train_accy 98.04: 100%|██████████| 20/20 [00:25<00:00,  1.29s/it]Task 1, Epoch 20/20 => Loss 0.163, Train_accy 98.04: 100%|██████████| 20/20 [00:25<00:00,  1.26s/it]
+2025-11-21 13:36:04,305 [lorasub_drs.py] => Task 1, Epoch 20/20 => Loss 0.163, Train_accy 98.04
+2025-11-21 13:36:05,083 [trainer.py] => Time:29.5139639377594
+53 53
+2025-11-21 13:36:06,093 [trainer.py] => Time:1.009484052658081
+2025-11-21 13:36:06,093 [trainer.py] => ACC: {'total': np.float64(90.57), '00-07': np.float64(88.64), '08-15': np.float64(100.0), 'old': np.float64(88.64), 'new': np.float64(100.0)}
+2025-11-21 13:36:06,093 [trainer.py] => ACC top1 curve: [np.float64(88.64), np.float64(90.57)]
+Average Accuracy: 89.60499999999999
+2025-11-21 13:36:06,093 [trainer.py] => Average Accuracy: 89.60499999999999
+2025-11-21 13:36:06,096 [trainer.py] => All params: 109259171
+2025-11-21 13:36:06,098 [trainer.py] => Trainable params: 374792
+2025-11-21 13:36:06,098 [lorasub_drs.py] => Learning on 10-12
+Parameters to be updated: {'image_encoder.blocks.7.attn.lora_B_v.2.weight', 'image_encoder.blocks.0.attn.lora_B_k.2.weight', 'image_encoder.blocks.8.attn.lora_B_v.2.weight', 'image_encoder.blocks.6.attn.lora_B_v.2.weight', 'image_encoder.blocks.7.attn.lora_A_k.2.weight', 'image_encoder.blocks.3.attn.lora_B_k.2.weight', 'image_encoder.blocks.5.attn.lora_B_k.2.weight', 'image_encoder.blocks.6.attn.lora_A_v.2.weight', 'image_encoder.blocks.1.attn.lora_B_k.2.weight', 'image_encoder.blocks.3.attn.lora_A_v.2.weight', 'image_encoder.blocks.9.attn.lora_B_k.2.weight', 'image_encoder.blocks.10.attn.lora_B_v.2.weight', 'classifier_pool.2.weight', 'image_encoder.blocks.5.attn.lora_B_v.2.weight', 'image_encoder.blocks.0.attn.lora_A_v.2.weight', 'image_encoder.blocks.5.attn.lora_A_v.2.weight', 'image_encoder.blocks.2.attn.lora_B_v.2.weight', 'image_encoder.blocks.4.attn.lora_B_k.2.weight', 'image_encoder.blocks.8.attn.lora_A_k.2.weight', 'image_encoder.blocks.8.attn.lora_A_v.2.weight', 'image_encoder.blocks.3.attn.lora_A_k.2.weight', 'image_encoder.blocks.6.attn.lora_B_k.2.weight', 'image_encoder.blocks.0.attn.lora_B_v.2.weight', 'image_encoder.blocks.4.attn.lora_B_v.2.weight', 'classifier_pool.2.bias', 'image_encoder.blocks.10.attn.lora_A_k.2.weight', 'image_encoder.blocks.11.attn.lora_A_v.2.weight', 'image_encoder.blocks.0.attn.lora_A_k.2.weight', 'image_encoder.blocks.9.attn.lora_A_v.2.weight', 'image_encoder.blocks.1.attn.lora_A_k.2.weight', 'image_encoder.blocks.2.attn.lora_B_k.2.weight', 'image_encoder.blocks.7.attn.lora_A_v.2.weight', 'image_encoder.blocks.8.attn.lora_B_k.2.weight', 'image_encoder.blocks.2.attn.lora_A_v.2.weight', 'image_encoder.blocks.2.attn.lora_A_k.2.weight', 'image_encoder.blocks.11.attn.lora_B_v.2.weight', 'image_encoder.blocks.10.attn.lora_A_v.2.weight', 'image_encoder.blocks.1.attn.lora_A_v.2.weight', 'image_encoder.blocks.3.attn.lora_B_v.2.weight', 'image_encoder.blocks.9.attn.lora_B_v.2.weight', 'image_encoder.blocks.10.attn.lora_B_k.2.weight', 'image_encoder.blocks.11.attn.lora_A_k.2.weight', 'image_encoder.blocks.7.attn.lora_B_k.2.weight', 'image_encoder.blocks.9.attn.lora_A_k.2.weight', 'image_encoder.blocks.4.attn.lora_A_v.2.weight', 'image_encoder.blocks.5.attn.lora_A_k.2.weight', 'image_encoder.blocks.4.attn.lora_A_k.2.weight', 'image_encoder.blocks.11.attn.lora_B_k.2.weight', 'image_encoder.blocks.1.attn.lora_B_v.2.weight', 'image_encoder.blocks.6.attn.lora_A_k.2.weight'}
+reserving basis 18/768; cond: 34271685246976.0, ratio:0.9915267825126648
+reserving basis 18/768; cond: 34271685246976.0, ratio:0.9915267825126648
+reserving basis 18/768; cond: 34271685246976.0, ratio:0.9915267825126648
+reserving basis 18/768; cond: 34271685246976.0, ratio:0.9915267825126648
+reserving basis 49/768; cond: 44973399474176.0, ratio:0.9901208281517029
+reserving basis 49/768; cond: 44973399474176.0, ratio:0.9901208281517029
+reserving basis 49/768; cond: 44973399474176.0, ratio:0.9901208281517029
+reserving basis 49/768; cond: 44973399474176.0, ratio:0.9901208281517029
+reserving basis 105/768; cond: 53602093629440.0, ratio:0.9901030659675598
+reserving basis 105/768; cond: 53602093629440.0, ratio:0.9901030659675598
+reserving basis 105/768; cond: 53602093629440.0, ratio:0.9901030659675598
+reserving basis 105/768; cond: 53602093629440.0, ratio:0.9901030659675598
+reserving basis 179/768; cond: 13074595577856.0, ratio:0.9900283813476562
+reserving basis 179/768; cond: 13074595577856.0, ratio:0.9900283813476562
+reserving basis 179/768; cond: 13074595577856.0, ratio:0.9900283813476562
+reserving basis 179/768; cond: 13074595577856.0, ratio:0.9900283813476562
+reserving basis 242/768; cond: 3868900982784.0, ratio:0.9900214076042175
+reserving basis 242/768; cond: 3868900982784.0, ratio:0.9900214076042175
+reserving basis 242/768; cond: 3868900982784.0, ratio:0.9900214076042175
+reserving basis 242/768; cond: 3868900982784.0, ratio:0.9900214076042175
+reserving basis 305/768; cond: 11713685487616.0, ratio:0.990019679069519
+reserving basis 305/768; cond: 11713685487616.0, ratio:0.990019679069519
+reserving basis 305/768; cond: 11713685487616.0, ratio:0.990019679069519
+reserving basis 305/768; cond: 11713685487616.0, ratio:0.990019679069519
+reserving basis 329/768; cond: 342027829248.0, ratio:0.990034818649292
+reserving basis 329/768; cond: 342027829248.0, ratio:0.990034818649292
+reserving basis 329/768; cond: 342027829248.0, ratio:0.990034818649292
+reserving basis 329/768; cond: 342027829248.0, ratio:0.990034818649292
+reserving basis 350/768; cond: 3633645879296.0, ratio:0.9900048971176147
+reserving basis 350/768; cond: 3633645879296.0, ratio:0.9900048971176147
+reserving basis 350/768; cond: 3633645879296.0, ratio:0.9900048971176147
+reserving basis 350/768; cond: 3633645879296.0, ratio:0.9900048971176147
+reserving basis 328/768; cond: 1827901696.0, ratio:0.9900438189506531
+reserving basis 328/768; cond: 1827901696.0, ratio:0.9900438189506531
+reserving basis 328/768; cond: 1827901696.0, ratio:0.9900438189506531
+reserving basis 328/768; cond: 1827901696.0, ratio:0.9900438189506531
+reserving basis 322/768; cond: 3914581504.0, ratio:0.9900479316711426
+reserving basis 322/768; cond: 3914581504.0, ratio:0.9900479316711426
+reserving basis 322/768; cond: 3914581504.0, ratio:0.9900479316711426
+reserving basis 322/768; cond: 3914581504.0, ratio:0.9900479316711426
+reserving basis 303/768; cond: 273924544.0, ratio:0.9900472164154053
+reserving basis 303/768; cond: 273924544.0, ratio:0.9900472164154053
+reserving basis 303/768; cond: 273924544.0, ratio:0.9900472164154053
+reserving basis 303/768; cond: 273924544.0, ratio:0.9900472164154053
+reserving basis 332/768; cond: 176235806720.0, ratio:0.9900354743003845
+reserving basis 332/768; cond: 176235806720.0, ratio:0.9900354743003845
+reserving basis 332/768; cond: 176235806720.0, ratio:0.9900354743003845
+reserving basis 332/768; cond: 176235806720.0, ratio:0.9900354743003845
+  0%|          | 0/20 [00:00<?, ?it/s]Task 2, Epoch 1/20 => Loss 4.322, Train_accy 0.00:   0%|          | 0/20 [00:01<?, ?it/s]Task 2, Epoch 1/20 => Loss 4.322, Train_accy 0.00:   5%|▌         | 1/20 [00:01<00:21,  1.13s/it]Task 2, Epoch 2/20 => Loss 1.649, Train_accy 43.48:   5%|▌         | 1/20 [00:02<00:21,  1.13s/it]Task 2, Epoch 2/20 => Loss 1.649, Train_accy 43.48:  10%|█         | 2/20 [00:02<00:22,  1.22s/it]Task 2, Epoch 3/20 => Loss 0.834, Train_accy 45.65:  10%|█         | 2/20 [00:03<00:22,  1.22s/it]Task 2, Epoch 3/20 => Loss 0.834, Train_accy 45.65:  15%|█▌        | 3/20 [00:03<00:21,  1.24s/it]Task 2, Epoch 4/20 => Loss 0.638, Train_accy 71.74:  15%|█▌        | 3/20 [00:04<00:21,  1.24s/it]Task 2, Epoch 4/20 => Loss 0.638, Train_accy 71.74:  20%|██        | 4/20 [00:04<00:19,  1.21s/it]Task 2, Epoch 5/20 => Loss 0.468, Train_accy 84.78:  20%|██        | 4/20 [00:05<00:19,  1.21s/it]Task 2, Epoch 5/20 => Loss 0.468, Train_accy 84.78:  25%|██▌       | 5/20 [00:05<00:17,  1.18s/it]Task 2, Epoch 6/20 => Loss 0.294, Train_accy 89.13:  25%|██▌       | 5/20 [00:07<00:17,  1.18s/it]Task 2, Epoch 6/20 => Loss 0.294, Train_accy 89.13:  30%|███       | 6/20 [00:07<00:16,  1.19s/it]Task 2, Epoch 7/20 => Loss 0.194, Train_accy 95.65:  30%|███       | 6/20 [00:08<00:16,  1.19s/it]Task 2, Epoch 7/20 => Loss 0.194, Train_accy 95.65:  35%|███▌      | 7/20 [00:08<00:15,  1.22s/it]Task 2, Epoch 8/20 => Loss 0.151, Train_accy 100.00:  35%|███▌      | 7/20 [00:09<00:15,  1.22s/it]Task 2, Epoch 8/20 => Loss 0.151, Train_accy 100.00:  40%|████      | 8/20 [00:09<00:14,  1.24s/it]Task 2, Epoch 9/20 => Loss 0.135, Train_accy 100.00:  40%|████      | 8/20 [00:10<00:14,  1.24s/it]Task 2, Epoch 9/20 => Loss 0.135, Train_accy 100.00:  45%|████▌     | 9/20 [00:10<00:13,  1.22s/it]Task 2, Epoch 10/20 => Loss 0.127, Train_accy 100.00:  45%|████▌     | 9/20 [00:12<00:13,  1.22s/it]Task 2, Epoch 10/20 => Loss 0.127, Train_accy 100.00:  50%|█████     | 10/20 [00:12<00:12,  1.22s/it]Task 2, Epoch 11/20 => Loss 0.118, Train_accy 100.00:  50%|█████     | 10/20 [00:13<00:12,  1.22s/it]Task 2, Epoch 11/20 => Loss 0.118, Train_accy 100.00:  55%|█████▌    | 11/20 [00:13<00:10,  1.21s/it]Task 2, Epoch 12/20 => Loss 0.109, Train_accy 100.00:  55%|█████▌    | 11/20 [00:14<00:10,  1.21s/it]Task 2, Epoch 12/20 => Loss 0.109, Train_accy 100.00:  60%|██████    | 12/20 [00:14<00:09,  1.21s/it]Task 2, Epoch 13/20 => Loss 0.100, Train_accy 100.00:  60%|██████    | 12/20 [00:15<00:09,  1.21s/it]Task 2, Epoch 13/20 => Loss 0.100, Train_accy 100.00:  65%|██████▌   | 13/20 [00:15<00:08,  1.21s/it]Task 2, Epoch 14/20 => Loss 0.093, Train_accy 100.00:  65%|██████▌   | 13/20 [00:16<00:08,  1.21s/it]Task 2, Epoch 14/20 => Loss 0.093, Train_accy 100.00:  70%|███████   | 14/20 [00:16<00:07,  1.20s/it]Task 2, Epoch 15/20 => Loss 0.087, Train_accy 100.00:  70%|███████   | 14/20 [00:18<00:07,  1.20s/it]Task 2, Epoch 15/20 => Loss 0.087, Train_accy 100.00:  75%|███████▌  | 15/20 [00:18<00:06,  1.21s/it]Task 2, Epoch 16/20 => Loss 0.083, Train_accy 100.00:  75%|███████▌  | 15/20 [00:19<00:06,  1.21s/it]Task 2, Epoch 16/20 => Loss 0.083, Train_accy 100.00:  80%|████████  | 16/20 [00:19<00:04,  1.21s/it]Task 2, Epoch 17/20 => Loss 0.081, Train_accy 100.00:  80%|████████  | 16/20 [00:20<00:04,  1.21s/it]Task 2, Epoch 17/20 => Loss 0.081, Train_accy 100.00:  85%|████████▌ | 17/20 [00:20<00:03,  1.23s/it]Task 2, Epoch 18/20 => Loss 0.079, Train_accy 100.00:  85%|████████▌ | 17/20 [00:21<00:03,  1.23s/it]Task 2, Epoch 18/20 => Loss 0.079, Train_accy 100.00:  90%|█████████ | 18/20 [00:21<00:02,  1.22s/it]Task 2, Epoch 19/20 => Loss 0.078, Train_accy 100.00:  90%|█████████ | 18/20 [00:22<00:02,  1.22s/it]Task 2, Epoch 19/20 => Loss 0.078, Train_accy 100.00:  95%|█████████▌| 19/20 [00:22<00:01,  1.19s/it]Task 2, Epoch 20/20 => Loss 0.077, Train_accy 100.00:  95%|█████████▌| 19/20 [00:24<00:01,  1.19s/it]Task 2, Epoch 20/20 => Loss 0.077, Train_accy 100.00: 100%|██████████| 20/20 [00:24<00:00,  1.20s/it]Task 2, Epoch 20/20 => Loss 0.077, Train_accy 100.00: 100%|██████████| 20/20 [00:24<00:00,  1.21s/it]
+2025-11-21 13:36:33,983 [lorasub_drs.py] => Task 2, Epoch 20/20 => Loss 0.077, Train_accy 100.00
+2025-11-21 13:36:34,677 [trainer.py] => Time:28.578548908233643
+67 67
+2025-11-21 13:36:35,677 [trainer.py] => Time:1.000284194946289
+2025-11-21 13:36:35,678 [trainer.py] => ACC: {'total': np.float64(88.06), '00-07': np.float64(88.64), '08-15': np.float64(86.96), 'old': np.float64(90.57), 'new': np.float64(78.57)}
+2025-11-21 13:36:35,678 [trainer.py] => ACC top1 curve: [np.float64(88.64), np.float64(90.57), np.float64(88.06)]
+Average Accuracy: 89.08999999999999
+2025-11-21 13:36:35,678 [trainer.py] => Average Accuracy: 89.08999999999999
+2025-11-21 13:36:35,681 [trainer.py] => All params: 109259171
+2025-11-21 13:36:35,683 [trainer.py] => Trainable params: 374792
+2025-11-21 13:36:35,683 [lorasub_drs.py] => Learning on 12-14
+Parameters to be updated: {'image_encoder.blocks.8.attn.lora_A_v.3.weight', 'image_encoder.blocks.9.attn.lora_A_v.3.weight', 'image_encoder.blocks.6.attn.lora_A_k.3.weight', 'image_encoder.blocks.4.attn.lora_A_k.3.weight', 'image_encoder.blocks.9.attn.lora_A_k.3.weight', 'image_encoder.blocks.0.attn.lora_B_k.3.weight', 'image_encoder.blocks.2.attn.lora_B_k.3.weight', 'image_encoder.blocks.6.attn.lora_B_k.3.weight', 'image_encoder.blocks.5.attn.lora_A_v.3.weight', 'image_encoder.blocks.3.attn.lora_A_v.3.weight', 'image_encoder.blocks.11.attn.lora_A_k.3.weight', 'image_encoder.blocks.10.attn.lora_A_v.3.weight', 'image_encoder.blocks.2.attn.lora_A_v.3.weight', 'image_encoder.blocks.7.attn.lora_B_k.3.weight', 'image_encoder.blocks.5.attn.lora_B_k.3.weight', 'image_encoder.blocks.8.attn.lora_B_v.3.weight', 'image_encoder.blocks.3.attn.lora_B_k.3.weight', 'image_encoder.blocks.1.attn.lora_B_v.3.weight', 'image_encoder.blocks.6.attn.lora_A_v.3.weight', 'image_encoder.blocks.10.attn.lora_B_k.3.weight', 'image_encoder.blocks.0.attn.lora_B_v.3.weight', 'classifier_pool.3.bias', 'image_encoder.blocks.7.attn.lora_B_v.3.weight', 'image_encoder.blocks.2.attn.lora_A_k.3.weight', 'image_encoder.blocks.1.attn.lora_B_k.3.weight', 'image_encoder.blocks.3.attn.lora_A_k.3.weight', 'image_encoder.blocks.9.attn.lora_B_k.3.weight', 'image_encoder.blocks.4.attn.lora_A_v.3.weight', 'image_encoder.blocks.2.attn.lora_B_v.3.weight', 'image_encoder.blocks.11.attn.lora_A_v.3.weight', 'image_encoder.blocks.3.attn.lora_B_v.3.weight', 'image_encoder.blocks.8.attn.lora_B_k.3.weight', 'image_encoder.blocks.11.attn.lora_B_k.3.weight', 'image_encoder.blocks.7.attn.lora_A_k.3.weight', 'classifier_pool.3.weight', 'image_encoder.blocks.1.attn.lora_A_v.3.weight', 'image_encoder.blocks.1.attn.lora_A_k.3.weight', 'image_encoder.blocks.4.attn.lora_B_k.3.weight', 'image_encoder.blocks.10.attn.lora_A_k.3.weight', 'image_encoder.blocks.4.attn.lora_B_v.3.weight', 'image_encoder.blocks.10.attn.lora_B_v.3.weight', 'image_encoder.blocks.0.attn.lora_A_k.3.weight', 'image_encoder.blocks.5.attn.lora_B_v.3.weight', 'image_encoder.blocks.7.attn.lora_A_v.3.weight', 'image_encoder.blocks.9.attn.lora_B_v.3.weight', 'image_encoder.blocks.11.attn.lora_B_v.3.weight', 'image_encoder.blocks.0.attn.lora_A_v.3.weight', 'image_encoder.blocks.8.attn.lora_A_k.3.weight', 'image_encoder.blocks.6.attn.lora_B_v.3.weight', 'image_encoder.blocks.5.attn.lora_A_k.3.weight'}
+reserving basis 18/768; cond: 30665076637696.0, ratio:0.9916260242462158
+reserving basis 18/768; cond: 30665076637696.0, ratio:0.9916260242462158
+reserving basis 18/768; cond: 30665076637696.0, ratio:0.9916260242462158
+reserving basis 18/768; cond: 30665076637696.0, ratio:0.9916260242462158
+reserving basis 46/768; cond: 52502200320000.0, ratio:0.9901461601257324
+reserving basis 46/768; cond: 52502200320000.0, ratio:0.9901461601257324
+reserving basis 46/768; cond: 52502200320000.0, ratio:0.9901461601257324
+reserving basis 46/768; cond: 52502200320000.0, ratio:0.9901461601257324
+reserving basis 98/768; cond: 55430717898752.0, ratio:0.9901311993598938
+reserving basis 98/768; cond: 55430717898752.0, ratio:0.9901311993598938
+reserving basis 98/768; cond: 55430717898752.0, ratio:0.9901311993598938
+reserving basis 98/768; cond: 55430717898752.0, ratio:0.9901311993598938
+reserving basis 169/768; cond: 15340474990592.0, ratio:0.9900825619697571
+reserving basis 169/768; cond: 15340474990592.0, ratio:0.9900825619697571
+reserving basis 169/768; cond: 15340474990592.0, ratio:0.9900825619697571
+reserving basis 169/768; cond: 15340474990592.0, ratio:0.9900825619697571
+reserving basis 234/768; cond: 4418997583872.0, ratio:0.9900307059288025
+reserving basis 234/768; cond: 4418997583872.0, ratio:0.9900307059288025
+reserving basis 234/768; cond: 4418997583872.0, ratio:0.9900307059288025
+reserving basis 234/768; cond: 4418997583872.0, ratio:0.9900307059288025
+reserving basis 298/768; cond: 11233241595904.0, ratio:0.9900085926055908
+reserving basis 298/768; cond: 11233241595904.0, ratio:0.9900085926055908
+reserving basis 298/768; cond: 11233241595904.0, ratio:0.9900085926055908
+reserving basis 298/768; cond: 11233241595904.0, ratio:0.9900085926055908
+reserving basis 322/768; cond: 499810074624.0, ratio:0.9900119304656982
+reserving basis 322/768; cond: 499810074624.0, ratio:0.9900119304656982
+reserving basis 322/768; cond: 499810074624.0, ratio:0.9900119304656982
+reserving basis 322/768; cond: 499810074624.0, ratio:0.9900119304656982
+reserving basis 346/768; cond: 3336893628416.0, ratio:0.9900041222572327
+reserving basis 346/768; cond: 3336893628416.0, ratio:0.9900041222572327
+reserving basis 346/768; cond: 3336893628416.0, ratio:0.9900041222572327
+reserving basis 346/768; cond: 3336893628416.0, ratio:0.9900041222572327
+reserving basis 327/768; cond: 2043912960.0, ratio:0.9900091886520386
+reserving basis 327/768; cond: 2043912960.0, ratio:0.9900091886520386
+reserving basis 327/768; cond: 2043912960.0, ratio:0.9900091886520386
+reserving basis 327/768; cond: 2043912960.0, ratio:0.9900091886520386
+reserving basis 325/768; cond: 6854975488.0, ratio:0.990037739276886
+reserving basis 325/768; cond: 6854975488.0, ratio:0.990037739276886
+reserving basis 325/768; cond: 6854975488.0, ratio:0.990037739276886
+reserving basis 325/768; cond: 6854975488.0, ratio:0.990037739276886
+reserving basis 304/768; cond: 262025712.0, ratio:0.9900386333465576
+reserving basis 304/768; cond: 262025712.0, ratio:0.9900386333465576
+reserving basis 304/768; cond: 262025712.0, ratio:0.9900386333465576
+reserving basis 304/768; cond: 262025712.0, ratio:0.9900386333465576
+reserving basis 345/768; cond: 177090281472.0, ratio:0.9900573492050171
+reserving basis 345/768; cond: 177090281472.0, ratio:0.9900573492050171
+reserving basis 345/768; cond: 177090281472.0, ratio:0.9900573492050171
+reserving basis 345/768; cond: 177090281472.0, ratio:0.9900573492050171
+  0%|          | 0/20 [00:00<?, ?it/s]Task 3, Epoch 1/20 => Loss 3.316, Train_accy 0.00:   0%|          | 0/20 [00:01<?, ?it/s]Task 3, Epoch 1/20 => Loss 3.316, Train_accy 0.00:   5%|▌         | 1/20 [00:01<00:22,  1.20s/it]Task 3, Epoch 2/20 => Loss 1.241, Train_accy 21.74:   5%|▌         | 1/20 [00:02<00:22,  1.20s/it]Task 3, Epoch 2/20 => Loss 1.241, Train_accy 21.74:  10%|█         | 2/20 [00:02<00:21,  1.18s/it]Task 3, Epoch 3/20 => Loss 0.838, Train_accy 60.87:  10%|█         | 2/20 [00:03<00:21,  1.18s/it]Task 3, Epoch 3/20 => Loss 0.838, Train_accy 60.87:  15%|█▌        | 3/20 [00:03<00:20,  1.19s/it]Task 3, Epoch 4/20 => Loss 0.696, Train_accy 69.57:  15%|█▌        | 3/20 [00:04<00:20,  1.19s/it]Task 3, Epoch 4/20 => Loss 0.696, Train_accy 69.57:  20%|██        | 4/20 [00:04<00:18,  1.17s/it]Task 3, Epoch 5/20 => Loss 0.551, Train_accy 78.26:  20%|██        | 4/20 [00:05<00:18,  1.17s/it]Task 3, Epoch 5/20 => Loss 0.551, Train_accy 78.26:  25%|██▌       | 5/20 [00:05<00:17,  1.16s/it]Task 3, Epoch 6/20 => Loss 0.438, Train_accy 84.78:  25%|██▌       | 5/20 [00:06<00:17,  1.16s/it]Task 3, Epoch 6/20 => Loss 0.438, Train_accy 84.78:  30%|███       | 6/20 [00:06<00:16,  1.15s/it]Task 3, Epoch 7/20 => Loss 0.382, Train_accy 93.48:  30%|███       | 6/20 [00:08<00:16,  1.15s/it]Task 3, Epoch 7/20 => Loss 0.382, Train_accy 93.48:  35%|███▌      | 7/20 [00:08<00:15,  1.15s/it]Task 3, Epoch 8/20 => Loss 0.343, Train_accy 93.48:  35%|███▌      | 7/20 [00:09<00:15,  1.15s/it]Task 3, Epoch 8/20 => Loss 0.343, Train_accy 93.48:  40%|████      | 8/20 [00:09<00:14,  1.17s/it]Task 3, Epoch 9/20 => Loss 0.303, Train_accy 93.48:  40%|████      | 8/20 [00:10<00:14,  1.17s/it]Task 3, Epoch 9/20 => Loss 0.303, Train_accy 93.48:  45%|████▌     | 9/20 [00:10<00:13,  1.21s/it]Task 3, Epoch 10/20 => Loss 0.271, Train_accy 97.83:  45%|████▌     | 9/20 [00:11<00:13,  1.21s/it]Task 3, Epoch 10/20 => Loss 0.271, Train_accy 97.83:  50%|█████     | 10/20 [00:11<00:11,  1.19s/it]Task 3, Epoch 11/20 => Loss 0.250, Train_accy 95.65:  50%|█████     | 10/20 [00:12<00:11,  1.19s/it]Task 3, Epoch 11/20 => Loss 0.250, Train_accy 95.65:  55%|█████▌    | 11/20 [00:12<00:10,  1.19s/it]Task 3, Epoch 12/20 => Loss 0.237, Train_accy 93.48:  55%|█████▌    | 11/20 [00:14<00:10,  1.19s/it]Task 3, Epoch 12/20 => Loss 0.237, Train_accy 93.48:  60%|██████    | 12/20 [00:14<00:09,  1.21s/it]Task 3, Epoch 13/20 => Loss 0.225, Train_accy 93.48:  60%|██████    | 12/20 [00:15<00:09,  1.21s/it]Task 3, Epoch 13/20 => Loss 0.225, Train_accy 93.48:  65%|██████▌   | 13/20 [00:15<00:08,  1.24s/it]Task 3, Epoch 14/20 => Loss 0.215, Train_accy 95.65:  65%|██████▌   | 13/20 [00:16<00:08,  1.24s/it]Task 3, Epoch 14/20 => Loss 0.215, Train_accy 95.65:  70%|███████   | 14/20 [00:16<00:07,  1.24s/it]Task 3, Epoch 15/20 => Loss 0.205, Train_accy 97.83:  70%|███████   | 14/20 [00:17<00:07,  1.24s/it]Task 3, Epoch 15/20 => Loss 0.205, Train_accy 97.83:  75%|███████▌  | 15/20 [00:17<00:06,  1.22s/it]Task 3, Epoch 16/20 => Loss 0.197, Train_accy 97.83:  75%|███████▌  | 15/20 [00:19<00:06,  1.22s/it]Task 3, Epoch 16/20 => Loss 0.197, Train_accy 97.83:  80%|████████  | 16/20 [00:19<00:04,  1.22s/it]Task 3, Epoch 17/20 => Loss 0.190, Train_accy 97.83:  80%|████████  | 16/20 [00:20<00:04,  1.22s/it]Task 3, Epoch 17/20 => Loss 0.190, Train_accy 97.83:  85%|████████▌ | 17/20 [00:20<00:03,  1.21s/it]Task 3, Epoch 18/20 => Loss 0.186, Train_accy 97.83:  85%|████████▌ | 17/20 [00:21<00:03,  1.21s/it]Task 3, Epoch 18/20 => Loss 0.186, Train_accy 97.83:  90%|█████████ | 18/20 [00:21<00:02,  1.20s/it]Task 3, Epoch 19/20 => Loss 0.183, Train_accy 97.83:  90%|█████████ | 18/20 [00:22<00:02,  1.20s/it]Task 3, Epoch 19/20 => Loss 0.183, Train_accy 97.83:  95%|█████████▌| 19/20 [00:22<00:01,  1.21s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 97.83:  95%|█████████▌| 19/20 [00:23<00:01,  1.21s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 97.83: 100%|██████████| 20/20 [00:23<00:00,  1.21s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 97.83: 100%|██████████| 20/20 [00:23<00:00,  1.20s/it]
+2025-11-21 13:37:03,329 [lorasub_drs.py] => Task 3, Epoch 20/20 => Loss 0.181, Train_accy 97.83
+2025-11-21 13:37:03,954 [trainer.py] => Time:28.270800352096558
+81 81
+2025-11-21 13:37:04,935 [trainer.py] => Time:0.9809682369232178
+2025-11-21 13:37:04,935 [trainer.py] => ACC: {'total': np.float64(82.72), '00-07': np.float64(86.36), '08-15': np.float64(78.38), 'old': np.float64(85.07), 'new': np.float64(71.43)}
+2025-11-21 13:37:04,935 [trainer.py] => ACC top1 curve: [np.float64(88.64), np.float64(90.57), np.float64(88.06), np.float64(82.72)]
+Average Accuracy: 87.4975
+2025-11-21 13:37:04,935 [trainer.py] => Average Accuracy: 87.4975
+2025-11-21 13:37:04,937 [trainer.py] => All params: 109259171
+2025-11-21 13:37:04,939 [trainer.py] => Trainable params: 374792
+2025-11-21 13:37:04,939 [lorasub_drs.py] => Learning on 14-16
+Parameters to be updated: {'image_encoder.blocks.7.attn.lora_A_v.4.weight', 'image_encoder.blocks.8.attn.lora_A_v.4.weight', 'image_encoder.blocks.11.attn.lora_A_k.4.weight', 'image_encoder.blocks.1.attn.lora_B_v.4.weight', 'image_encoder.blocks.7.attn.lora_B_v.4.weight', 'image_encoder.blocks.6.attn.lora_A_k.4.weight', 'image_encoder.blocks.4.attn.lora_A_v.4.weight', 'image_encoder.blocks.4.attn.lora_B_v.4.weight', 'image_encoder.blocks.0.attn.lora_B_v.4.weight', 'image_encoder.blocks.2.attn.lora_B_v.4.weight', 'image_encoder.blocks.6.attn.lora_B_v.4.weight', 'image_encoder.blocks.8.attn.lora_B_v.4.weight', 'image_encoder.blocks.6.attn.lora_B_k.4.weight', 'image_encoder.blocks.5.attn.lora_B_k.4.weight', 'image_encoder.blocks.8.attn.lora_B_k.4.weight', 'image_encoder.blocks.3.attn.lora_A_v.4.weight', 'image_encoder.blocks.5.attn.lora_B_v.4.weight', 'image_encoder.blocks.9.attn.lora_A_v.4.weight', 'image_encoder.blocks.7.attn.lora_B_k.4.weight', 'image_encoder.blocks.10.attn.lora_A_k.4.weight', 'image_encoder.blocks.2.attn.lora_A_k.4.weight', 'image_encoder.blocks.4.attn.lora_B_k.4.weight', 'image_encoder.blocks.9.attn.lora_B_k.4.weight', 'image_encoder.blocks.1.attn.lora_A_v.4.weight', 'image_encoder.blocks.0.attn.lora_B_k.4.weight', 'image_encoder.blocks.2.attn.lora_B_k.4.weight', 'image_encoder.blocks.11.attn.lora_B_v.4.weight', 'image_encoder.blocks.9.attn.lora_A_k.4.weight', 'image_encoder.blocks.0.attn.lora_A_v.4.weight', 'image_encoder.blocks.11.attn.lora_A_v.4.weight', 'image_encoder.blocks.10.attn.lora_B_k.4.weight', 'image_encoder.blocks.1.attn.lora_B_k.4.weight', 'image_encoder.blocks.8.attn.lora_A_k.4.weight', 'image_encoder.blocks.10.attn.lora_B_v.4.weight', 'image_encoder.blocks.2.attn.lora_A_v.4.weight', 'image_encoder.blocks.3.attn.lora_B_v.4.weight', 'image_encoder.blocks.7.attn.lora_A_k.4.weight', 'image_encoder.blocks.6.attn.lora_A_v.4.weight', 'classifier_pool.4.bias', 'image_encoder.blocks.3.attn.lora_B_k.4.weight', 'image_encoder.blocks.10.attn.lora_A_v.4.weight', 'image_encoder.blocks.5.attn.lora_A_v.4.weight', 'image_encoder.blocks.5.attn.lora_A_k.4.weight', 'classifier_pool.4.weight', 'image_encoder.blocks.3.attn.lora_A_k.4.weight', 'image_encoder.blocks.11.attn.lora_B_k.4.weight', 'image_encoder.blocks.4.attn.lora_A_k.4.weight', 'image_encoder.blocks.9.attn.lora_B_v.4.weight', 'image_encoder.blocks.0.attn.lora_A_k.4.weight', 'image_encoder.blocks.1.attn.lora_A_k.4.weight'}
+reserving basis 18/768; cond: 30509694451712.0, ratio:0.9913350343704224
+reserving basis 18/768; cond: 30509694451712.0, ratio:0.9913350343704224
+reserving basis 18/768; cond: 30509694451712.0, ratio:0.9913350343704224
+reserving basis 18/768; cond: 30509694451712.0, ratio:0.9913350343704224
+reserving basis 48/768; cond: 49244039806976.0, ratio:0.9902751445770264
+reserving basis 48/768; cond: 49244039806976.0, ratio:0.9902751445770264
+reserving basis 48/768; cond: 49244039806976.0, ratio:0.9902751445770264
+reserving basis 48/768; cond: 49244039806976.0, ratio:0.9902751445770264
+reserving basis 98/768; cond: 45422131281920.0, ratio:0.9900487065315247
+reserving basis 98/768; cond: 45422131281920.0, ratio:0.9900487065315247
+reserving basis 98/768; cond: 45422131281920.0, ratio:0.9900487065315247
+reserving basis 98/768; cond: 45422131281920.0, ratio:0.9900487065315247
+reserving basis 165/768; cond: 12821906587648.0, ratio:0.9900169372558594
+reserving basis 165/768; cond: 12821906587648.0, ratio:0.9900169372558594
+reserving basis 165/768; cond: 12821906587648.0, ratio:0.9900169372558594
+reserving basis 165/768; cond: 12821906587648.0, ratio:0.9900169372558594
+reserving basis 228/768; cond: 4506857242624.0, ratio:0.990064799785614
+reserving basis 228/768; cond: 4506857242624.0, ratio:0.990064799785614
+reserving basis 228/768; cond: 4506857242624.0, ratio:0.990064799785614
+reserving basis 228/768; cond: 4506857242624.0, ratio:0.990064799785614
+reserving basis 293/768; cond: 11557928960000.0, ratio:0.9900177717208862
+reserving basis 293/768; cond: 11557928960000.0, ratio:0.9900177717208862
+reserving basis 293/768; cond: 11557928960000.0, ratio:0.9900177717208862
+reserving basis 293/768; cond: 11557928960000.0, ratio:0.9900177717208862
+reserving basis 316/768; cond: 42726080512.0, ratio:0.990054726600647
+reserving basis 316/768; cond: 42726080512.0, ratio:0.990054726600647
+reserving basis 316/768; cond: 42726080512.0, ratio:0.990054726600647
+reserving basis 316/768; cond: 42726080512.0, ratio:0.990054726600647
+reserving basis 339/768; cond: 3506975539200.0, ratio:0.990017831325531
+reserving basis 339/768; cond: 3506975539200.0, ratio:0.990017831325531
+reserving basis 339/768; cond: 3506975539200.0, ratio:0.990017831325531
+reserving basis 339/768; cond: 3506975539200.0, ratio:0.990017831325531
+reserving basis 314/768; cond: 1561958784.0, ratio:0.9900277256965637
+reserving basis 314/768; cond: 1561958784.0, ratio:0.9900277256965637
+reserving basis 314/768; cond: 1561958784.0, ratio:0.9900277256965637
+reserving basis 314/768; cond: 1561958784.0, ratio:0.9900277256965637
+reserving basis 310/768; cond: 2443296000.0, ratio:0.990054726600647
+reserving basis 310/768; cond: 2443296000.0, ratio:0.990054726600647
+reserving basis 310/768; cond: 2443296000.0, ratio:0.990054726600647
+reserving basis 310/768; cond: 2443296000.0, ratio:0.990054726600647
+reserving basis 288/768; cond: 280463424.0, ratio:0.9900411367416382
+reserving basis 288/768; cond: 280463424.0, ratio:0.9900411367416382
+reserving basis 288/768; cond: 280463424.0, ratio:0.9900411367416382
+reserving basis 288/768; cond: 280463424.0, ratio:0.9900411367416382
+reserving basis 327/768; cond: 201342468096.0, ratio:0.9900376200675964
+reserving basis 327/768; cond: 201342468096.0, ratio:0.9900376200675964
+reserving basis 327/768; cond: 201342468096.0, ratio:0.9900376200675964
+reserving basis 327/768; cond: 201342468096.0, ratio:0.9900376200675964
+  0%|          | 0/20 [00:00<?, ?it/s]Task 4, Epoch 1/20 => Loss 3.449, Train_accy 0.00:   0%|          | 0/20 [00:01<?, ?it/s]Task 4, Epoch 1/20 => Loss 3.449, Train_accy 0.00:   5%|▌         | 1/20 [00:01<00:21,  1.15s/it]Task 4, Epoch 2/20 => Loss 1.251, Train_accy 51.11:   5%|▌         | 1/20 [00:02<00:21,  1.15s/it]Task 4, Epoch 2/20 => Loss 1.251, Train_accy 51.11:  10%|█         | 2/20 [00:02<00:21,  1.20s/it]Task 4, Epoch 3/20 => Loss 0.638, Train_accy 73.33:  10%|█         | 2/20 [00:03<00:21,  1.20s/it]Task 4, Epoch 3/20 => Loss 0.638, Train_accy 73.33:  15%|█▌        | 3/20 [00:03<00:20,  1.19s/it]Task 4, Epoch 4/20 => Loss 0.648, Train_accy 60.00:  15%|█▌        | 3/20 [00:04<00:20,  1.19s/it]Task 4, Epoch 4/20 => Loss 0.648, Train_accy 60.00:  20%|██        | 4/20 [00:04<00:19,  1.20s/it]Task 4, Epoch 5/20 => Loss 0.594, Train_accy 62.22:  20%|██        | 4/20 [00:06<00:19,  1.20s/it]Task 4, Epoch 5/20 => Loss 0.594, Train_accy 62.22:  25%|██▌       | 5/20 [00:06<00:18,  1.25s/it]Task 4, Epoch 6/20 => Loss 0.416, Train_accy 84.44:  25%|██▌       | 5/20 [00:07<00:18,  1.25s/it]Task 4, Epoch 6/20 => Loss 0.416, Train_accy 84.44:  30%|███       | 6/20 [00:07<00:17,  1.27s/it]Task 4, Epoch 7/20 => Loss 0.304, Train_accy 95.56:  30%|███       | 6/20 [00:08<00:17,  1.27s/it]Task 4, Epoch 7/20 => Loss 0.304, Train_accy 95.56:  35%|███▌      | 7/20 [00:08<00:16,  1.30s/it]Task 4, Epoch 8/20 => Loss 0.293, Train_accy 93.33:  35%|███▌      | 7/20 [00:10<00:16,  1.30s/it]Task 4, Epoch 8/20 => Loss 0.293, Train_accy 93.33:  40%|████      | 8/20 [00:10<00:15,  1.32s/it]Task 4, Epoch 9/20 => Loss 0.296, Train_accy 86.67:  40%|████      | 8/20 [00:11<00:15,  1.32s/it]Task 4, Epoch 9/20 => Loss 0.296, Train_accy 86.67:  45%|████▌     | 9/20 [00:11<00:14,  1.31s/it]Task 4, Epoch 10/20 => Loss 0.269, Train_accy 88.89:  45%|████▌     | 9/20 [00:12<00:14,  1.31s/it]Task 4, Epoch 10/20 => Loss 0.269, Train_accy 88.89:  50%|█████     | 10/20 [00:12<00:12,  1.30s/it]Task 4, Epoch 11/20 => Loss 0.225, Train_accy 91.11:  50%|█████     | 10/20 [00:13<00:12,  1.30s/it]Task 4, Epoch 11/20 => Loss 0.225, Train_accy 91.11:  55%|█████▌    | 11/20 [00:13<00:11,  1.30s/it]Task 4, Epoch 12/20 => Loss 0.187, Train_accy 100.00:  55%|█████▌    | 11/20 [00:15<00:11,  1.30s/it]Task 4, Epoch 12/20 => Loss 0.187, Train_accy 100.00:  60%|██████    | 12/20 [00:15<00:10,  1.30s/it]Task 4, Epoch 13/20 => Loss 0.165, Train_accy 100.00:  60%|██████    | 12/20 [00:16<00:10,  1.30s/it]Task 4, Epoch 13/20 => Loss 0.165, Train_accy 100.00:  65%|██████▌   | 13/20 [00:16<00:09,  1.29s/it]Task 4, Epoch 14/20 => Loss 0.156, Train_accy 100.00:  65%|██████▌   | 13/20 [00:17<00:09,  1.29s/it]Task 4, Epoch 14/20 => Loss 0.156, Train_accy 100.00:  70%|███████   | 14/20 [00:17<00:07,  1.28s/it]Task 4, Epoch 15/20 => Loss 0.153, Train_accy 100.00:  70%|███████   | 14/20 [00:19<00:07,  1.28s/it]Task 4, Epoch 15/20 => Loss 0.153, Train_accy 100.00:  75%|███████▌  | 15/20 [00:19<00:06,  1.28s/it]Task 4, Epoch 16/20 => Loss 0.152, Train_accy 97.78:  75%|███████▌  | 15/20 [00:20<00:06,  1.28s/it] Task 4, Epoch 16/20 => Loss 0.152, Train_accy 97.78:  80%|████████  | 16/20 [00:20<00:05,  1.27s/it]Task 4, Epoch 17/20 => Loss 0.151, Train_accy 97.78:  80%|████████  | 16/20 [00:21<00:05,  1.27s/it]Task 4, Epoch 17/20 => Loss 0.151, Train_accy 97.78:  85%|████████▌ | 17/20 [00:21<00:03,  1.28s/it]Task 4, Epoch 18/20 => Loss 0.148, Train_accy 97.78:  85%|████████▌ | 17/20 [00:22<00:03,  1.28s/it]Task 4, Epoch 18/20 => Loss 0.148, Train_accy 97.78:  90%|█████████ | 18/20 [00:22<00:02,  1.29s/it]Task 4, Epoch 19/20 => Loss 0.145, Train_accy 97.78:  90%|█████████ | 18/20 [00:24<00:02,  1.29s/it]Task 4, Epoch 19/20 => Loss 0.145, Train_accy 97.78:  95%|█████████▌| 19/20 [00:24<00:01,  1.26s/it]Task 4, Epoch 20/20 => Loss 0.143, Train_accy 97.78:  95%|█████████▌| 19/20 [00:25<00:01,  1.26s/it]Task 4, Epoch 20/20 => Loss 0.143, Train_accy 97.78: 100%|██████████| 20/20 [00:25<00:00,  1.24s/it]Task 4, Epoch 20/20 => Loss 0.143, Train_accy 97.78: 100%|██████████| 20/20 [00:25<00:00,  1.27s/it]
+2025-11-21 13:37:33,959 [lorasub_drs.py] => Task 4, Epoch 20/20 => Loss 0.143, Train_accy 97.78
+2025-11-21 13:37:34,622 [trainer.py] => Time:29.683568239212036
+96 96
+2025-11-21 13:37:35,709 [trainer.py] => Time:1.0862853527069092
+2025-11-21 13:37:35,709 [trainer.py] => ACC: {'total': np.float64(84.38), '00-07': np.float64(86.36), '08-15': np.float64(82.69), 'old': np.float64(82.72), 'new': np.float64(93.33)}
+2025-11-21 13:37:35,710 [trainer.py] => ACC top1 curve: [np.float64(88.64), np.float64(90.57), np.float64(88.06), np.float64(82.72), np.float64(84.38)]
+Average Accuracy: 86.874
+2025-11-21 13:37:35,710 [trainer.py] => Average Accuracy: 86.874

@@ -1,0 +1,323 @@
+Generated 100 random seeds: [1824, 409, 4506, 4012, 3657, 2286, 1679, 8935, 1424, 9674]...
+
+============================================================
+Processing dataset: mmfi_stft
+============================================================
+
+[mmfi_stft] Seed 1/100: 1824
+Accuracy: 68.2533
+
+[mmfi_stft] Seed 2/100: 409
+Accuracy: 68.3867
+
+[mmfi_stft] Seed 3/100: 4506
+Accuracy: 66.9983
+
+[mmfi_stft] Seed 4/100: 4012
+Accuracy: 64.6000
+
+[mmfi_stft] Seed 5/100: 3657
+Accuracy: 67.0867
+
+[mmfi_stft] Seed 6/100: 2286
+Accuracy: 65.6783
+
+[mmfi_stft] Seed 7/100: 1679
+Accuracy: 66.8833
+
+[mmfi_stft] Seed 8/100: 8935
+Accuracy: 65.5933
+
+[mmfi_stft] Seed 9/100: 1424
+Accuracy: 67.5600
+
+[mmfi_stft] Seed 10/100: 9674
+Accuracy: 65.5100
+
+[mmfi_stft] Seed 11/100: 6912
+Accuracy: 66.9067
+
+[mmfi_stft] Seed 12/100: 520
+Accuracy: 67.3417
+
+[mmfi_stft] Seed 13/100: 488
+Accuracy: 67.4800
+
+[mmfi_stft] Seed 14/100: 1535
+Accuracy: 65.8483
+
+[mmfi_stft] Seed 15/100: 3582
+Accuracy: 67.7817
+
+[mmfi_stft] Seed 16/100: 3811
+Accuracy: 66.3467
+
+[mmfi_stft] Seed 17/100: 8279
+Accuracy: 66.4267
+
+[mmfi_stft] Seed 18/100: 9863
+Accuracy: 66.7317
+
+[mmfi_stft] Seed 19/100: 434
+Accuracy: 64.4183
+
+[mmfi_stft] Seed 20/100: 9195
+Accuracy: 67.5700
+
+[mmfi_stft] Seed 21/100: 3257
+Accuracy: 67.5517
+
+[mmfi_stft] Seed 22/100: 8928
+Accuracy: 65.8600
+
+[mmfi_stft] Seed 23/100: 6873
+Accuracy: 67.0700
+
+[mmfi_stft] Seed 24/100: 3611
+Accuracy: 66.9867
+
+[mmfi_stft] Seed 25/100: 7359
+Accuracy: 65.8417
+
+[mmfi_stft] Seed 26/100: 9654
+Accuracy: 65.1900
+
+[mmfi_stft] Seed 27/100: 4557
+Accuracy: 65.4750
+
+[mmfi_stft] Seed 28/100: 106
+Accuracy: 65.9083
+
+[mmfi_stft] Seed 29/100: 2615
+Accuracy: 65.7683
+
+[mmfi_stft] Seed 30/100: 6924
+Accuracy: 67.5167
+
+[mmfi_stft] Seed 31/100: 5574
+Accuracy: 66.4717
+
+[mmfi_stft] Seed 32/100: 4552
+Accuracy: 65.0400
+
+[mmfi_stft] Seed 33/100: 2547
+Accuracy: 66.1100
+
+[mmfi_stft] Seed 34/100: 3527
+Accuracy: 64.5900
+
+[mmfi_stft] Seed 35/100: 5514
+Accuracy: 64.3017
+
+[mmfi_stft] Seed 36/100: 1674
+Accuracy: 66.7033
+
+[mmfi_stft] Seed 37/100: 1519
+Accuracy: 65.7767
+
+[mmfi_stft] Seed 38/100: 6224
+Accuracy: 65.8967
+
+[mmfi_stft] Seed 39/100: 1584
+Accuracy: 64.6633
+
+[mmfi_stft] Seed 40/100: 5881
+Accuracy: 67.5533
+
+[mmfi_stft] Seed 41/100: 5635
+Accuracy: 65.9933
+
+[mmfi_stft] Seed 42/100: 9891
+Accuracy: 67.0967
+
+[mmfi_stft] Seed 43/100: 4333
+Accuracy: 64.9883
+
+[mmfi_stft] Seed 44/100: 711
+Accuracy: 69.4733
+
+[mmfi_stft] Seed 45/100: 7527
+Accuracy: 63.5133
+
+[mmfi_stft] Seed 46/100: 8785
+Accuracy: 66.2817
+
+[mmfi_stft] Seed 47/100: 2045
+Accuracy: 64.8200
+
+[mmfi_stft] Seed 48/100: 6201
+Accuracy: 66.7900
+
+[mmfi_stft] Seed 49/100: 1291
+Accuracy: 65.4500
+
+[mmfi_stft] Seed 50/100: 9044
+Accuracy: 66.6050
+
+[mmfi_stft] Seed 51/100: 4803
+Accuracy: 67.0250
+
+[mmfi_stft] Seed 52/100: 5925
+Accuracy: 66.1367
+
+[mmfi_stft] Seed 53/100: 9459
+Accuracy: 65.4133
+
+[mmfi_stft] Seed 54/100: 3150
+Accuracy: 66.2667
+
+[mmfi_stft] Seed 55/100: 1139
+Accuracy: 66.7933
+
+[mmfi_stft] Seed 56/100: 750
+Accuracy: 66.2983
+
+[mmfi_stft] Seed 57/100: 3733
+Accuracy: 64.8967
+
+[mmfi_stft] Seed 58/100: 4741
+Accuracy: 67.1200
+
+[mmfi_stft] Seed 59/100: 1307
+Accuracy: 65.3150
+
+[mmfi_stft] Seed 60/100: 3814
+Accuracy: 67.8083
+
+[mmfi_stft] Seed 61/100: 1654
+Accuracy: 67.6583
+
+[mmfi_stft] Seed 62/100: 6227
+Accuracy: 61.8050
+
+[mmfi_stft] Seed 63/100: 4554
+Accuracy: 66.0667
+
+[mmfi_stft] Seed 64/100: 7428
+Accuracy: 65.9267
+
+[mmfi_stft] Seed 65/100: 5977
+Accuracy: 67.8650
+
+[mmfi_stft] Seed 66/100: 2664
+Accuracy: 66.3167
+
+[mmfi_stft] Seed 67/100: 6065
+Accuracy: 67.1133
+
+[mmfi_stft] Seed 68/100: 5820
+Accuracy: 66.6750
+
+[mmfi_stft] Seed 69/100: 3432
+Accuracy: 68.5183
+
+[mmfi_stft] Seed 70/100: 4374
+Accuracy: 65.4467
+
+[mmfi_stft] Seed 71/100: 1169
+Accuracy: 66.4617
+
+[mmfi_stft] Seed 72/100: 9980
+Accuracy: 66.8867
+
+[mmfi_stft] Seed 73/100: 2803
+Accuracy: 68.9550
+
+[mmfi_stft] Seed 74/100: 8751
+Accuracy: 66.1017
+
+[mmfi_stft] Seed 75/100: 4010
+Accuracy: 66.6333
+
+[mmfi_stft] Seed 76/100: 2677
+Accuracy: 65.3483
+
+[mmfi_stft] Seed 77/100: 7573
+Accuracy: 65.6967
+
+[mmfi_stft] Seed 78/100: 6216
+Accuracy: 65.4383
+
+[mmfi_stft] Seed 79/100: 4422
+Accuracy: 67.4633
+
+[mmfi_stft] Seed 80/100: 9125
+Accuracy: 66.7483
+
+[mmfi_stft] Seed 81/100: 3598
+Accuracy: 67.1050
+
+[mmfi_stft] Seed 82/100: 5313
+Accuracy: 67.8133
+
+[mmfi_stft] Seed 83/100: 916
+Accuracy: 64.8883
+
+[mmfi_stft] Seed 84/100: 3752
+Accuracy: 66.4317
+
+[mmfi_stft] Seed 85/100: 525
+Accuracy: 69.0267
+
+[mmfi_stft] Seed 86/100: 5168
+Accuracy: 62.3650
+
+[mmfi_stft] Seed 87/100: 6572
+Accuracy: 67.4667
+
+[mmfi_stft] Seed 88/100: 4386
+Accuracy: 66.1450
+
+[mmfi_stft] Seed 89/100: 1084
+Accuracy: 66.5717
+
+[mmfi_stft] Seed 90/100: 3456
+Accuracy: 66.5533
+
+[mmfi_stft] Seed 91/100: 9292
+Accuracy: 66.5817
+
+[mmfi_stft] Seed 92/100: 5155
+Accuracy: 64.0617
+
+[mmfi_stft] Seed 93/100: 3483
+Accuracy: 66.3467
+
+[mmfi_stft] Seed 94/100: 8179
+Accuracy: 66.6417
+
+[mmfi_stft] Seed 95/100: 6482
+Accuracy: 66.0950
+
+[mmfi_stft] Seed 96/100: 7517
+Accuracy: 65.8183
+
+[mmfi_stft] Seed 97/100: 2340
+Accuracy: 66.4783
+
+[mmfi_stft] Seed 98/100: 4339
+Accuracy: 66.0367
+
+[mmfi_stft] Seed 99/100: 2287
+Accuracy: 68.4233
+
+[mmfi_stft] Seed 100/100: 4040
+Accuracy: 68.0317
+
+mmfi_stft Statistics:
+  Total Runs: 100
+  Mean Accuracy: 66.3577 ± 1.2725
+  Min Accuracy: 61.8050
+  Max Accuracy: 69.4733
+  Top5 Mean: 68.8793 ± 0.3791
+  Top5 Values: ['68.4233', '68.5183', '68.9550', '69.0267', '69.4733']
+
+============================================================
+Batch training completed!
+Results saved to: batch_results_mmfi_stft_20251123_101725.json
+
+MMFI_STFT:
+  Runs: 100
+  Mean: 66.3577 ± 1.2725
+  Top5 Mean: 68.8793 ± 0.3791
+  Top5 Seeds: [711, 3432, 2803, 525, 2287]

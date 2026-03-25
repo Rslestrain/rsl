@@ -1,0 +1,89 @@
+======================================================================
+重新生成MMFI STFT数据集（时域拼接优化）
+======================================================================
+
+初始化MMFI STFT数据加载器...
+
+开始生成数据...
+
+[时域拼接] 启用时域拼接增强，每5个样本拼接为1个
+[时域拼接] 原始时间步T=10 → 拼接后T=50
+[STFT参数] nperseg=16, noverlap=8, nfft=32
+截取前100个样本: mmfi_processed_a01.npy
+加载MMFI文件 mmfi_processed_a01.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 0
+截取前100个样本: mmfi_processed_a02.npy
+加载MMFI文件 mmfi_processed_a02.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 1
+截取前100个样本: mmfi_processed_a03.npy
+加载MMFI文件 mmfi_processed_a03.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 2
+截取前100个样本: mmfi_processed_a04.npy
+加载MMFI文件 mmfi_processed_a04.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 3
+截取前100个样本: mmfi_processed_a05.npy
+加载MMFI文件 mmfi_processed_a05.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 4
+截取前100个样本: mmfi_processed_a06.npy
+加载MMFI文件 mmfi_processed_a06.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 5
+截取前100个样本: mmfi_processed_a07.npy
+加载MMFI文件 mmfi_processed_a07.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 6
+截取前100个样本: mmfi_processed_a08.npy
+加载MMFI文件 mmfi_processed_a08.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 7
+截取前100个样本: mmfi_processed_a09.npy
+加载MMFI文件 mmfi_processed_a09.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 8
+截取前100个样本: mmfi_processed_a10.npy
+加载MMFI文件 mmfi_processed_a10.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 9
+截取前100个样本: mmfi_processed_a11.npy
+加载MMFI文件 mmfi_processed_a11.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 10
+截取前100个样本: mmfi_processed_a12.npy
+加载MMFI文件 mmfi_processed_a12.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 11
+截取前100个样本: mmfi_processed_a13.npy
+加载MMFI文件 mmfi_processed_a13.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 12
+截取前100个样本: mmfi_processed_a14.npy
+加载MMFI文件 mmfi_processed_a14.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 13
+截取前100个样本: mmfi_processed_a15.npy
+加载MMFI文件 mmfi_processed_a15.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 14
+截取前100个样本: mmfi_processed_a16.npy
+加载MMFI文件 mmfi_processed_a16.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 15
+截取前100个样本: mmfi_processed_a17.npy
+加载MMFI文件 mmfi_processed_a17.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 16
+截取前100个样本: mmfi_processed_a18.npy
+加载MMFI文件 mmfi_processed_a18.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 17
+截取前100个样本: mmfi_processed_a19.npy
+加载MMFI文件 mmfi_processed_a19.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 18
+截取前100个样本: mmfi_processed_a20.npy
+加载MMFI文件 mmfi_processed_a20.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 19
+截取前100个样本: mmfi_processed_a21.npy
+加载MMFI文件 mmfi_processed_a21.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 20
+截取前100个样本: mmfi_processed_a22.npy
+加载MMFI文件 mmfi_processed_a22.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 21
+截取前100个样本: mmfi_processed_a23.npy
+加载MMFI文件 mmfi_processed_a23.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 22
+截取前100个样本: mmfi_processed_a24.npy
+加载MMFI文件 mmfi_processed_a24.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 23
+截取前100个样本: mmfi_processed_a25.npy
+加载MMFI文件 mmfi_processed_a25.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 24
+截取前100个样本: mmfi_processed_a26.npy
+加载MMFI文件 mmfi_processed_a26.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 25
+截取前100个样本: mmfi_processed_a27.npy
+加载MMFI文件 mmfi_processed_a27.npy: 100个原始样本 → 20个拼接样本 (T=10→50), 类别 26
+MMFI总数据量: 540 个样本
+MMFI标签分布: [20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+ 20 20 20]
+MMFI数据集划分: 训练集 432 个样本, 测试集 108 个样本
+开始使用STFT处理训练集数据...
+开始使用STFT处理测试集数据...
+MMFI-STFT数据处理完成
+MMFI-STFT数据集划分和处理完成: 训练集432个样本, 测试集108个样本
+
+======================================================================
+✓ MMFI STFT数据生成完成！
+======================================================================
+训练集: 432 个样本
+测试集: 108 个样本
+
+优化效果:
+  - 时间步: T=10 → T=50 (5x拼接)
+  - STFT参数: nperseg=16, noverlap=8, nfft=32
+  - 时间分辨率: 4 → 8 bins (2.0x)
+  - 频率分辨率: 9 → 17 bins (1.9x)
+  - 生成图像: 114×36 → 114×136 (3.8x像素)
+
+下一步: 运行训练测试新数据集效果
+  python main.py --config configs/mmfi_short_stft.json

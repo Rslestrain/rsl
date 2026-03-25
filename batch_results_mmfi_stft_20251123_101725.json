@@ -1,0 +1,522 @@
+{
+  "mmfi_stft": {
+    "results": [
+      {
+        "seed": 1824,
+        "accuracy": 68.25333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 409,
+        "accuracy": 68.38666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 4506,
+        "accuracy": 66.99833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 4012,
+        "accuracy": 64.6,
+        "status": "success"
+      },
+      {
+        "seed": 3657,
+        "accuracy": 67.08666666666669,
+        "status": "success"
+      },
+      {
+        "seed": 2286,
+        "accuracy": 65.67833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 1679,
+        "accuracy": 66.88333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 8935,
+        "accuracy": 65.59333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 1424,
+        "accuracy": 67.55999999999999,
+        "status": "success"
+      },
+      {
+        "seed": 9674,
+        "accuracy": 65.50999999999999,
+        "status": "success"
+      },
+      {
+        "seed": 6912,
+        "accuracy": 66.90666666666668,
+        "status": "success"
+      },
+      {
+        "seed": 520,
+        "accuracy": 67.34166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 488,
+        "accuracy": 67.48,
+        "status": "success"
+      },
+      {
+        "seed": 1535,
+        "accuracy": 65.84833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 3582,
+        "accuracy": 67.78166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 3811,
+        "accuracy": 66.34666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 8279,
+        "accuracy": 66.42666666666668,
+        "status": "success"
+      },
+      {
+        "seed": 9863,
+        "accuracy": 66.73166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 434,
+        "accuracy": 64.41833333333334,
+        "status": "success"
+      },
+      {
+        "seed": 9195,
+        "accuracy": 67.57000000000001,
+        "status": "success"
+      },
+      {
+        "seed": 3257,
+        "accuracy": 67.55166666666666,
+        "status": "success"
+      },
+      {
+        "seed": 8928,
+        "accuracy": 65.86,
+        "status": "success"
+      },
+      {
+        "seed": 6873,
+        "accuracy": 67.07000000000001,
+        "status": "success"
+      },
+      {
+        "seed": 3611,
+        "accuracy": 66.98666666666668,
+        "status": "success"
+      },
+      {
+        "seed": 7359,
+        "accuracy": 65.84166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 9654,
+        "accuracy": 65.19,
+        "status": "success"
+      },
+      {
+        "seed": 4557,
+        "accuracy": 65.47500000000001,
+        "status": "success"
+      },
+      {
+        "seed": 106,
+        "accuracy": 65.90833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 2615,
+        "accuracy": 65.76833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 6924,
+        "accuracy": 67.51666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 5574,
+        "accuracy": 66.47166666666668,
+        "status": "success"
+      },
+      {
+        "seed": 4552,
+        "accuracy": 65.03999999999999,
+        "status": "success"
+      },
+      {
+        "seed": 2547,
+        "accuracy": 66.11,
+        "status": "success"
+      },
+      {
+        "seed": 3527,
+        "accuracy": 64.59,
+        "status": "success"
+      },
+      {
+        "seed": 5514,
+        "accuracy": 64.30166666666666,
+        "status": "success"
+      },
+      {
+        "seed": 1674,
+        "accuracy": 66.70333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 1519,
+        "accuracy": 65.77666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 6224,
+        "accuracy": 65.89666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 1584,
+        "accuracy": 64.66333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 5881,
+        "accuracy": 67.55333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 5635,
+        "accuracy": 65.99333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 9891,
+        "accuracy": 67.09666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 4333,
+        "accuracy": 64.98833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 711,
+        "accuracy": 69.47333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 7527,
+        "accuracy": 63.51333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 8785,
+        "accuracy": 66.28166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 2045,
+        "accuracy": 64.82000000000001,
+        "status": "success"
+      },
+      {
+        "seed": 6201,
+        "accuracy": 66.79,
+        "status": "success"
+      },
+      {
+        "seed": 1291,
+        "accuracy": 65.45,
+        "status": "success"
+      },
+      {
+        "seed": 9044,
+        "accuracy": 66.605,
+        "status": "success"
+      },
+      {
+        "seed": 4803,
+        "accuracy": 67.02499999999999,
+        "status": "success"
+      },
+      {
+        "seed": 5925,
+        "accuracy": 66.13666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 9459,
+        "accuracy": 65.41333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 3150,
+        "accuracy": 66.26666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 1139,
+        "accuracy": 66.79333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 750,
+        "accuracy": 66.29833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 3733,
+        "accuracy": 64.89666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 4741,
+        "accuracy": 67.12,
+        "status": "success"
+      },
+      {
+        "seed": 1307,
+        "accuracy": 65.315,
+        "status": "success"
+      },
+      {
+        "seed": 3814,
+        "accuracy": 67.80833333333332,
+        "status": "success"
+      },
+      {
+        "seed": 1654,
+        "accuracy": 67.65833333333335,
+        "status": "success"
+      },
+      {
+        "seed": 6227,
+        "accuracy": 61.805,
+        "status": "success"
+      },
+      {
+        "seed": 4554,
+        "accuracy": 66.06666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 7428,
+        "accuracy": 65.92666666666668,
+        "status": "success"
+      },
+      {
+        "seed": 5977,
+        "accuracy": 67.865,
+        "status": "success"
+      },
+      {
+        "seed": 2664,
+        "accuracy": 66.31666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 6065,
+        "accuracy": 67.11333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 5820,
+        "accuracy": 66.675,
+        "status": "success"
+      },
+      {
+        "seed": 3432,
+        "accuracy": 68.51833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 4374,
+        "accuracy": 65.44666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 1169,
+        "accuracy": 66.46166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 9980,
+        "accuracy": 66.88666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 2803,
+        "accuracy": 68.955,
+        "status": "success"
+      },
+      {
+        "seed": 8751,
+        "accuracy": 66.10166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 4010,
+        "accuracy": 66.63333333333334,
+        "status": "success"
+      },
+      {
+        "seed": 2677,
+        "accuracy": 65.34833333333334,
+        "status": "success"
+      },
+      {
+        "seed": 7573,
+        "accuracy": 65.69666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 6216,
+        "accuracy": 65.43833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 4422,
+        "accuracy": 67.46333333333332,
+        "status": "success"
+      },
+      {
+        "seed": 9125,
+        "accuracy": 66.74833333333333,
+        "status": "success"
+      },
+      {
+        "seed": 3598,
+        "accuracy": 67.105,
+        "status": "success"
+      },
+      {
+        "seed": 5313,
+        "accuracy": 67.81333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 916,
+        "accuracy": 64.88833333333334,
+        "status": "success"
+      },
+      {
+        "seed": 3752,
+        "accuracy": 66.43166666666666,
+        "status": "success"
+      },
+      {
+        "seed": 525,
+        "accuracy": 69.02666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 5168,
+        "accuracy": 62.365,
+        "status": "success"
+      },
+      {
+        "seed": 6572,
+        "accuracy": 67.46666666666667,
+        "status": "success"
+      },
+      {
+        "seed": 4386,
+        "accuracy": 66.145,
+        "status": "success"
+      },
+      {
+        "seed": 1084,
+        "accuracy": 66.57166666666666,
+        "status": "success"
+      },
+      {
+        "seed": 3456,
+        "accuracy": 66.55333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 9292,
+        "accuracy": 66.58166666666668,
+        "status": "success"
+      },
+      {
+        "seed": 5155,
+        "accuracy": 64.06166666666668,
+        "status": "success"
+      },
+      {
+        "seed": 3483,
+        "accuracy": 66.34666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 8179,
+        "accuracy": 66.64166666666667,
+        "status": "success"
+      },
+      {
+        "seed": 6482,
+        "accuracy": 66.095,
+        "status": "success"
+      },
+      {
+        "seed": 7517,
+        "accuracy": 65.81833333333334,
+        "status": "success"
+      },
+      {
+        "seed": 2340,
+        "accuracy": 66.47833333333334,
+        "status": "success"
+      },
+      {
+        "seed": 4339,
+        "accuracy": 66.03666666666666,
+        "status": "success"
+      },
+      {
+        "seed": 2287,
+        "accuracy": 68.42333333333333,
+        "status": "success"
+      },
+      {
+        "seed": 4040,
+        "accuracy": 68.03166666666665,
+        "status": "success"
+      }
+    ],
+    "statistics": {
+      "mean": 66.35768333333334,
+      "std": 1.2724809078462946,
+      "count": 100,
+      "min": 61.805,
+      "max": 69.47333333333333,
+      "top5_mean": 68.87933333333334,
+      "top5_std": 0.37908456986681754,
+      "top5_values": [
+        68.42333333333333,
+        68.51833333333333,
+        68.955,
+        69.02666666666666,
+        69.47333333333333
+      ]
+    }
+  }
+}

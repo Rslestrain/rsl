@@ -1,0 +1,507 @@
+{
+  "mmfi_stft": {
+    "results": [
+      {
+        "seed": 1824,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 409,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4506,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4012,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3657,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2286,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1679,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8935,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1424,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9674,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6912,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 520,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 488,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1535,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3582,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3811,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8279,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9863,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 434,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9195,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3257,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8928,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6873,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3611,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 7359,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9654,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4557,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 106,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2615,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6924,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5574,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4552,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2547,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3527,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5514,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1674,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1519,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6224,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1584,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5881,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5635,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9891,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4333,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 711,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 7527,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8785,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2045,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6201,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1291,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9044,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4803,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5925,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9459,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3150,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1139,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 750,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3733,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4741,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1307,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3814,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1654,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6227,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4554,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 7428,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5977,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2664,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6065,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5820,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3432,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4374,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1169,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9980,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2803,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8751,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4010,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2677,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 7573,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6216,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4422,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9125,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3598,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5313,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 916,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3752,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 525,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5168,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6572,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4386,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 1084,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3456,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 9292,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 5155,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 3483,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 8179,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 6482,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 7517,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2340,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4339,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 2287,
+        "accuracy": null,
+        "status": "cuda_oom"
+      },
+      {
+        "seed": 4040,
+        "accuracy": null,
+        "status": "cuda_oom"
+      }
+    ],
+    "statistics": null
+  }
+}
